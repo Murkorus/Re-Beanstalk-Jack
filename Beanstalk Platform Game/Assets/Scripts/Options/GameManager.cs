@@ -2,27 +2,26 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Android;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
+using static UnityEditor.PlayerSettings;
+using static UnityEngine.Rendering.DebugUI.Table;
 
 public class GameManager : MonoBehaviour
 {
-    //Pause
+    public UIManager UIM;
+
     public bool isPaused;
-    private GameObject pauseMenu;
+    public bool optionsIsOpened;
 
+    public GameObject UIAudioSource;
+    public AudioClip TestAudio;
 
-    public void Start()
-    {
-        pauseMenu = GameObject.Find("PauseMenu");
-        pauseMenu.SetActive(false);
-        
-
-    }
 
     public void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Escape))
+        if(Input.GetKeyDown(KeyCode.Escape) && !optionsIsOpened)
         {
             if(isPaused)
             {
@@ -31,6 +30,9 @@ public class GameManager : MonoBehaviour
             {
                 PauseGame();
             }
+        } else if(Input.GetKeyDown(KeyCode.Escape) && optionsIsOpened)
+        {
+            PauseGame();
         }
     }
 
@@ -39,17 +41,43 @@ public class GameManager : MonoBehaviour
     {
         isPaused = true;
         Time.timeScale = 0;
-        pauseMenu.SetActive(true);
+
+        optionsIsOpened = false;
+        UIM.CloseOptionsMenu();
+        UIM.OpenPauseMenu();
     }
 
     public void UnpauseGame()
     {
         isPaused = false;
         Time.timeScale = 1;
-        pauseMenu.SetActive(false);
+        UIM.ClosePauseMenu();
     }
 
 
+    public void testAudioFunction()
+    {
+        GameObject TestGO = Instantiate(UIAudioSource, transform.position, Quaternion.identity);
+        TestGO.GetComponent<AudioSource>().pitch = Random.Range(0.90f, 1.10f);
+        TestGO.GetComponent<AudioSource>().Play();
+        Destroy(TestGO, 3);
+    }
+
+
+    public void OpenOptionsMenu()
+    {
+        isPaused = false;
+        optionsIsOpened = true;
+        Time.timeScale = 0;
+
+        UIM.OpenOptionsMenu();
+    }
+
+    public void CloseOptionsMenu()
+    {
+        optionsIsOpened = false;
+        PauseGame();
+    }
 
 
     //Quit game

@@ -40,7 +40,8 @@ public class PlayerMovement : MonoBehaviour
         rb.velocity = new Vector2(rb.velocity.x + Horizontal * speed * (Time.deltaTime * acceleration), rb.velocity.y);
 
         //Deacceleration
-        rb.velocity = new Vector2(rb.velocity.x * deacceleration, rb.velocity.y);
+        if(Horizontal == 0)
+            rb.velocity = new Vector2(rb.velocity.x * deacceleration, rb.velocity.y);
 
 
         if (Input.GetButtonDown("Jump") && isGrounded)

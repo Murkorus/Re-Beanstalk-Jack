@@ -9,7 +9,7 @@ public class PlayerCam : MonoBehaviour
     public Vector3 offset;
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         transform.position = Vector3.Lerp(transform.position, playerPos.transform.position + offset, smoothing);
     }
