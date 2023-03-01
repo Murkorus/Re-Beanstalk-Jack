@@ -118,13 +118,37 @@ public class UIManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (uiHoverPitch > 1)
+        {
+            uiHoverPitch -= 1 * Time.deltaTime;
+            uiHoverPitch = Mathf.Clamp(uiHoverPitch, 1, 1.25f);
+        }
     }
 
 
+    #region uiHoverSound
+    public GameObject HoverSound;
+    public float uiHoverPitch = 1;
+    public void playUiHover()
+    {
+        uiHoverPitch += 0.1f;
+        GameObject hoverSoundGO = Instantiate(HoverSound);
+        hoverSoundGO.GetComponent<AudioSource>().pitch = uiHoverPitch;
+        hoverSoundGO.GetComponent<AudioSource>().Play();
+        Destroy(hoverSoundGO, 1);
+    }
+    #endregion
 
-
-
+    #region uiLoadSound
+    public GameObject LoadSound;
+    public void playUiLoad()
+    {
+        uiHoverPitch += 0.1f;
+        GameObject hoverSoundGO = Instantiate(LoadSound);
+        hoverSoundGO.GetComponent<AudioSource>().Play();
+        Destroy(hoverSoundGO, 1);
+    }
+    #endregion
     public void updatePlayerUI()
     {
 
