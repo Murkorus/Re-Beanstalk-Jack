@@ -13,6 +13,18 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float jumpForce;
     [SerializeField] private float acceleration;
     [SerializeField] private float deacceleration;
+    [SerializeField] private float turnMultiplier;
+
+    public float maxJumpTime = 0.5f; // Maximum time that the player can hold down the jump button
+    public float jumpHeight = 5f; // Height that the player jumps when pressing the jump button
+
+    private float jumpTime; // Time that the player has been holding down the jump button
+
+    [Header("Booleans")]
+    public bool isGrounded;
+
+
+
 
     [Space(25)]
 
@@ -21,7 +33,6 @@ public class PlayerMovement : MonoBehaviour
     private float Vertical;
 
     //If grounded bool
-    private bool isGrounded;
 
     Rigidbody2D rb;
 
@@ -37,30 +48,40 @@ public class PlayerMovement : MonoBehaviour
         Vertical = Input.GetAxisRaw("Vertical");
 
         //Acceleration
-        rb.velocity = new Vector2(rb.velocity.x + Horizontal * speed * (Time.deltaTime * acceleration), rb.velocity.y);
+        if (Mathf.Sign(rb.velocity.x) == Mathf.Sign(Horizontal)) // If moving in same direction
+        {
+            rb.velocity = new Vector2(rb.velocity.x + Horizontal * speed * (Time.deltaTime * acceleration), rb.velocity.y);
+        }
+        else // If moving in opposite direction
+        {
+            rb.velocity = new Vector2(rb.velocity.x + Horizontal * speed * (Time.deltaTime * acceleration * turnMultiplier), rb.velocity.y);
+        }
 
         //Deacceleration
-        if(Horizontal == 0)
+        if (Horizontal == 0)
             rb.velocity = new Vector2(rb.velocity.x * deacceleration, rb.velocity.y);
 
 
-        if (Input.GetButtonDown("Jump") && isGrounded)
+        if (Input.GetButton("Jump") && jumpTime < maxJumpTime)
         {
-            Jump();
+            rb.velocity = new Vector2(rb.velocity.x, jumpHeight);
+            jumpTime += Time.deltaTime;
+        }
+        else if (Input.GetButtonUp("Jump"))
+        {
+            jumpTime = maxJumpTime;
         }
 
         rb.velocity = new Vector2(Mathf.Clamp(rb.velocity.x, -5, 5), rb.velocity.y);
     }
 
-    public void FixedUpdate()
-    {
-        
-    }
-
-
     public void Jump()
     {
-        rb.velocity = rb.velocity += new Vector2(0, jumpForce);
+        if (isGrounded)
+        {
+            rb.velocity = new Vector2(rb.velocity.x, jumpHeight);
+            jumpTime = 0f;
+        }
     }
         
 
@@ -74,6 +95,7 @@ public class PlayerMovement : MonoBehaviour
             if (contacts[i].normal.y > .75)
             {
                 isGrounded = true;
+                jumpTime = 0f;
             }
         }
     }
