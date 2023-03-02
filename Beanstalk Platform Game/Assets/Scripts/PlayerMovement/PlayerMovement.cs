@@ -15,6 +15,10 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float deacceleration;
     [SerializeField] private float turnMultiplier;
 
+    public float coyoteTimer;
+    public float coyoteTime;
+    public bool hasJumped;
+
     public float maxJumpTime = 0.5f; // Maximum time that the player can hold down the jump button
     public float jumpHeight = 5f; // Height that the player jumps when pressing the jump button
 
@@ -29,12 +33,12 @@ public class PlayerMovement : MonoBehaviour
     [Space(25)]
 
     //Input
-    private float Horizontal;
-    private float Vertical;
+    public float Horizontal;
+    public float Vertical;
 
     //If grounded bool
 
-    Rigidbody2D rb;
+    public Rigidbody2D rb;
 
     void Start()
     {
@@ -46,6 +50,12 @@ public class PlayerMovement : MonoBehaviour
     {
         Horizontal = Input.GetAxisRaw("Horizontal");
         Vertical = Input.GetAxisRaw("Vertical");
+
+        if(!isGrounded && !hasJumped)
+        {
+            coyoteTimer += 1 * Time.deltaTime;
+        }
+
 
         //Acceleration
         if (Mathf.Sign(rb.velocity.x) == Mathf.Sign(Horizontal)) // If moving in same direction
@@ -62,14 +72,9 @@ public class PlayerMovement : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x * deacceleration, rb.velocity.y);
 
 
-        if (Input.GetButton("Jump") && jumpTime < maxJumpTime)
+        if (Input.GetButtonDown("Jump"))
         {
-            rb.velocity = new Vector2(rb.velocity.x, jumpHeight);
-            jumpTime += Time.deltaTime;
-        }
-        else if (Input.GetButtonUp("Jump"))
-        {
-            jumpTime = maxJumpTime;
+            Jump();
         }
 
         rb.velocity = new Vector2(Mathf.Clamp(rb.velocity.x, -5, 5), rb.velocity.y);
@@ -77,10 +82,12 @@ public class PlayerMovement : MonoBehaviour
 
     public void Jump()
     {
-        if (isGrounded)
+        if (isGrounded || coyoteTimer <= coyoteTime && !hasJumped)
         {
-            rb.velocity = new Vector2(rb.velocity.x, jumpHeight);
             jumpTime = 0f;
+            hasJumped = true;
+
+            rb.velocity = new Vector2(rb.velocity.x, jumpHeight);
         }
     }
         
@@ -95,7 +102,9 @@ public class PlayerMovement : MonoBehaviour
             if (contacts[i].normal.y > .75)
             {
                 isGrounded = true;
+                coyoteTimer = 0;
                 jumpTime = 0f;
+                hasJumped = false;
             }
         }
     }
