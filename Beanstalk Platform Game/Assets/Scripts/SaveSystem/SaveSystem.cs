@@ -5,14 +5,19 @@ using System.IO;
 using System.Runtime.InteropServices.WindowsRuntime;
 using System.Xml.Linq;
 using Unity.Mathematics;
+using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
 public class SaveSystem : MonoBehaviour
 {
     public SaveFile save;
 
-    public int unlockedLevelsTest;
+    public int unlockedLevels;
+    public int maxLevels;
+
+    public float progress;
 
     // Start is called before the first frame update
     public void Start()
@@ -35,7 +40,8 @@ public class SaveSystem : MonoBehaviour
 
     public void SaveAll()
     {
-        save.unlockedLevels = unlockedLevelsTest;
+        save.unlockedlevels = unlockedLevels;
+        save.maxlevels = maxLevels;
 
         WriteSave("Save1");
     }
@@ -53,7 +59,8 @@ public class SaveSystem : MonoBehaviour
     public void Load(string saveName)
     {
         save = ReadFile(saveName);
-        unlockedLevelsTest = save.unlockedLevels;
+        unlockedLevels = save.unlockedlevels;
+        maxLevels = save.maxlevels;
     }
 
     public SaveFile ReadFile(string saveName)
@@ -69,6 +76,7 @@ public class SaveSystem : MonoBehaviour
     [System.Serializable]
     public class SaveFile
     {
-        public int unlockedLevels;
+        public int unlockedlevels;
+        public int maxlevels;
     }
 }
