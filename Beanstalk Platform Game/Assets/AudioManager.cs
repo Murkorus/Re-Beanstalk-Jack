@@ -6,6 +6,9 @@ public class AudioManager : MonoBehaviour
 {
     // Start is called before the first frame update 
 
+
+    public bool playWind;
+
     void Start()
     {
         
@@ -14,6 +17,9 @@ public class AudioManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(playWind)
+        {
+
+        }
     }
 }

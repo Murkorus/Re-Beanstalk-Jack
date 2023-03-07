@@ -8,21 +8,31 @@ using Unity.Mathematics;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UIElements;
 
 public class SaveSystem : MonoBehaviour
 {
     public SaveFile save;
+    public informationFile infoFile;
 
-    public int unlockedLevels;
-    public int maxLevels;
+    public int currentSave;
+    public int currentLevel;
+    public Vector3 playerPos;
 
-    public float progress;
+    public string[] sceneNames;
+
 
     // Start is called before the first frame update
+
+
+    void Awake()
+    {
+        DontDestroyOnLoad(transform.gameObject);
+    }
+
     public void Start()
     {
         save = new SaveFile();
+        getInformation();
     }
 
     // Update is called once per frame
@@ -30,7 +40,7 @@ public class SaveSystem : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.L))
         {
-            SaveAll();
+            SaveAll(1);
         }
         if (Input.GetKeyDown(KeyCode.K))
         {
@@ -38,19 +48,19 @@ public class SaveSystem : MonoBehaviour
         }
     }
 
-    public void SaveAll()
+    public void SaveAll(int saveNum)
     {
-        save.unlockedlevels = unlockedLevels;
-        save.maxlevels = maxLevels;
+        save.currentSave_save = currentSave;
+        save.currentLevel_save= currentLevel;
 
-        WriteSave("Save1");
+        WriteSave(saveNum);
     }
 
-    public void WriteSave(string saveName)
+    public void WriteSave(int saveNum)
     {
         string json = JsonUtility.ToJson(save);
         Debug.Log(json);
-        string path = Application.persistentDataPath + "/" + saveName + ".json";
+        string path = Application.persistentDataPath + "/Save" + saveNum + ".json";
         File.WriteAllText(path, json);
     }
 
@@ -59,8 +69,6 @@ public class SaveSystem : MonoBehaviour
     public void Load(string saveName)
     {
         save = ReadFile(saveName);
-        unlockedLevels = save.unlockedlevels;
-        maxLevels = save.maxlevels;
     }
 
     public SaveFile ReadFile(string saveName)
@@ -73,10 +81,63 @@ public class SaveSystem : MonoBehaviour
     }
 
 
+
+    public informationFile getInformation()
+    {
+        //Save 1
+        string path = Application.persistentDataPath + "/Save1.json";
+
+        string json = File.ReadAllText(path);
+        SaveFile information = JsonUtility.FromJson<SaveFile>(json);
+        infoFile.save1Level_info = information.currentLevel_save;
+
+        //Save 2
+        path = Application.persistentDataPath + "/Save2.json";
+        if(File.Exists(path))
+        {
+            json = File.ReadAllText(path);
+            information = JsonUtility.FromJson<SaveFile>(json);
+            infoFile.save2Level_info = information.currentLevel_save;
+        } else
+        {
+            infoFile.save2Level_info = 0;
+        }
+
+        //Save 3
+        path = Application.persistentDataPath + "/Save3.json";
+        if (System.IO.File.Exists(path))
+        {
+            json = File.ReadAllText(path);
+            information = JsonUtility.FromJson<SaveFile>(json);
+            infoFile.save3Level_info = information.currentLevel_save;
+        }
+        else
+        {
+            infoFile.save3Level_info = 0;
+        }
+
+        Debug.Log(infoFile);
+        return infoFile;
+    }
+
+
+
     [System.Serializable]
     public class SaveFile
     {
-        public int unlockedlevels;
-        public int maxlevels;
+        public int currentSave_save;
+        public int currentLevel_save;
+        public Vector3 playerPos_sace;
+    }
+
+    [System.Serializable]
+    public class informationFile
+    {
+        public int save1Level_info;
+
+        public int save2Level_info;
+
+        public int save3Level_info;
+
     }
 }

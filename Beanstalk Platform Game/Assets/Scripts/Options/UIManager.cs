@@ -62,8 +62,6 @@ public class UIManager : MonoBehaviour
     private Resolution[] resolutions;
     private List<Resolution> filteredResolutions;
 
-    private float currentRefreshRate;
-    private int currentResolutionIndex = 0;
     public void getResolution()
     {
 

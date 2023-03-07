@@ -4717,7 +4717,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1397442832}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.38, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6580,7 +6580,7 @@ MonoBehaviour:
   speed: 5
   jumpForce: 5
   acceleration: 10
-  deacceleration: 0.986
+  deacceleration: 0.9125
   turnMultiplier: 1.1
   coyoteTimer: 0
   coyoteTime: 0.2
@@ -7656,56 +7656,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7971092832005127073
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7971092832005127087}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 733.5934, y: 271.5886, z: -43.189774}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 7971092832900325611}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7971092832005127086
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7971092832005127087}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 127d2140e0714094ea48af8eb4ec6fc2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  save:
-    unlockedlevels: 0
-    maxlevels: 0
-  unlockedLevels: 0
-  maxLevels: 0
-  progress: 0
---- !u!1 &7971092832005127087
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7971092832005127073}
-  - component: {fileID: 7971092832005127086}
-  m_Layer: 0
-  m_Name: SaveSystem
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &7971092832665176194
 GameObject:
   m_ObjectHideFlags: 0
@@ -7788,7 +7738,6 @@ Transform:
   m_Children:
   - {fileID: 7971092833046430273}
   - {fileID: 7971092832665176196}
-  - {fileID: 7971092832005127073}
   - {fileID: 7971092832915585522}
   - {fileID: 8238056679466557424}
   m_Father: {fileID: 3398735972155003695}
@@ -7807,7 +7756,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7971092832900325611}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7971092832915585523
 GameObject:
@@ -7870,6 +7819,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: affcfc64febf0074ba51693e63127a55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playWind: 0
 --- !u!1 &7971092833046430287
 GameObject:
   m_ObjectHideFlags: 0
@@ -7900,7 +7850,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7971092832900325611}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!223 &8579420170057307199
 Canvas:
