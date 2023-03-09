@@ -6,11 +6,13 @@ using Unity.VisualScripting;
 using TMPro;
 using UnityEngine.SceneManagement;
 using UnityEditor;
+using static SaveSystem;
 
 public class SaveSelector : MonoBehaviour
 {
     public SaveSystem savesys;
     public SaveSystem.informationFile infoFile;
+    public SaveSystem.SaveFile saveFile;
 
     public GameObject saveSlot1;
     public GameObject saveSlot2;
@@ -23,6 +25,7 @@ public class SaveSelector : MonoBehaviour
         getSceneNames();
 
         infoFile = savesys.getInformation();
+
         foreach (Transform child in saveSlot1.transform)
         {
             if(child.name == "Progress")
@@ -95,10 +98,24 @@ public class SaveSelector : MonoBehaviour
     {
         if(System.IO.File.Exists(Application.persistentDataPath + "/Save" + saveNumber + ".json"))
         {
+            string path = Application.persistentDataPath + "/Save" + saveNumber + ".json";
+            string json = File.ReadAllText(path);
+            Debug.Log($"ReadFile() {json}");
+            SaveFile load = JsonUtility.FromJson<SaveFile>(json);
             Debug.Log("Save exists");
+            if(load.currentLevel_save < 0)
+            {
+                Debug.Log("save found");
+            } else
+            {
+                Debug.Log("File doesn't exists");
+                savesys.newSave(saveNumber);
+            }
+
         } else
         {
             Debug.Log("File doesn't exists");
+            savesys.newSave(saveNumber);
         }
     }
 }

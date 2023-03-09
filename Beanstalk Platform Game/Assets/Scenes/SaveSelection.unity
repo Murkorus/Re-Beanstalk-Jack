@@ -941,8 +941,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 251, y: 27.000053}
-  m_SizeDelta: {x: 1913, y: 799.19}
+  m_AnchoredPosition: {x: 251, y: -0.0015259}
+  m_SizeDelta: {x: 1913, y: 233.25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &712445244
 MonoBehaviour:
@@ -1391,6 +1391,7 @@ MonoBehaviour:
   selectedUIAnimation: {fileID: 678969642}
   selectedColor: {r: 1, g: 1, b: 1, a: 0.5882353}
   normalColor: {r: 1, g: 1, b: 1, a: 0}
+  isUsingMouse: 0
   uimanager: {fileID: 6398747959478364282}
 --- !u!4 &808892195
 Transform:
@@ -1424,6 +1425,10 @@ MonoBehaviour:
     save1Level_info: 0
     save2Level_info: 0
     save3Level_info: 0
+  saveFile:
+    currentSave_save: 0
+    currentLevel_save: 0
+    playerPos_save: {x: 0, y: 0, z: 0}
   saveSlot1: {fileID: 1900943780}
   saveSlot2: {fileID: 2026826163}
   saveSlot3: {fileID: 1398263401}
@@ -1463,8 +1468,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 251, y: 27}
-  m_SizeDelta: {x: 1913, y: 799.19}
+  m_AnchoredPosition: {x: 251, y: -0.0015259}
+  m_SizeDelta: {x: 1913, y: 233.25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &892217319
 MonoBehaviour:
@@ -2225,6 +2230,7 @@ GameObject:
   - component: {fileID: 1398263404}
   - component: {fileID: 1398263403}
   - component: {fileID: 1398263405}
+  - component: {fileID: 1398263406}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -2349,6 +2355,51 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1398263406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1398263401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 808892194}
+          m_TargetAssemblyTypeName: UISelector, Assembly-CSharp
+          m_MethodName: SwitchToMouse
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 2
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 808892194}
+          m_TargetAssemblyTypeName: UISelector, Assembly-CSharp
+          m_MethodName: switchToKeyboard
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 2
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1559664538
 GameObject:
   m_ObjectHideFlags: 0
@@ -2461,6 +2512,7 @@ GameObject:
   - component: {fileID: 1900943783}
   - component: {fileID: 1900943782}
   - component: {fileID: 1900943784}
+  - component: {fileID: 1900943785}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -2585,6 +2637,51 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1900943785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1900943780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 808892194}
+          m_TargetAssemblyTypeName: UISelector, Assembly-CSharp
+          m_MethodName: SwitchToMouse
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 808892194}
+          m_TargetAssemblyTypeName: UISelector, Assembly-CSharp
+          m_MethodName: switchToKeyboard
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1930921199
 GameObject:
   m_ObjectHideFlags: 0
@@ -2732,6 +2829,7 @@ GameObject:
   - component: {fileID: 2026826166}
   - component: {fileID: 2026826165}
   - component: {fileID: 2026826167}
+  - component: {fileID: 2026826168}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -2856,6 +2954,51 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &2026826168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2026826163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 808892194}
+          m_TargetAssemblyTypeName: UISelector, Assembly-CSharp
+          m_MethodName: SwitchToMouse
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 808892194}
+          m_TargetAssemblyTypeName: UISelector, Assembly-CSharp
+          m_MethodName: switchToKeyboard
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &2049445787
 GameObject:
   m_ObjectHideFlags: 0
@@ -3348,8 +3491,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 251, y: 27}
-  m_SizeDelta: {x: 1913, y: 799.19}
+  m_AnchoredPosition: {x: 251, y: -0.00088500977}
+  m_SizeDelta: {x: 1913, y: 233.25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &5953943031922881498
 MonoBehaviour:
@@ -3433,7 +3576,7 @@ MonoBehaviour:
   save:
     currentSave_save: 0
     currentLevel_save: 0
-    playerPos_sace: {x: 0, y: 0, z: 0}
+    playerPos_save: {x: 0, y: 0, z: 0}
   infoFile:
     save1Level_info: 0
     save2Level_info: 0

@@ -40,18 +40,19 @@ public class SaveSystem : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.L))
         {
-            SaveAll(1);
+            SaveAll(currentSave);
         }
         if (Input.GetKeyDown(KeyCode.K))
         {
-            Load("Save1");
+            Load(currentSave);
         }
     }
 
     public void SaveAll(int saveNum)
     {
         save.currentSave_save = currentSave;
-        save.currentLevel_save= currentLevel;
+        save.currentLevel_save = currentLevel;
+        save.playerPos_save = GameObject.Find("Player").transform.position;
 
         WriteSave(saveNum);
     }
@@ -66,14 +67,18 @@ public class SaveSystem : MonoBehaviour
 
 
 
-    public void Load(string saveName)
+    public void Load(int saveNum)
     {
-        save = ReadFile(saveName);
+        save = ReadFile(saveNum);
+
+        SceneManager.LoadScene(save.currentLevel_save);
+        currentLevel = save.currentLevel_save;
+        currentSave = saveNum;
     }
 
-    public SaveFile ReadFile(string saveName)
+    public SaveFile ReadFile(int saveNum)
     {
-        string path = Application.persistentDataPath + "/" + saveName + ".json";
+        string path = Application.persistentDataPath + "/Save" + saveNum + ".json";
         string json = File.ReadAllText(path);
         Debug.Log($"ReadFile() {json}");
         SaveFile load = JsonUtility.FromJson<SaveFile>(json);
@@ -84,40 +89,45 @@ public class SaveSystem : MonoBehaviour
 
     public informationFile getInformation()
     {
-        //Save 1
-        string path = Application.persistentDataPath + "/Save1.json";
+        string path = Application.persistentDataPath;
+        string json;
+        SaveFile information;
 
-        string json = File.ReadAllText(path);
-        SaveFile information = JsonUtility.FromJson<SaveFile>(json);
-        infoFile.save1Level_info = information.currentLevel_save;
-
-        //Save 2
-        path = Application.persistentDataPath + "/Save2.json";
-        if(File.Exists(path))
+        if(File.Exists(path.ToString() + "/Save1.json")) 
         {
-            json = File.ReadAllText(path);
+            json = File.ReadAllText(path + "/Save1.json");
             information = JsonUtility.FromJson<SaveFile>(json);
-            infoFile.save2Level_info = information.currentLevel_save;
-        } else
-        {
-            infoFile.save2Level_info = 0;
+            infoFile.save1Level_info = information.currentLevel_save;
         }
 
-        //Save 3
-        path = Application.persistentDataPath + "/Save3.json";
-        if (System.IO.File.Exists(path))
+        if (File.Exists(path.ToString() + "/Save2.json"))
         {
-            json = File.ReadAllText(path);
+            json = File.ReadAllText(path + "/Save2.json");
+            information = JsonUtility.FromJson<SaveFile>(json);
+            infoFile.save2Level_info = information.currentLevel_save;
+        }
+
+        if (File.Exists(path.ToString() + "/Save3.json"))
+        {
+            json = File.ReadAllText(path + "/Save3.json");
             information = JsonUtility.FromJson<SaveFile>(json);
             infoFile.save3Level_info = information.currentLevel_save;
         }
-        else
-        {
-            infoFile.save3Level_info = 0;
-        }
-
         Debug.Log(infoFile);
         return infoFile;
+    }
+
+
+    public void newSave(int saveNum)
+    {
+        save.currentSave_save = saveNum;
+        save.currentLevel_save = 3;
+        string json = JsonUtility.ToJson(save);
+        Debug.Log(json);
+        string path = Application.persistentDataPath + "/Save" + saveNum + ".json";
+        File.WriteAllText(path, json);
+
+        Load(saveNum);
     }
 
 
@@ -127,7 +137,7 @@ public class SaveSystem : MonoBehaviour
     {
         public int currentSave_save;
         public int currentLevel_save;
-        public Vector3 playerPos_sace;
+        public Vector3 playerPos_save;
     }
 
     [System.Serializable]

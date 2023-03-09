@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -16,6 +17,7 @@ public class UISelector : MonoBehaviour
     [SerializeField] private Color normalColor;
 
     private bool hasSwitched;
+    [SerializeField] private bool isUsingMouse;
 
     [SerializeField] UIManager uimanager;
 
@@ -28,38 +30,53 @@ public class UISelector : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetAxisRaw("Vertical") < 0 && !hasSwitched)
+        if(!isUsingMouse)
         {
-            hasSwitched = true;
-            if(currentSelected != ButtonsList.Count - 1)
+            if (Input.GetAxisRaw("Vertical") < 0 && !hasSwitched)
             {
-                currentSelected++;
-                updateUi();
+                hasSwitched = true;
+                if (currentSelected != ButtonsList.Count - 1)
+                {
+                    currentSelected++;
+                    updateUi();
+                }
+            }
+            if (Input.GetAxisRaw("Vertical") > 0 && !hasSwitched)
+            {
+                hasSwitched = true;
+                if (currentSelected != 0)
+                {
+                    currentSelected--;
+                    updateUi();
+                }
+            }
+            if (Input.GetAxisRaw("Vertical") == 0 && hasSwitched)
+            {
+                hasSwitched = false;
+            }
+
+            if (Input.GetKeyDown(KeyCode.Return))
+            {
+                ButtonsList[currentSelected].GetComponent<Button>().onClick.Invoke();
+                Debug.Log("Clicked button");
             }
         }
-        if (Input.GetAxisRaw("Vertical") > 0 && !hasSwitched)
-        {
-            hasSwitched = true;
-            if (currentSelected != 0)
-            {
-                currentSelected--;
-                updateUi();
-            }
-        }
-        if (Input.GetAxisRaw("Vertical") == 0 && hasSwitched)
-        {
-            hasSwitched = false;
-        }
-
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            ButtonsList[currentSelected].GetComponent<Button>().onClick.Invoke();
-            Debug.Log("Clicked button");
-        }
-
     }
 
 
+
+    public void SwitchToMouse(int index)
+    {
+        isUsingMouse = true;
+        currentSelected = index;
+        updateUi();
+        Debug.Log("Hovering mouse");
+    }
+
+    public void switchToKeyboard()
+    {
+        isUsingMouse = false;
+    }
 
     public void updateUi()
     {
