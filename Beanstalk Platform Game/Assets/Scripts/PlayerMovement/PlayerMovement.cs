@@ -66,11 +66,11 @@ public class PlayerMovement : MonoBehaviour
 
     public void FixedUpdate()
     {
-        float horizontalInput = Input.GetAxisRaw("Horizontal");
-        if (horizontalInput != 0)
+        Horizontal = Input.GetAxisRaw("Horizontal");
+        if (Horizontal != 0)
         {
             // Apply acceleration
-            rb.velocity += new Vector2(horizontalInput * acceleration * Time.deltaTime, 0);
+            rb.velocity += new Vector2(Horizontal * acceleration * Time.deltaTime, 0);
 
             // Limit velocity to maximum speed
             rb.velocity = new Vector2(Mathf.Clamp(rb.velocity.x, -maxSpeed, maxSpeed), rb.velocity.y);

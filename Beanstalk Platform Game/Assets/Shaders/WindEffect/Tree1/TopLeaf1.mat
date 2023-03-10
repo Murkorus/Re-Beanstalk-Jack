@@ -43,8 +43,8 @@ Material:
     m_Ints: []
     m_Floats:
     - _BlendValue: 0.07
-    - _CellDensity: 15
+    - _CellDensity: 5
     - _PixelAmount: 64
-    - _Speed: 0.25
+    - _Speed: 1
     m_Colors: []
   m_BuildTextureStacks: []

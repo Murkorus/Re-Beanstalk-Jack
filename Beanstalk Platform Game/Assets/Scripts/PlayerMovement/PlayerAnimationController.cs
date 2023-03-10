@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerAnimationController : MonoBehaviour
 {
+    public PlayerMovement playerMovement;
+
     public Animator playerAnimator;
 
     public bool isGrounded;
@@ -21,5 +23,18 @@ public class PlayerAnimationController : MonoBehaviour
     public bool isFacingRight;
 
     // Update is called once per frame
+
+    public void Start() {
+        playerMovement = GetComponent<PlayerMovement>();
+    }
+    public void Update() {
+        isGrounded = playerMovement.isGrounded;
+
+        if(playerMovement.Horizontal == 0) {
+            isMoving = false;
+        } else {
+            isMoving = true;
+        }
+    }
 
 }

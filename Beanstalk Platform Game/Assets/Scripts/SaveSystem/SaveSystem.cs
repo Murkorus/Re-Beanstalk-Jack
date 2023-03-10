@@ -121,7 +121,7 @@ public class SaveSystem : MonoBehaviour
     public void newSave(int saveNum)
     {
         save.currentSave_save = saveNum;
-        save.currentLevel_save = 3;
+        save.currentLevel_save = 4;
         string json = JsonUtility.ToJson(save);
         Debug.Log(json);
         string path = Application.persistentDataPath + "/Save" + saveNum + ".json";

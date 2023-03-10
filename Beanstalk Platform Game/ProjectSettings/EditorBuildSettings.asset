@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Testing/PlayerMovement.unity
     guid: be360a63fe994e542adeed8e021b097c
   - enabled: 1
+    path: Assets/Scenes/Testing/VisualsTest.unity
+    guid: c0eac538f7f6d2d44816883bf1174315
+  - enabled: 1
     path: Assets/Scenes/Credits.unity
     guid: 357f0b1be7222ff4086adc13dc3141ac
   m_configObjects: {}

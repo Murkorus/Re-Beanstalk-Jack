@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: WindShaderMaterial 2
+  m_Name: BushBottom
   m_Shader: {fileID: -6465566751694194690, guid: 833353ac224514049b574e81f71b8749, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -25,7 +25,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ManiTex:
-        m_Texture: {fileID: 2800000, guid: ff2741be54f2c724b8fe0b428032e92f, type: 3}
+        m_Texture: {fileID: 2800000, guid: 876542e9b2d1bb843b772ede5390f2b8, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -44,7 +44,7 @@ Material:
     m_Floats:
     - _BlendValue: 0.07
     - _CellDensity: 15
-    - _PixelAmount: 83
+    - _PixelAmount: 80
     - _Speed: 1
     m_Colors: []
   m_BuildTextureStacks: []
