@@ -104,15 +104,15 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 1uts7wca_0
+      name: NormalGiant_Stomp1
       rect:
         serializedVersion: 2
         x: 6
         y: 448
         width: 25
         height: 63
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.16, y: 0.50793654}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -125,15 +125,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1uts7wca_1
+      name: NormalGiant_Stomp2
       rect:
         serializedVersion: 2
         x: 41
         y: 448
         width: 25
         height: 63
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.16, y: 0.50793654}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -146,15 +146,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1uts7wca_2
+      name: NormalGiant_Stomp3
       rect:
         serializedVersion: 2
         x: 75
         y: 448
         width: 26
         height: 63
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.15384616, y: 0.50793654}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -167,7 +167,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1uts7wca_3
+      name: NormalGiant_Angry_Walk1
       rect:
         serializedVersion: 2
         x: 135
@@ -175,7 +175,7 @@ TextureImporter:
         width: 22
         height: 63
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -188,7 +188,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1uts7wca_4
+      name: NormalGiant_Angry_Walk2
       rect:
         serializedVersion: 2
         x: 160
@@ -196,7 +196,7 @@ TextureImporter:
         width: 20
         height: 63
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -209,7 +209,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1uts7wca_5
+      name: NormalGiant_Angry_Walk3
       rect:
         serializedVersion: 2
         x: 186
@@ -217,7 +217,7 @@ TextureImporter:
         width: 17
         height: 63
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -230,7 +230,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1uts7wca_6
+      name: NormalGiant_Angry_Walk4
       rect:
         serializedVersion: 2
         x: 209
@@ -238,7 +238,7 @@ TextureImporter:
         width: 20
         height: 63
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -251,7 +251,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1uts7wca_7
+      name: NormalGiant_Angry_Walk5
       rect:
         serializedVersion: 2
         x: 233
@@ -259,7 +259,7 @@ TextureImporter:
         width: 22
         height: 63
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -272,15 +272,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1uts7wca_8
+      name: NormalGiant_Stomp4
       rect:
         serializedVersion: 2
         x: 5
         y: 384
         width: 32
         height: 63
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.125, y: 0.50793654}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -293,15 +293,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1uts7wca_9
+      name: NormalGiant_Stomp5
       rect:
         serializedVersion: 2
         x: 44
         y: 384
         width: 28
         height: 63
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.14285715, y: 0.50793654}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -314,15 +314,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1uts7wca_10
+      name: NormalGiant_Stomp6
       rect:
         serializedVersion: 2
         x: 96
         y: 384
         width: 27
         height: 63
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.14814815, y: 0.50793654}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -343,7 +343,7 @@ TextureImporter:
         width: 16
         height: 63
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -356,15 +356,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1uts7wca_12
+      name: NormalGiant_Idle1
       rect:
         serializedVersion: 2
         x: 153
         y: 373
         width: 16
         height: 63
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.50793654}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -377,15 +377,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1uts7wca_13
+      name: NormalGiant_Idle2
       rect:
         serializedVersion: 2
         x: 172
         y: 373
         width: 16
         height: 59
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5423729}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -406,7 +406,7 @@ TextureImporter:
         width: 16
         height: 63
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -419,15 +419,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1uts7wca_15
+      name: NormalGiant_Confused1
       rect:
         serializedVersion: 2
         x: 2
         y: 300
         width: 21
         height: 68
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.42857143, y: 0.47058824}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -440,15 +440,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1uts7wca_16
+      name: NormalGiant_Confused2
       rect:
         serializedVersion: 2
         x: 34
         y: 300
         width: 19
         height: 65
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.42105263, y: 0.4923077}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -469,7 +469,7 @@ TextureImporter:
         width: 8
         height: 4
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -482,15 +482,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1uts7wca_18
+      name: NormalGiant_Confused3
       rect:
         serializedVersion: 2
         x: 65
         y: 300
         width: 18
         height: 67
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.44444445, y: 0.47761193}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -503,57 +503,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1uts7wca_19
+      name: NormalGiant_Confused4
       rect:
         serializedVersion: 2
         x: 93
-        y: 359
-        width: 4
-        height: 5
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 04f72776a6114404a8964db0d9b65438
-      internalID: 921525781
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 1uts7wca_20
-      rect:
-        serializedVersion: 2
-        x: 101
-        y: 362
-        width: 9
-        height: 4
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 48d2296cc5d8d2f45bc0028af3fe8a0f
-      internalID: -1346414618
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 1uts7wca_21
-      rect:
-        serializedVersion: 2
-        x: 95
         y: 300
-        width: 16
-        height: 62
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 18
+        height: 66
+      alignment: 9
+      pivot: {x: 0.6111111, y: 0.4848485}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -561,111 +519,6 @@ TextureImporter:
       bones: []
       spriteID: b373d24217469ad4d9b3a90452bfe804
       internalID: -2049114742
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 1uts7wca_22
-      rect:
-        serializedVersion: 2
-        x: 132
-        y: 298
-        width: 22
-        height: 63
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1f942efcdace31e47a9b9b2a19ffdecc
-      internalID: 917713946
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 1uts7wca_23
-      rect:
-        serializedVersion: 2
-        x: 157
-        y: 298
-        width: 20
-        height: 63
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e7ff70416a8fb824bab42fc2265983dd
-      internalID: 747109517
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 1uts7wca_24
-      rect:
-        serializedVersion: 2
-        x: 183
-        y: 298
-        width: 17
-        height: 63
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 09fd39f957d72714d87dced54a47c74d
-      internalID: 1040033880
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 1uts7wca_25
-      rect:
-        serializedVersion: 2
-        x: 206
-        y: 298
-        width: 20
-        height: 63
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a5c95bde668e5564d8f0911964f907d3
-      internalID: -296281069
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 1uts7wca_26
-      rect:
-        serializedVersion: 2
-        x: 230
-        y: 298
-        width: 22
-        height: 63
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 74a802638606d024682d12f5f00a2284
-      internalID: -444533742
       vertices: []
       indices: 
       edges: []
@@ -679,7 +532,7 @@ TextureImporter:
         width: 20
         height: 62
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -700,7 +553,7 @@ TextureImporter:
         width: 23
         height: 63
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -721,7 +574,7 @@ TextureImporter:
         width: 31
         height: 58
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -742,7 +595,7 @@ TextureImporter:
         width: 32
         height: 51
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -763,7 +616,7 @@ TextureImporter:
         width: 32
         height: 51
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -784,7 +637,7 @@ TextureImporter:
         width: 32
         height: 50
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -805,7 +658,7 @@ TextureImporter:
         width: 32
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -826,7 +679,7 @@ TextureImporter:
         width: 32
         height: 43
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -847,7 +700,7 @@ TextureImporter:
         width: 32
         height: 43
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -855,6 +708,111 @@ TextureImporter:
       bones: []
       spriteID: 7cc619b8b29145f47b9937c12729b813
       internalID: 763717737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalGiant_happy_Walk1
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 298
+        width: 22
+        height: 63
+      alignment: 9
+      pivot: {x: 0.45454547, y: 0.50793654}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 121f5ac4dad42684b82d540bb8c6763a
+      internalID: 542594692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalGiant_happy_Walk2
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 298
+        width: 19
+        height: 63
+      alignment: 9
+      pivot: {x: 0.47368422, y: 0.50793654}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 525c30be3810cd9458f34d910fe27638
+      internalID: 866626435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalGiant_happy_Walk3
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 298
+        width: 17
+        height: 63
+      alignment: 9
+      pivot: {x: 0.47058824, y: 0.50793654}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a52ad54a8f31483459bf2f9374506b7e
+      internalID: -1031462580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalGiant_happy_Walk4
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 298
+        width: 20
+        height: 63
+      alignment: 9
+      pivot: {x: 0.55, y: 0.50793654}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf294e8a9187d514ea09e2f8aa356085
+      internalID: -1695377703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalGiant_happy_Walk5
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 298
+        width: 21
+        height: 63
+      alignment: 9
+      pivot: {x: 0.47619048, y: 0.50793654}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71dc4d248999c1544adad788af9a0f71
+      internalID: -1979820179
       vertices: []
       indices: 
       edges: []
@@ -870,42 +828,47 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      1uts7wca_4: 919108767
-      1uts7wca_12: 187534315
-      1uts7wca_18: -1967737048
-      1uts7wca_21: -2049114742
+      NormalGiant_Happy_Walk4: -296281069
+      NormalGiant_Angry_Walk3: 1371293763
+      NormalGiant_Stomp4: -1029236345
       1uts7wca_11: -814152201
       1uts7wca_27: 606638307
-      1uts7wca_15: 269333076
-      1uts7wca_6: -1083769912
-      1uts7wca_7: 343005408
-      1uts7wca_13: -309911003
+      NormalGiant_Confused3: -1967737048
+      NormalGiant_happy_Walk5: -1979820179
+      NormalGiant_happy_Walk4: -1695377703
       1uts7wca_35: 763717737
-      1uts7wca_16: 472864495
-      1uts7wca_9: 956315346
-      1uts7wca_5: 1371293763
-      1uts7wca_22: 917713946
-      1uts7wca_23: 747109517
+      NormalGiant_Happy_Walk3: 1040033880
+      NormalGiant_Happy_Walk1: 917713946
+      NormalGiant_Stomp1: -301837757
+      NormalGiant_happy_Walk3: -1031462580
       1uts7wca_14: 1303361530
+      NormalGiant_Happy_Walk5: -444533742
       1uts7wca_30: 1779138262
+      NormalGiant_Happy_Walk2: 747109517
       1uts7wca_20: -1346414618
-      1uts7wca_0: -301837757
+      NormalGiant_Idle2: -309911003
+      NormalGiant_Stomp6: -232496874
       1uts7wca_33: -1520713258
+      NormalGiant_Angry_Walk1: 1736397476
       1uts7wca_32: -426343470
       1uts7wca_34: 2077652008
-      1uts7wca_1: 1775004889
-      1uts7wca_10: -232496874
-      1uts7wca_8: -1029236345
-      1uts7wca_24: 1040033880
-      1uts7wca_26: -444533742
-      1uts7wca_19: 921525781
-      1uts7wca_31: -2064035378
-      1uts7wca_17: -1023604137
-      1uts7wca_28: 1407851363
-      1uts7wca_2: 711975721
-      1uts7wca_3: 1736397476
-      1uts7wca_29: -1074508689
-      1uts7wca_25: -296281069
+      NormalGiant_Angry_Walk2: 919108767
+      NormalGiant_happy_Walk2: 711975721
+      NormalGiant_Confused1: 269333076
+      NormalGiant_Confused4: -2049114742
+      NormalGiant_happy_Walk1: 542594692
+      NormalGiant_Stomp3: 921525781
+      1uts7wca_19: 1775004889
+      NormalGiant_Stomp2: -2064035378
+      1uts7wca_31: 187534315
+      NormalGiant_Idle1: -1023604137
+      1uts7wca_17: 1407851363
+      1uts7wca_28: 343005408
+      NormalGiant_Angry_Walk5: 956315346
+      NormalGiant_Stomp5: -1074508689
+      1uts7wca_29: 472864495
+      NormalGiant_Confused2: -1083769912
+      NormalGiant_Angry_Walk4: 542594692
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
