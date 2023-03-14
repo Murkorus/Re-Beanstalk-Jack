@@ -17,6 +17,7 @@ public class PlayerAnimationController : MonoBehaviour
     public bool isFalling;
 
     public bool usingSlingshot;
+    public Slingshot slingshot;
 
     public bool gooseOnBack;
 
@@ -29,12 +30,21 @@ public class PlayerAnimationController : MonoBehaviour
     }
     public void Update() {
         isGrounded = playerMovement.isGrounded;
+        usingSlingshot = slingshot.isCharging;
+
 
         if(playerMovement.Horizontal == 0) {
             isMoving = false;
         } else {
             isMoving = true;
         }
+
+        if(playerMovement.rb.velocity.y > 0.01) {
+            isJumping = true;
+        } else {
+            isJumping = false;
+        }
+        
     }
 
 }

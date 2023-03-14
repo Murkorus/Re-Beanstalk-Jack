@@ -2919,6 +2919,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentState: 2
   isWalking: 0
+  isAttacking: 0
   stompSpawnPosition: {fileID: 2062266362}
   stompPrefab: {fileID: 897423719509127123, guid: cfe2f219a326d7943ae6d89d8fb3f647, type: 3}
   attackCooldown: 1
@@ -3535,7 +3536,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1293984734}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 2.221, y: 0, z: 0.0888}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4784,7 +4785,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2062266362}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.579, z: 0}
+  m_LocalPosition: {x: 0.346, y: -1.579, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5027,7 +5028,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ad980451443d70438faac0bc6c235a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_TrackedObjectOffset: {x: 0, y: 1.3, z: 0}
+  m_TrackedObjectOffset: {x: 0, y: 2, z: 0}
   m_LookaheadTime: 0
   m_LookaheadSmoothing: 0
   m_LookaheadIgnoreY: 0
@@ -5288,7 +5289,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7001012438486179909}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -960, y: -538.7, z: -10}
+  m_LocalPosition: {x: -963.77, y: -538.43, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5432,7 +5433,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7001012438776512484}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -960, y: -538.7, z: -10}
+  m_LocalPosition: {x: -963.77, y: -538.43, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5596,14 +5597,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53ae12a541ff0844db4adad93a88c7fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentProjectile: pebble
-  pebbleAmount: 1
-  platformBeanAmount: 0
-  fireBeanAmount: 0
-  mindControlBeanAmount: 0
-  haveProjectile: 0
+  Stones: 5
+  maxStones: 4
+  Player: {fileID: 7235943756884425823}
+  Pebble: {fileID: 572257231913690876, guid: 59e8ec17c13e0964b96b2c2c3c33d332, type: 3}
+  PlatformBean: {fileID: 0}
+  projectileForce: 4
+  projectilePoint: {fileID: 7235943756884425827}
+  currentProjectile: normal
   isCharging: 0
-  slingshotMenuIsOpen: 0
+  isWalking: 0
+  carryingGoose: 0
+  canShoot: 0
+  chargeTime: 1
+  point: {fileID: 5877308583327490201, guid: ecb915653f6821a48b93a63dc5af97ac, type: 3}
+  numberOfPoints: 15
+  spaceBetweenPoints: 0.05
 --- !u!1 &7235943756884425823
 GameObject:
   m_ObjectHideFlags: 0
@@ -5634,7 +5643,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7235943756884425823}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -3.77, y: -0.43, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5664,6 +5673,7 @@ MonoBehaviour:
   isJumping: 0
   isFalling: 0
   usingSlingshot: 0
+  slingshot: {fileID: 7235943756524455691}
   gooseOnBack: 0
   isFacingRight: 0
 --- !u!95 &7235943756884425830
@@ -5698,8 +5708,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd41098bdb7263f4fb7f0643db996a30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpHeight: 5
-  gravityScale: 1
   rb: {fileID: 7235943756884425833}
   groundCheck: {fileID: 2126278493}
   isGrounded: 0
@@ -5711,6 +5719,8 @@ MonoBehaviour:
   acceleration: 86
   deacceleration: 10
   maxSpeed: 6
+  jumpHeight: 7
+  gravityScale: 1
 --- !u!61 &7235943756884425832
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -44,7 +44,9 @@ Material:
     m_Floats:
     - _BlendValue: 0.05
     - _CellDensity: 4.25
+    - _OverlayStrength: 2
     - _PixelAmount: 16
     - _Speed: 5
-    m_Colors: []
+    m_Colors:
+    - _OverlayColor: {r: 1, g: 0.06132078, b: 0.06132078, a: 1}
   m_BuildTextureStacks: []

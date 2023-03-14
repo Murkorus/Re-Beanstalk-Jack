@@ -28,28 +28,6 @@ public class StompController : MonoBehaviour
 
     public LayerMask detectionLayer;
 
-    void Awake()
-    {
-        Color randColor;
-        if(groundMaterial == 1) {
-            randColor = DirtColor.Evaluate(Random.Range(0f, 1f));
-            stompParticles1.startColor = randColor;
-            stompParticles2.startColor = randColor;
-        }
-        
-        if(groundMaterial == 2) {
-            randColor = GrassColor.Evaluate(Random.Range(0f, 1f));
-            stompParticles1.startColor = randColor;
-            stompParticles2.startColor = randColor;
-        }
-
-        if(groundMaterial == 3) {
-            randColor = StoneColor.Evaluate(Random.Range(0f, 1f));
-            stompParticles1.startColor = randColor;
-            stompParticles2.startColor = randColor;
-        }
-    }
-
     // Update is called once per frame
     void Update()
     {
@@ -74,5 +52,28 @@ public class StompController : MonoBehaviour
             stompParticles2.Stop();
             Destroy(this.gameObject, 0.25f);
         }
+
+
+        //Random particle color
+        Color randColor;
+        if(groundMaterial == 1) {
+            randColor = DirtColor.Evaluate(Random.Range(0f, 1f));
+            stompParticles1.startColor = randColor;
+            stompParticles2.startColor = randColor;
+        }
+        
+        if(groundMaterial == 2) {
+            randColor = GrassColor.Evaluate(Random.Range(0f, 1f));
+            stompParticles1.startColor = randColor;
+            stompParticles2.startColor = randColor;
+        }
+
+        if(groundMaterial == 3) {
+            randColor = StoneColor.Evaluate(Random.Range(0f, 1f));
+            stompParticles1.startColor = randColor;
+            stompParticles2.startColor = randColor;
+        }
+
+
     }
 }
