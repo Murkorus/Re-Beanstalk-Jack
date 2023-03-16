@@ -21,7 +21,6 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float deacceleration;
     [SerializeField] private float maxSpeed = 5f;
     [SerializeField] float jumpHeight = 5;
-    [SerializeField] float gravityScale = 1;
 
     // Update is called once per frame
     void Update()

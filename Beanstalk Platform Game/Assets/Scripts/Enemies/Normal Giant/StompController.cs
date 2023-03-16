@@ -29,6 +29,7 @@ public class StompController : MonoBehaviour
     public LayerMask detectionLayer;
 
     // Update is called once per frame
+    [System.Obsolete]
     void Update()
     {
         if(isLeft) {

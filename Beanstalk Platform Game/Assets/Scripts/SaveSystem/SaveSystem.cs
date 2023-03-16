@@ -48,11 +48,14 @@ public class SaveSystem : MonoBehaviour
         }
     }
 
+    //Save
+
     public void SaveAll(int saveNum)
     {
         save.currentSave_save = currentSave;
         save.currentLevel_save = currentLevel;
         save.playerPos_save = GameObject.Find("Player").transform.position;
+        save.playerHealth = GameObject.Find("Player").GetComponent<PlayerStats>().health;
 
         WriteSave(saveNum);
     }
@@ -66,7 +69,7 @@ public class SaveSystem : MonoBehaviour
     }
 
 
-
+    //Load
     public void Load(int saveNum)
     {
         save = ReadFile(saveNum);
@@ -74,6 +77,7 @@ public class SaveSystem : MonoBehaviour
         SceneManager.LoadScene(save.currentLevel_save);
         currentLevel = save.currentLevel_save;
         currentSave = saveNum;
+        GameObject.Find("Player").GetComponent<PlayerStats>().health = save.playerHealth;
     }
 
     public SaveFile ReadFile(int saveNum)
@@ -86,7 +90,7 @@ public class SaveSystem : MonoBehaviour
     }
 
 
-
+    //Information for save slot
     public informationFile getInformation()
     {
         string path = Application.persistentDataPath;
@@ -117,7 +121,7 @@ public class SaveSystem : MonoBehaviour
         return infoFile;
     }
 
-
+    //new save file
     public void newSave(int saveNum)
     {
         save.currentSave_save = saveNum;
@@ -131,13 +135,14 @@ public class SaveSystem : MonoBehaviour
     }
 
 
-
     [System.Serializable]
     public class SaveFile
     {
         public int currentSave_save;
         public int currentLevel_save;
         public Vector3 playerPos_save;
+
+        public float playerHealth;
     }
 
     [System.Serializable]

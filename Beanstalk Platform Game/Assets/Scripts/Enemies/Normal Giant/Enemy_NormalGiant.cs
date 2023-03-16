@@ -17,11 +17,9 @@ public class Enemy_NormalGiant : MonoBehaviour
     [SerializeField] private float attackCooldownTime;
     [SerializeField] private float attackCooldownTimer;
 
-
+    public screenShake screenshake;
 
     private Animator enemyanimator;
-    public CinemachineVirtualCamera vcam;
-    public CinemachineBasicMultiChannelPerlin noise;
 
 
 
@@ -31,8 +29,7 @@ public class Enemy_NormalGiant : MonoBehaviour
         currentState = 1;
         enemyanimator = GetComponent<Animator>();
 
-        vcam = GameObject.Find("CM vcam1").GetComponent<CinemachineVirtualCamera> ();
-        noise = vcam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin> ();
+        screenshake = GameObject.Find("CM vcam1").GetComponent<screenShake>();
     }
 
     // Update is called once per frame
@@ -92,20 +89,7 @@ public class Enemy_NormalGiant : MonoBehaviour
 
         GameObject rightParticles = Instantiate(stompPrefab, stompSpawnPosition.transform.position, Quaternion.identity);     
         rightParticles.GetComponent<StompController>().isLeft = false; 
-        StartCoroutine(shakeScreen());
-    }
-
-
-    public void Noise(float amplitudeGain, float frequencyGain) {
-        noise.m_AmplitudeGain = amplitudeGain;
-        noise.m_FrequencyGain = frequencyGain;    
-    }
-
-
-    IEnumerator shakeScreen() {
-        Noise(2, 5);
-        yield return new WaitForSeconds(0.25f);
-        Noise(0, 0);
+        screenshake.shake(0.25f, 2f, 5f);
         isAttacking = false;
     }
 }
