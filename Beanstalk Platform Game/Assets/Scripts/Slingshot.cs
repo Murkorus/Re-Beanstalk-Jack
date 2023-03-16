@@ -84,7 +84,7 @@ public class Slingshot : MonoBehaviour
                         if (currentProjectile == "normal")
                         {
                             chargeTime += Time.deltaTime;
-                            projectileForce = chargeTime * 3.5f + 2;
+                            projectileForce = chargeTime * 5f + 2;
                             projectileForce = Mathf.Clamp(projectileForce, 2, 10);
                         }
                         if(currentProjectile == "platform")

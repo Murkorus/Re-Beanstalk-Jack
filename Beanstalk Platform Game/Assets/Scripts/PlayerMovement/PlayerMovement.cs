@@ -1,66 +1,147 @@
-using JetBrains.Annotations;
 using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public Rigidbody2D rb;
-
-    //is grounded
-    public GameObject groundCheck;
-    public bool isGrounded;
+    
+    [Header("Move settings")]
+    public float speed = 5f;
+    public float maxSpeed = 10f;
+    public float acceleration = 5f;
+    
+    [Header("Jump settings")]
+    public float jumpForce = 10f;
+    public float maxJumpTime = 0.5f;
+    public float coyoteTime = 0.1f;
+    public float fallMultiplier = 2.5f;
+    public float lowJumpMultiplier = 2f;
+    
+    [Header("Ground check")]
+    public Transform groundCheck;
+    public float groundCheckRadius = 0.1f;
     public LayerMask groundLayer;
 
+    [Header("Ledge settings")]
+    [SerializeField] public bool ledgeDetected;
+    [SerializeField] public bool wallDetected;
+    [SerializeField] public bool isClimbing;
+    [SerializeField] private Vector3 climboffset;
+    private GameObject groundCheckGO;
+    
+    
+    
+    [HideInInspector] public Rigidbody2D rb;
+    private Animator _animator;
+    [HideInInspector] public float Horizontal;
+    [HideInInspector] public bool isGrounded;
+    private bool _isJumping;
+    private float _jumpTime;
+    private float _coyoteTimeLeft;
+    
+    
+    
 
-    //Movement
-    public float Horizontal;
-    [SerializeField] private float speed;
-    [SerializeField] private float acceleration;
-    [SerializeField] private float deacceleration;
-    [SerializeField] private float maxSpeed = 5f;
-    [SerializeField] float jumpHeight = 5;
+    void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+        _animator = GetComponent<Animator>();
+        groundCheckGO = GameObject.Find("GroundDistance");
+    }
 
-    // Update is called once per frame
     void Update()
     {
-        //Ground check
-        if(Physics2D.OverlapBox(groundCheck.transform.position, groundCheck.transform.localScale, 0, groundLayer))
+        //If climbing freeze player
+        if (!isClimbing)
         {
-            isGrounded = true;
-        } else
-        {
-            isGrounded = false;
+            Horizontal = Input.GetAxisRaw("Horizontal");
+
+            if (Input.GetButtonDown("Jump") && (isGrounded || _coyoteTimeLeft > 0))
+            {
+                _isJumping = true;
+                _jumpTime = maxJumpTime;
+            }
+            else if (Input.GetButton("Jump") && _isJumping)
+            {
+                if (_jumpTime > 0)
+                {
+                    _coyoteTimeLeft = 0;
+                    rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+                    _jumpTime -= Time.deltaTime;
+                }
+                else
+                {
+                    _isJumping = false;
+                }
+            }
+            else
+            {
+                _isJumping = false;
             }
 
-        //Jump
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
-        {
-            rb.AddForce(Vector2.up * jumpHeight, ForceMode2D.Impulse);  
+            _coyoteTimeLeft = isGrounded ? coyoteTime : _coyoteTimeLeft - Time.deltaTime;
         }
-        if (Input.GetKeyUp(KeyCode.Space) && rb.velocity.y > 0)
+        
+        //Ledge climb
+        Debug.Log(ledgeDetected);
+
+        RaycastHit2D distanceToGround = Physics2D.Raycast(this.groundCheckGO.transform.position, -Vector2.up);
+        if (ledgeDetected && !wallDetected && distanceToGround.distance > 0.05f && !isClimbing)
         {
-            rb.AddForce(Vector2.down * jumpHeight * .4f, ForceMode2D.Impulse);
+            if (Input.GetButtonDown("Jump"))
+            {
+                StartCoroutine(ledgeClimb());
+                Debug.Log("climbing");
+            }
         }
+        
+    }
+
+    void FixedUpdate()
+    {
+        if (!isClimbing)
+        {
+            rb.gravityScale = 1.15f;
+            isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
+
+            float targetVelocity = Horizontal * maxSpeed;
+            float moveSpeed = Mathf.MoveTowards(rb.velocity.x, targetVelocity, acceleration * Time.fixedDeltaTime);
+        
+            rb.velocity = new Vector2(moveSpeed, rb.velocity.y);
+
+            if (rb.velocity.y < 0)
+            {
+                rb.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.fixedDeltaTime;
+            }
+            else if (rb.velocity.y > 0 && !Input.GetButton("Jump"))
+            {
+                rb.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.fixedDeltaTime;
+            }
+        }
+        else
+        {
+            rb.velocity = new Vector2(0, 0);
+            rb.gravityScale = 0;
+            
+        }
+        
     }
 
 
-    public void FixedUpdate()
+
+
+    IEnumerator ledgeClimb()
     {
-        Horizontal = Input.GetAxisRaw("Horizontal");
-        if (Horizontal != 0)
-        {
-            // Apply acceleration
-            rb.velocity += new Vector2(Horizontal * acceleration * Time.deltaTime, 0);
+        isClimbing = true;
+        
+        RaycastHit2D hit = Physics2D.Raycast(transform.position + climboffset, -Vector2.up);
+        
+        
+        transform.position = hit.point - new Vector2(1, 0.5f);
 
-            // Limit velocity to maximum speed
-            rb.velocity = new Vector2(Mathf.Clamp(rb.velocity.x, -maxSpeed, maxSpeed), rb.velocity.y);
-        }
-
-        if (Horizontal == 0)
-        {
-            rb.velocity = new Vector2(rb.velocity.x * (1 - deacceleration * Time.deltaTime), rb.velocity.y);
-        }
+        yield return new WaitForSeconds(1);
+        
+        
+        transform.position = hit.point;
+        isClimbing = false;
     }
 }
