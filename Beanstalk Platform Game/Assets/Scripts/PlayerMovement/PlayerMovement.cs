@@ -131,16 +131,15 @@ public class PlayerMovement : MonoBehaviour
 
     IEnumerator ledgeClimb()
     {
+
         isClimbing = true;
-        
         RaycastHit2D hit = Physics2D.Raycast(transform.position + climboffset, -Vector2.up);
-        
-        
+        GameObject.Find("CameraLook").transform.position = hit.point;
         transform.position = hit.point - new Vector2(1, 0.5f);
 
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.75f);
         
-        
+        GameObject.Find("CameraLook").transform.localPosition = new Vector3(0, 0, 0);
         transform.position = hit.point;
         isClimbing = false;
     }
