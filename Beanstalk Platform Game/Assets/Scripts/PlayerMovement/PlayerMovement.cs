@@ -27,6 +27,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] public bool isClimbing;
     [SerializeField] private Vector3 climboffset;
     private GameObject groundCheckGO;
+    public bool isHanging;
     
     
     
@@ -37,6 +38,8 @@ public class PlayerMovement : MonoBehaviour
     private bool _isJumping;
     private float _jumpTime;
     private float _coyoteTimeLeft;
+    public bool freeze;
+    public bool isFacingRight;
     
     
     
@@ -51,7 +54,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         //If climbing freeze player
-        if (!isClimbing)
+        if (!freeze)
         {
             Horizontal = Input.GetAxisRaw("Horizontal");
 
@@ -81,24 +84,74 @@ public class PlayerMovement : MonoBehaviour
             _coyoteTimeLeft = isGrounded ? coyoteTime : _coyoteTimeLeft - Time.deltaTime;
         }
         
+        //player facing
+        if(Horizontal > 0.001) {
+            isFacingRight = true;
+        }
+        if(Horizontal < -0.001) {
+            isFacingRight = false;
+        }
+
+        if(isFacingRight) {
+            transform.localScale = new Vector3(1, 1, 1);
+        } else {
+            transform.localScale = new Vector3(-1, 1, 1);
+        }
+
+
         //Ledge climb
-        Debug.Log(ledgeDetected);
+
 
         RaycastHit2D distanceToGround = Physics2D.Raycast(this.groundCheckGO.transform.position, -Vector2.up);
-        if (ledgeDetected && !wallDetected && distanceToGround.distance > 0.05f && !isClimbing)
+        if (ledgeDetected && !wallDetected && distanceToGround.distance > 0.75f && !isClimbing)
         {
             if (Input.GetButtonDown("Jump"))
             {
-                StartCoroutine(ledgeClimb());
                 Debug.Log("climbing");
+                isHanging = true;
+                freezePlayer(true);
+
+                //Position player
+                RaycastHit2D hit = Physics2D.Raycast(transform.position + climboffset, -Vector2.up);
+                transform.position = hit.point - new Vector2(1, 0.5f);
             }
+        }
+        if(Input.GetButtonUp("Jump") && isHanging && !isClimbing ) {
+            isHanging = false;
+            freezePlayer(false);
+        }
+
+        if(isFacingRight && Input.GetKeyDown(KeyCode.A) && isHanging && !isClimbing) {
+            Debug.Log("Edge jump to the Right");
+            isHanging = false;
+
+            isClimbing = false;
+            freezePlayer(false);
+
+            rb.velocity = new Vector3(-15, 7, 0);
+        }
+        if(!isFacingRight && Input.GetKeyDown(KeyCode.D) && isHanging && !isClimbing) {
+            Debug.Log("Edge jump to the Left");
+            isHanging = false;
+
+            isClimbing = false;
+            freezePlayer(false);
+
+            rb.velocity = new Vector3(15, 5, 0);
+        }
+
+        if(Input.GetKeyDown(KeyCode.W) && isHanging) {
+            Debug.Log("edge climb");
+
+
+            StartCoroutine(ledgeClimb());
         }
         
     }
 
     void FixedUpdate()
     {
-        if (!isClimbing)
+        if (!freeze)
         {
             rb.gravityScale = 1.15f;
             isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
@@ -121,12 +174,15 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.velocity = new Vector2(0, 0);
             rb.gravityScale = 0;
-            
         }
         
     }
 
 
+
+    public void freezePlayer(bool State) {
+        freeze = State;
+    }
 
 
     IEnumerator ledgeClimb()
@@ -142,5 +198,7 @@ public class PlayerMovement : MonoBehaviour
         GameObject.Find("CameraLook").transform.localPosition = new Vector3(0, 0, 0);
         transform.position = hit.point;
         isClimbing = false;
+        isHanging = false;
+        freezePlayer(false);
     }
 }
