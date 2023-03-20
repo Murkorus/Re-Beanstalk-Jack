@@ -45,13 +45,13 @@ public class StompController : MonoBehaviour
         {
             stompParticles1.Stop();
             stompParticles2.Stop();
-            Destroy(this.gameObject, 0.25f);
+            Destroy(this.gameObject, 5f);
         }
         if(Physics2D.OverlapCircle(FloorDetection.transform.position, 0.5f, detectionLayer))
         {
             stompParticles1.Stop();
             stompParticles2.Stop();
-            Destroy(this.gameObject, 0.25f);
+            Destroy(this.gameObject, 5f);
         }
 
 

@@ -1553,7 +1553,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 5hfuqp7o_69
+      name: Idle_Goose_FacingSide_1
       rect:
         serializedVersion: 2
         x: 278
@@ -1574,14 +1574,14 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 5hfuqp7o_70
+      name: Idle_Goose_FacingSide_2
       rect:
         serializedVersion: 2
         x: 308
         y: 151
         width: 18
         height: 30
-      alignment: 0
+      alignment: 9
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -2303,9 +2303,7 @@ TextureImporter:
       5hfuqp7o_83: -471735982
       5hfuqp7o_93: 1743639033
       5hfuqp7o_2: -1047714005
-      5hfuqp7o_70: 339840572
       5hfuqp7o_65: -412172305
-      5hfuqp7o_69: 259006583
       Move_slingshot4: 1361154329
       5hfuqp7o_52: 1956545239
       5hfuqp7o_45: -1172231772
@@ -2339,8 +2337,8 @@ TextureImporter:
       5hfuqp7o_99: 530205745
       5hfuqp7o_73: 1422339383
       5hfuqp7o_10: -1761572598
-      FallingTest: -2127676672
       5hfuqp7o_76: -1247266800
+      FallingTest: -2127676672
       Move_normal6: 162324044
       5hfuqp7o_58: -2006596600
       5hfuqp7o_12: -1042346730
@@ -2352,12 +2350,13 @@ TextureImporter:
       5hfuqp7o_35: -2049381711
       5hfuqp7o_84: -644714182
       5hfuqp7o_53: -1924120093
-      5hfuqp7o_40: -1883800548
-      Move_slingshot1: 2065959702
-      5hfuqp7o_88: 1545816711
       5hfuqp7o_7: -2007297217
+      Move_slingshot1: 2065959702
+      5hfuqp7o_40: -1883800548
+      5hfuqp7o_88: 1545816711
       5hfuqp7o_63: -1782024350
       5hfuqp7o_42: -1046646137
+      Idle_Goose_FacingSide_1: 259006583
       Idle_FacingForwad_1: 2105777000
       Jump_Goose_Normal_1: 460925857
       Move_normal4: -1477893729
@@ -2393,6 +2392,7 @@ TextureImporter:
       5hfuqp7o_51: -1393961418
       Move_normal1: -2073404643
       Move_normal5: 2034480334
+      Idle_Goose_FacingSide_2: 339840572
       5hfuqp7o_91: 662569962
       5hfuqp7o_103: 559972009
       Move_normal3: 1318773244

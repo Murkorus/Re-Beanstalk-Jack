@@ -77,7 +77,6 @@ public class SaveSystem : MonoBehaviour
         SceneManager.LoadScene(save.currentLevel_save);
         currentLevel = save.currentLevel_save;
         currentSave = saveNum;
-        GameObject.Find("Player").GetComponent<PlayerStats>().health = save.playerHealth;
     }
 
     public SaveFile ReadFile(int saveNum)
@@ -126,6 +125,9 @@ public class SaveSystem : MonoBehaviour
     {
         save.currentSave_save = saveNum;
         save.currentLevel_save = 4;
+        save.playerHealth = 100;
+        save.pebbles = 25;
+        save.platform = 5;
         string json = JsonUtility.ToJson(save);
         Debug.Log(json);
         string path = Application.persistentDataPath + "/Save" + saveNum + ".json";
@@ -143,6 +145,8 @@ public class SaveSystem : MonoBehaviour
         public Vector3 playerPos_save;
 
         public float playerHealth;
+        public int pebbles;
+        public int platform;
     }
 
     [System.Serializable]

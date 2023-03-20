@@ -6,13 +6,18 @@ using Cinemachine;
 
 public class Enemy_NormalGiant : MonoBehaviour
 {
+    [Header("Booleans")]
     [SerializeField] private int currentState; //1 = Idle / Normal Walking  |  2 = Attacking / Mad
     [SerializeField] private bool isWalking;
+    [SerializeField] private bool ïsFacingRight;
     [SerializeField] private bool isAttacking;
+
+    [Header("Stomp")]
     [SerializeField] private GameObject stompSpawnPosition;
     [SerializeField] private GameObject stompPrefab;
     
     //Attack cooldown
+    [Header("Attack cooldown")]
     [SerializeField] private bool attackCooldown;
     [SerializeField] private float attackCooldownTime;
     [SerializeField] private float attackCooldownTimer;
@@ -21,6 +26,11 @@ public class Enemy_NormalGiant : MonoBehaviour
 
     private Animator enemyanimator;
 
+    [Header("Wall detection")]
+    [SerializeField] private GameObject WallDetection;
+    [SerializeField] private GameObject PlayerDetection;
+    public LayerMask groundLayer;
+    public LayerMask playerLayer;
 
 
     // Start is called before the first frame update
@@ -30,6 +40,7 @@ public class Enemy_NormalGiant : MonoBehaviour
         enemyanimator = GetComponent<Animator>();
 
         screenshake = GameObject.Find("CM vcam1").GetComponent<screenShake>();
+        StartCoroutine(MoveOrIdle());
     }
 
     // Update is called once per frame
@@ -62,11 +73,47 @@ public class Enemy_NormalGiant : MonoBehaviour
             }
         }
         if(currentState == 2 && !isAttacking) {
-            enemyanimator.Play("Enemy_NormalGiant_angryy_walking");
+            enemyanimator.Play("Enemy_NormalGiant_angryy_walking"); 
+            isWalking = true;
         }
 
+        if(isWalking) {
+            if(ïsFacingRight && !isAttacking) {
+                transform.position = new Vector3(transform.position.x + 2 * Time.deltaTime, transform.position.y, transform.position.z);
+                transform.localScale = new Vector3(1, 1, 1);
 
+            }
+            if(!ïsFacingRight && !isAttacking) {
+                transform.position = new Vector3(transform.position.x + -2 * Time.deltaTime, transform.position.y, transform.position.z);
+                transform.localScale = new Vector3(-1, 1, 1);
+            }
+        }
+
+        if(Physics2D.OverlapBox(WallDetection.transform.position, WallDetection.transform.localScale, 0, groundLayer)) {
+            ïsFacingRight = !ïsFacingRight;
+        }
+
+        if(Physics2D.OverlapBox(PlayerDetection.transform.position, PlayerDetection.transform.localScale, 0, playerLayer)) {
+            currentState = 2;
+        }
     }
+
+
+    IEnumerator MoveOrIdle() {
+        if(currentState == 1) {
+            int randomNum = Random.Range(1, 3);
+            if(randomNum == 1) {
+                isWalking = true;
+            } else {
+                isWalking = false;
+            }
+        }
+        yield return new WaitForSeconds(3);
+        
+        StartCoroutine(MoveOrIdle());
+    }
+
+
 
     IEnumerator randomAttackWait()
     {
@@ -84,12 +131,14 @@ public class Enemy_NormalGiant : MonoBehaviour
 
 
     public void stomp() {
+
+        float distanceToPlayer = Vector2.Distance(transform.position, GameObject.Find("Player").transform.position) / 4;
         GameObject LeftParticles = Instantiate(stompPrefab, stompSpawnPosition.transform.position, Quaternion.identity);    
         LeftParticles.GetComponent<StompController>().isLeft = true;
 
         GameObject rightParticles = Instantiate(stompPrefab, stompSpawnPosition.transform.position, Quaternion.identity);     
         rightParticles.GetComponent<StompController>().isLeft = false; 
-        screenshake.shake(0.25f, 2f, 5f);
+        screenshake.shake(0.25f, 2f / distanceToPlayer, 5f / distanceToPlayer);
         isAttacking = false;
     }
 }

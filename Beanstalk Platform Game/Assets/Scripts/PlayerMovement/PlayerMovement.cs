@@ -40,6 +40,9 @@ public class PlayerMovement : MonoBehaviour
     private float _coyoteTimeLeft;
     public bool freeze;
     public bool isFacingRight;
+
+    public float momentumX;
+    public float wallJumpMomentumX;
     
     
     
@@ -128,7 +131,8 @@ public class PlayerMovement : MonoBehaviour
             isClimbing = false;
             freezePlayer(false);
 
-            rb.velocity = new Vector3(-15, 7, 0);
+            wallJumpMomentumX = -6;
+            rb.velocity = new Vector2(rb.velocity.x, 5);
         }
         if(!isFacingRight && Input.GetKeyDown(KeyCode.D) && isHanging && !isClimbing) {
             Debug.Log("Edge jump to the Left");
@@ -137,7 +141,9 @@ public class PlayerMovement : MonoBehaviour
             isClimbing = false;
             freezePlayer(false);
 
-            rb.velocity = new Vector3(15, 5, 0);
+            wallJumpMomentumX = 6;
+            rb.velocity = new Vector2(rb.velocity.x, 5);
+
         }
 
         if(Input.GetKeyDown(KeyCode.W) && isHanging) {
@@ -147,19 +153,27 @@ public class PlayerMovement : MonoBehaviour
             StartCoroutine(ledgeClimb());
         }
         
+
+        if(wallJumpMomentumX != 0) {
+            wallJumpMomentumX = Mathf.Lerp(wallJumpMomentumX, 0, 2f * Time.deltaTime);
+            if(isFacingRight && wallJumpMomentumX > -0.15)
+                wallJumpMomentumX = 0;
+            if(!isFacingRight && wallJumpMomentumX > 0.15)
+                wallJumpMomentumX = 0;
+        }
     }
 
     void FixedUpdate()
     {
         if (!freeze)
         {
+            
+
             rb.gravityScale = 1.15f;
             isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
 
-            float targetVelocity = Horizontal * maxSpeed;
-            float moveSpeed = Mathf.MoveTowards(rb.velocity.x, targetVelocity, acceleration * Time.fixedDeltaTime);
-        
-            rb.velocity = new Vector2(moveSpeed, rb.velocity.y);
+            momentumX = Horizontal * maxSpeed + wallJumpMomentumX;
+
 
             if (rb.velocity.y < 0)
             {
@@ -169,6 +183,8 @@ public class PlayerMovement : MonoBehaviour
             {
                 rb.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.fixedDeltaTime;
             }
+
+            rb.velocity = new Vector2(momentumX, rb.velocity.y);
         }
         else
         {
