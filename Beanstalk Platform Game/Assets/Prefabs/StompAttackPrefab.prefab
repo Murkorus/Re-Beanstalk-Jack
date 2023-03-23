@@ -48,7 +48,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f5f5869a5debb648b8c0dd010ba883a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  groundMaterial: 3
+  groundMaterial: 1
   DirtColor:
     serializedVersion: 2
     key0: {r: 0.6320754, g: 0.45291758, b: 0.28920433, a: 1}
@@ -140,12 +140,15 @@ MonoBehaviour:
   stompParticles2: {fileID: 897423719548621971}
   isLeft: 0
   speed: 8
-  damage: 0
+  damage: 8
   wallDetection: {fileID: 3295310586197194796}
   FloorDetection: {fileID: 3366949104707719062}
   detectionLayer:
     serializedVersion: 2
     m_Bits: 64
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!1 &897423719548621998
 GameObject:
   m_ObjectHideFlags: 0

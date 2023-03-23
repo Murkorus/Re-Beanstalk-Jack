@@ -42,8 +42,8 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _BlendValue: 0.07
-    - _CellDensity: 15
+    - _BlendValue: 0
+    - _CellDensity: 0
     - _OverlayStrength: 2
     - _PixelAmount: 38.59
     - _Speed: 1

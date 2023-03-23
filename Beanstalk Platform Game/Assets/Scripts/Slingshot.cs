@@ -30,12 +30,6 @@ public class Slingshot : MonoBehaviour
     [SerializeField] private float chargeTime;
     private float totalTime;
 
-    private GameObject AM;
-    private GameObject GM;
-
-
-    //UI
-
 
     //Trajectory
     public GameObject point;
@@ -73,9 +67,7 @@ public class Slingshot : MonoBehaviour
 
 
         //Slingshot charge
-        if (Stones > 0)
-        {
-            if (!isAttacking)
+        if (!isAttacking)
                 {
                     if (Input.GetMouseButton(1))
                     {
@@ -83,15 +75,19 @@ public class Slingshot : MonoBehaviour
                         //AM.GetComponent<AnimationManager>().isCharging = true;
                         if (currentProjectile == "normal")
                         {
-                            chargeTime += Time.deltaTime;
-                            projectileForce = chargeTime * 5f + 2;
-                            projectileForce = Mathf.Clamp(projectileForce, 2, 10);
+                            if(GameObject.Find("Player").GetComponent<PlayerStats>().pebbles > 0) {
+                                chargeTime += Time.deltaTime * 3;
+                                projectileForce = chargeTime * 7.5f + 2;
+                                projectileForce = Mathf.Clamp(projectileForce, 2, 10);
+                            }
                         }
                         if(currentProjectile == "platform")
                         {
-                            chargeTime += Time.deltaTime;   
-                            projectileForce = chargeTime * 1.5f + 2;
-                            projectileForce = Mathf.Clamp(projectileForce, 2, 4);
+                            if(GameObject.Find("Player").GetComponent<PlayerStats>().platformBeans > 0) {
+                                chargeTime += Time.deltaTime;   
+                                projectileForce = chargeTime * 1.5f + 2;
+                                projectileForce = Mathf.Clamp(projectileForce, 2, 4);
+                            }
                         }
                     }
                     if (Input.GetMouseButtonUp(1))
@@ -102,7 +98,6 @@ public class Slingshot : MonoBehaviour
                         projectileForce = chargeTime;
                     }
                 }
-        }
 
 
         //Trajectory
@@ -133,13 +128,13 @@ public class Slingshot : MonoBehaviour
             GameObject newProjectile = Instantiate(Pebble, projectilePoint.position, projectilePoint.rotation);
             newProjectile.GetComponent<Rigidbody2D>().velocity = transform.right * projectileForce;
             //newProjectile.GetComponent<Projectile>().force = projectileForce;
-            Stones--;
+            GameObject.Find("Player").GetComponent<PlayerStats>().removePebbles(1);
         }
         if(currentProjectile == "platform")
         {
             GameObject newProjectile = Instantiate(PlatformBean, projectilePoint.position, projectilePoint.rotation);
             newProjectile.GetComponent<Rigidbody2D>().velocity = transform.right * projectileForce;
-            Stones--;
+            GameObject.Find("Player").GetComponent<PlayerStats>().removePlatform(1);
         }
     }
 

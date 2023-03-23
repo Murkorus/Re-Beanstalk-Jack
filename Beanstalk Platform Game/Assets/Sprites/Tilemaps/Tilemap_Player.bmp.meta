@@ -1582,7 +1582,7 @@ TextureImporter:
         width: 18
         height: 30
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.5, y: 0.53333336}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2349,11 +2349,11 @@ TextureImporter:
       Idle_FacingForwad_2: 1130342991
       5hfuqp7o_35: -2049381711
       5hfuqp7o_84: -644714182
+      5hfuqp7o_40: -1883800548
       5hfuqp7o_53: -1924120093
       5hfuqp7o_7: -2007297217
-      Move_slingshot1: 2065959702
-      5hfuqp7o_40: -1883800548
       5hfuqp7o_88: 1545816711
+      Move_slingshot1: 2065959702
       5hfuqp7o_63: -1782024350
       5hfuqp7o_42: -1046646137
       Idle_Goose_FacingSide_1: 259006583

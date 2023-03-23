@@ -6,6 +6,12 @@ using Cinemachine;
 
 public class Enemy_NormalGiant : MonoBehaviour
 {
+    [Header("Basic settings")]
+    public float stompDamage;
+    public float angryTime;
+    private float angryTimer;
+
+
     [Header("Booleans")]
     [SerializeField] private int currentState; //1 = Idle / Normal Walking  |  2 = Attacking / Mad
     [SerializeField] private bool isWalking;
@@ -95,6 +101,11 @@ public class Enemy_NormalGiant : MonoBehaviour
 
         if(Physics2D.OverlapBox(PlayerDetection.transform.position, PlayerDetection.transform.localScale, 0, playerLayer)) {
             currentState = 2;
+            angryTimer = 0;
+        } else {
+            angryTimer += 1 * Time.deltaTime;
+            if(angryTimer > angryTime)
+                currentState = 1;
         }
     }
 

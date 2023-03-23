@@ -3908,7 +3908,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -14, y: -58.5}
+        - {x: -14, y: -34.5}
+        - {x: 16, y: -34.5}
+        - {x: 16, y: -58.5}
+      - - {x: -16, y: -30.5}
+        - {x: -16, y: -16.5}
+        - {x: 17, y: -16.5}
+        - {x: 17, y: -30.5}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -4644,8 +4652,8 @@ TextureImporter:
       8wfwy9aw_142: -1652190898
       8wfwy9aw_72: -489806415
       8wfwy9aw_73: -1350477961
-      8wfwy9aw_131: -1883169364
       8wfwy9aw_24: -1371425239
+      8wfwy9aw_131: -1883169364
       8wfwy9aw_66: -12026027
       Grass_Corner_Left: -2006240473
       8wfwy9aw_52: -1319754631
@@ -4657,8 +4665,8 @@ TextureImporter:
       CloudGrass_Floating5: 2084399706
       8wfwy9aw_29: 1775780821
       8wfwy9aw_58: 1281408333
-      8wfwy9aw_17: 1771390559
       Grass_End_Right: -1625579549
+      8wfwy9aw_17: 1771390559
       8wfwy9aw_195: -1976579712
       Grass_Middle_9: -1593980889
       Stone_Corner_Lef: -247388675

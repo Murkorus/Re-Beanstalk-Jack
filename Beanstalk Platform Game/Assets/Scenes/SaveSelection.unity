@@ -475,7 +475,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 84, y: 0}
+  m_AnchoredPosition: {x: 47, y: 0}
   m_SizeDelta: {x: 1913, y: 799.19}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &352803326
@@ -525,8 +525,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 126.76
-  m_fontSizeBase: 126.76
+  m_fontSize: 155.85
+  m_fontSizeBase: 155.85
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -610,7 +610,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 83.999825, y: 0}
+  m_AnchoredPosition: {x: 46.999847, y: 0}
   m_SizeDelta: {x: 1913, y: 799.19}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &474450399
@@ -660,8 +660,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 126.76
-  m_fontSizeBase: 126.76
+  m_fontSize: 155.85
+  m_fontSizeBase: 155.85
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1429,6 +1429,9 @@ MonoBehaviour:
     currentSave_save: 0
     currentLevel_save: 0
     playerPos_save: {x: 0, y: 0, z: 0}
+    playerHealth: 0
+    pebbles: 0
+    platform: 0
   saveSlot1: {fileID: 1900943780}
   saveSlot2: {fileID: 2026826163}
   saveSlot3: {fileID: 1398263401}
@@ -2118,7 +2121,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 84, y: 0}
+  m_AnchoredPosition: {x: 47.000023, y: 0}
   m_SizeDelta: {x: 1913, y: 799.19}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1330319815
@@ -2168,8 +2171,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 126.76
-  m_fontSizeBase: 126.76
+  m_fontSize: 155.85
+  m_fontSizeBase: 155.85
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3577,6 +3580,9 @@ MonoBehaviour:
     currentSave_save: 0
     currentLevel_save: 0
     playerPos_save: {x: 0, y: 0, z: 0}
+    playerHealth: 0
+    pebbles: 0
+    platform: 0
   infoFile:
     save1Level_info: 0
     save2Level_info: 0

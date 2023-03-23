@@ -27,6 +27,9 @@ public class StompController : MonoBehaviour
     public GameObject FloorDetection;
 
     public LayerMask detectionLayer;
+    public LayerMask playerLayer;
+
+    bool hasDamaged;
 
     // Update is called once per frame
     [System.Obsolete]
@@ -54,6 +57,15 @@ public class StompController : MonoBehaviour
             Destroy(this.gameObject, 5f);
         }
 
+        if(Physics2D.OverlapCircle(transform.position, 0.5f, playerLayer) && !hasDamaged)
+        {
+            hasDamaged = true;
+            stompParticles1.Stop();
+            stompParticles2.Stop();
+            Destroy(this.gameObject, 5f);
+            GameObject.Find("Player").GetComponent<PlayerStats>().takeDamage(damage);
+        }
+
 
         //Random particle color
         Color randColor;
@@ -74,6 +86,9 @@ public class StompController : MonoBehaviour
             stompParticles1.startColor = randColor;
             stompParticles2.startColor = randColor;
         }
+
+
+        
 
 
     }
