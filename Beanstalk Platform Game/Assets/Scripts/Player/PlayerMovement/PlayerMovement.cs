@@ -18,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
 	[Range(0.01f, 1)] public float accelInAir; //Multipliers applied to acceleration rate when airborne.
 	[Range(0.01f, 1)] public float deccelInAir;
 	public bool doConserveMomentum;
+	public bool isDodging;
 	
 	
 	public Vector2 moveInput;
@@ -78,6 +79,9 @@ public class PlayerMovement : MonoBehaviour
 
 	private void Update()
 	{
+		if(!isDodging) {
+			
+		}
 		LastOnGroundTime -= Time.deltaTime;
 
 		if(!freezePlayer)
@@ -184,7 +188,7 @@ public class PlayerMovement : MonoBehaviour
     
     private void Run()
 	{
-		if(!freezePlayer) {
+		if(!freezePlayer && !isDodging) {
 			//Calculate the direction we want to move in and our desired velocity
 			float targetSpeed = moveInput.x * MaxSpeed;
 			

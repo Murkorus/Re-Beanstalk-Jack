@@ -5,14 +5,12 @@ using Cinemachine;
 
 public class screenShake : MonoBehaviour
 {
-    
-    private Animator enemyanimator;
-    public CinemachineVirtualCamera vcam;
-    public CinemachineBasicMultiChannelPerlin noise;
+    public CinemachineVirtualCamera Vcam;
+    private CinemachineBasicMultiChannelPerlin noise;
 
     public void Start() {
-        vcam = GameObject.Find("CM vcam1").GetComponent<CinemachineVirtualCamera>();
-        noise = vcam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin> ();
+        Vcam = GameObject.Find("CM vcam1").GetComponent<CinemachineVirtualCamera>();
+        noise = Vcam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin> ();
     }
     public void shake(float time, float amplitude, float frequency) {
         StartCoroutine(shakeScreen(time, amplitude, frequency));

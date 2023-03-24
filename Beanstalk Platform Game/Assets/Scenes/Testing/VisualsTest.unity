@@ -12981,8 +12981,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f90fea88c5fad5e42a149925294b0f17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vcam: {fileID: 0}
-  noise: {fileID: 0}
+  Vcam: {fileID: 0}
 --- !u!114 &7001012438776512480
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13328,6 +13327,7 @@ MonoBehaviour:
   accelInAir: 1
   deccelInAir: 0.2
   doConserveMomentum: 1
+  isDodging: 0
   moveInput: {x: 0, y: 0}
   _groundCheckPoint: {fileID: 459157822}
   _groundCheckSize: {x: 0.45, y: 0.03}
@@ -13420,7 +13420,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7235943756884425823}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f02aedf92d555ea4cb5bf590163da744, type: 3}
   m_Name: 
@@ -13443,7 +13443,7 @@ MonoBehaviour:
   heavyAttackDamage: 20
   heavyAttackTime: 3
   isPerformingHeavyAttack: 0
-  heavyAttackThreshold: 2
+  heavyAttackThreshold: 1
   lightAttackDamage: 10
   lightAttackTime: 0.25
   isPerformingLightAttack: 0
@@ -13452,9 +13452,11 @@ MonoBehaviour:
   slingshotDamage: 0
   slingshotChargeTime: 0
   isChargingSlingshot: 0
-  dodgeLength: 0
+  dodgeForce: 375
+  dodgeTime: 0.15
   iFrames: 0
   isDodging: 0
+  pm: {fileID: 7235943756884425831}
 --- !u!4 &9071623961104989951
 Transform:
   m_ObjectHideFlags: 0

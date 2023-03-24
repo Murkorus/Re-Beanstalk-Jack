@@ -32,10 +32,16 @@ public class PlayerCombatController : MonoBehaviour
 
 
     [Header("Dodge settings")]
-    [SerializeField] private float dodgeLength;
+    [SerializeField] private float dodgeForce;
+    [SerializeField] private float dodgeTime;
     [SerializeField] private float iFrames;
     public bool isDodging;
     
+
+     [Header("Other scripts")]
+     public PlayerMovement pm;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -65,6 +71,9 @@ public class PlayerCombatController : MonoBehaviour
                 }
                 attackHoldTime = 0;
             }
+        if(Input.GetKeyDown(KeyCode.LeftControl) && !isDodging && pm.isGrounded && !isPerformingHeavyAttack && !isPerformingLightAttack) {
+            dodge();
+        }
     }
 
 
@@ -87,10 +96,31 @@ public class PlayerCombatController : MonoBehaviour
         isChargingSlingshot = true;
     }
 
+
+
+#region dodge
     public void dodge() {
         isDodging = true;
+        StartCoroutine(dodgeRoutine(dodgeTime));
         StartCoroutine(eventTime(isDodging, 2));
     }
+
+    IEnumerator dodgeRoutine(float time) {
+        pm.isDodging = true;
+        pm.RB.velocity = new Vector2(0, 0);
+        if(pm.IsFacingRight) {
+            pm.RB.AddForce(new Vector2(dodgeForce, 0));
+        } else {
+            pm.RB.AddForce(new Vector2(-dodgeForce, 0));
+
+        }
+        yield return new WaitForSeconds(time);
+        pm.isDodging = false;
+        isDodging = false;
+
+    }
+#endregion
+
 
 
 
