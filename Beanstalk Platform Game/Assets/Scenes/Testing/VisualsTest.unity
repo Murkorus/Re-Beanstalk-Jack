@@ -9144,8 +9144,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 611218523}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.259, y: 0.683, z: 0}
-  m_LocalScale: {x: 0.88, y: 0.61, z: 1}
+  m_LocalPosition: {x: 0.259, y: 0.881, z: 0}
+  m_LocalScale: {x: 0.88, y: 1.34, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1629157204}
@@ -9595,6 +9595,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree3
       objectReference: {fileID: 0}
+    - target: {fileID: 2600075527689545265, guid: ed23ce2e35b1c77459ea72df7490078c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5941595599774566505, guid: ed23ce2e35b1c77459ea72df7490078c, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -9940,6 +9944,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1128040566
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1128040567}
+  m_Layer: 7
+  m_Name: Slingshot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1128040567
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1128040566}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7235943756884425827}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1145472314
 GameObject:
   m_ObjectHideFlags: 0
@@ -12008,6 +12043,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree3 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2600075527689545265, guid: ed23ce2e35b1c77459ea72df7490078c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5941595599774566505, guid: ed23ce2e35b1c77459ea72df7490078c, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -13261,6 +13300,7 @@ Transform:
   - {fileID: 1292656708}
   - {fileID: 1629157204}
   - {fileID: 1324923721}
+  - {fileID: 1128040567}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -13271,7 +13311,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7235943756884425823}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 99e856c57b3b8c847a533270aae6a17f, type: 3}
   m_Name: 
@@ -13426,7 +13466,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 0
-  pebbles: 0
+  pebbles: 5
   platformBeans: 0
 --- !u!114 &7235943756884425836
 MonoBehaviour:
@@ -13452,6 +13492,20 @@ MonoBehaviour:
   slingshotDamage: 0
   slingshotChargeTime: 0
   isChargingSlingshot: 0
+  projectilePoint: {fileID: 1128040567}
+  point: {fileID: 5877308583327490201, guid: ecb915653f6821a48b93a63dc5af97ac, type: 3}
+  numberOfPoints: 10
+  spaceBetweenPoints: 0.05
+  currentProjectile: normal
+  projectileForce: 0
+  slingshotPebbleGO: {fileID: 572257231913690876, guid: 59e8ec17c13e0964b96b2c2c3c33d332, type: 3}
+  slingshotPebblesCount: 0
+  slingshotPlatformGO: {fileID: 0}
+  slingshotPlatformsCount: 0
+  slingshotFireGO: {fileID: 0}
+  slingshotFireCount: 0
+  slingshotIceGO: {fileID: 0}
+  slingshotIceCount: 0
   dodgeForce: 375
   dodgeTime: 0.15
   iFrames: 0

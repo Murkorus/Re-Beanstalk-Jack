@@ -27,6 +27,37 @@ public class PlayerCombatController : MonoBehaviour
     [SerializeField] private float slingshotDamage;
     [SerializeField] private float slingshotChargeTime;
     public bool isChargingSlingshot;
+    private float chargeTime;
+    private float totalTime;
+    public Transform projectilePoint;
+
+    //Trajectory
+    public GameObject point;
+    GameObject[] points;
+    public int numberOfPoints;
+    public float spaceBetweenPoints;
+    Vector2 direction;
+
+
+
+
+
+
+    [Header("Slingshot projectiles")]
+    [SerializeField] private string currentProjectile;
+    public float projectileForce;
+
+    public GameObject slingshotPebbleGO;
+    public int slingshotPebblesCount;
+
+    public GameObject slingshotPlatformGO;
+    public int slingshotPlatformsCount;
+
+    public GameObject slingshotFireGO;
+    public int slingshotFireCount;
+
+    public GameObject slingshotIceGO;
+    public int slingshotIceCount;
 
     [Space(10)]
 
@@ -45,7 +76,7 @@ public class PlayerCombatController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        InitializeSlingshot();
     }
 
     // Update is called once per frame
@@ -74,6 +105,9 @@ public class PlayerCombatController : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.LeftControl) && !isDodging && pm.isGrounded && !isPerformingHeavyAttack && !isPerformingLightAttack) {
             dodge();
         }
+
+
+        Slingshot();
     }
 
 
@@ -119,6 +153,108 @@ public class PlayerCombatController : MonoBehaviour
         isDodging = false;
 
     }
+#endregion
+
+
+#region slingshot
+
+    public void InitializeSlingshot() {
+        points = new GameObject[numberOfPoints];
+        for (int i = 0; i < numberOfPoints; i++)
+        {
+            points[i] = Instantiate(point, projectilePoint.position, Quaternion.identity);
+            points[i].SetActive(false);
+        }
+    }
+
+    public void Slingshot() {
+        Vector2 slingshotPos = point.transform.position;
+        Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        direction = mousePos - slingshotPos;
+        point.transform.right = direction;
+
+
+        if (!isPerformingHeavyAttack && !isPerformingLightAttack)
+                {
+                    if (Input.GetMouseButton(1))
+                    {
+                        isChargingSlingshot = true;
+                        //AM.GetComponent<AnimationManager>().isCharging = true;
+                        if (currentProjectile == "normal")
+                        {
+                            if(GameObject.Find("Player").GetComponent<PlayerStats>().pebbles > 0) {
+                                chargeTime += Time.deltaTime * 3;
+                                projectileForce = chargeTime * 7.5f + 2;
+                                projectileForce = Mathf.Clamp(projectileForce, 2, 10);
+                            }
+                        }
+                        if(currentProjectile == "platform")
+                        {
+                            if(GameObject.Find("Player").GetComponent<PlayerStats>().platformBeans > 0) {
+                                chargeTime += Time.deltaTime;   
+                                projectileForce = chargeTime * 1.5f + 2;
+                                projectileForce = Mathf.Clamp(projectileForce, 2, 4);
+                            }
+                        }
+                    }
+                    if (Input.GetMouseButtonUp(1))
+                    {
+                        isChargingSlingshot = false;
+                        shootSlingshot();
+                        chargeTime = 0.0f;
+                        projectileForce = chargeTime;
+                    }
+                }
+
+
+        //Trajectory
+        for (int i = 0; i < numberOfPoints; i++)
+        {
+            if (projectileForce > 0)
+            {
+                points[i].gameObject.SetActive(true);
+                points[i].transform.position = PointPosition(i * spaceBetweenPoints);
+            }
+            else
+            {
+                points[i].gameObject.SetActive(false);
+            }
+
+            if(!isChargingSlingshot) {
+                points[i].gameObject.SetActive(false);
+                projectileForce = 0;
+                chargeTime = 0;
+            }
+        }
+    }
+
+
+
+    public void shootSlingshot() {
+        if (currentProjectile == "normal")
+        {
+            GameObject newProjectile = Instantiate(slingshotPebbleGO, projectilePoint.position, projectilePoint.rotation);
+            newProjectile.GetComponent<Rigidbody2D>().velocity = point.transform.right * projectileForce;
+            //newProjectile.GetComponent<Projectile>().force = projectileForce;
+            GameObject.Find("Player").GetComponent<PlayerStats>().removePebbles(1);
+        }
+        if(currentProjectile == "platform")
+        {
+            GameObject newProjectile = Instantiate(slingshotPlatformGO, projectilePoint.position, projectilePoint.rotation);
+            newProjectile.GetComponent<Rigidbody2D>().velocity = point.transform.right * projectileForce;
+            GameObject.Find("Player").GetComponent<PlayerStats>().removePlatform(1);
+        }
+    }
+
+
+
+    Vector2 PointPosition(float t)
+    {
+        Vector2 pos = (Vector2)projectilePoint.transform.position + (direction.normalized * projectileForce * t) + 0.5f * Physics2D.gravity * (t * t);
+        return pos;
+    }
+
+
 #endregion
 
 

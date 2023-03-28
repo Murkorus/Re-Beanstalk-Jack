@@ -23,14 +23,14 @@ public class PlayerAnimationController : MonoBehaviour
 
     public bool isFacingRight;
 
-    // Update is called once per frame
-
     public void Start() {
         playerMovement = GetComponent<PlayerMovement>();
     }
+
+
     public void Update() {
         isGrounded = playerMovement.isGrounded;
-        usingSlingshot = slingshot.isCharging;
+        //usingSlingshot = slingshot.isCharging;
         isFacingRight = playerMovement.IsFacingRight;
 
 
@@ -40,12 +40,14 @@ public class PlayerAnimationController : MonoBehaviour
             isMoving = true;
         }
 
+
         if(playerMovement.RB.velocity.y > 0.01) {
             isJumping = true;
         } else {
             isJumping = false;  
         }
-        
+
+
         if(playerMovement.RB.velocity.y > 2) {
             if(gooseOnBack) {
                 playerAnimator.Play("Jump_Goose_Normal");
@@ -56,6 +58,7 @@ public class PlayerAnimationController : MonoBehaviour
         if(playerMovement.RB.velocity.y < -20) {
             playerAnimator.Play("PlayerFalling");
         }
+
 
         //Idle
         if(isGrounded && !isMoving && !usingSlingshot) {
@@ -80,12 +83,11 @@ public class PlayerAnimationController : MonoBehaviour
         //Moving while charging slingshot
         if(isGrounded && isMoving && usingSlingshot) {
             if(gooseOnBack) {
-                //playerAnimator.Play("Move_Goose_Normal");
+                playerAnimator.Play("Move_Goose_Normal");
             } else {
-                //playerAnimator.Play("Move_Normal");
+                playerAnimator.Play("Move_Normal");
             }
         }
         
     }
-
 }

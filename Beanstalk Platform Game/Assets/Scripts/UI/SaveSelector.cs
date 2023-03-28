@@ -22,6 +22,7 @@ public class SaveSelector : MonoBehaviour
 
     void Start()
     {
+        int saveNumber = 1;
         getSceneNames();
 
         infoFile = savesys.getInformation();
@@ -96,22 +97,20 @@ public class SaveSelector : MonoBehaviour
 
     public void loadSave(int saveNumber)
     {
-        if(System.IO.File.Exists(Application.persistentDataPath + "/Save" + saveNumber + ".json"))
+        Debug.Log(System.IO.Path.Combine(Application.persistentDataPath, "Save" + saveNumber.ToString() + ".json"));
+        if(System.IO.File.Exists(System.IO.Path.Combine(Application.persistentDataPath, "Save" + saveNumber.ToString() + ".json")))
         {
+            Debug.Log(Application.persistentDataPath + "/Save" + saveNumber + ".json");
             string path = Application.persistentDataPath + "/Save" + saveNumber + ".json";
             string json = File.ReadAllText(path);
             Debug.Log($"ReadFile() {json}");
             SaveFile load = JsonUtility.FromJson<SaveFile>(json);
             Debug.Log("Save exists");
+            savesys.Load(load.currentSave_save);
             if(load.currentLevel_save < 0)
             {
                 Debug.Log("save found");
-            } else
-            {
-                Debug.Log("File doesn't exists");
-                savesys.newSave(saveNumber);
             }
-
         } else
         {
             Debug.Log("File doesn't exists");

@@ -44,7 +44,7 @@ public class SaveSystem : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.K))
         {
-            Load(currentSave);
+            Load(currentSave); 
         }
     }
 
@@ -72,11 +72,7 @@ public class SaveSystem : MonoBehaviour
     //Load
     public void Load(int saveNum)
     {
-        save = ReadFile(saveNum);
-
-        SceneManager.LoadScene(save.currentLevel_save);
-        currentLevel = save.currentLevel_save;
-        currentSave = saveNum;
+        StartCoroutine(loadLevel(saveNum));
     }
 
     public SaveFile ReadFile(int saveNum)
@@ -127,13 +123,27 @@ public class SaveSystem : MonoBehaviour
         save.currentLevel_save = 4;
         save.playerHealth = 100;
         save.pebbles = 25;
-        save.platform = 5;
+        save.platform = 0;
+        save.fire = 0;
+        save.ice = 0;
         string json = JsonUtility.ToJson(save);
         Debug.Log(json);
         string path = Application.persistentDataPath + "/Save" + saveNum + ".json";
         File.WriteAllText(path, json);
 
         Load(saveNum);
+    }
+
+
+
+    IEnumerator loadLevel(int saveNum) {
+        save = ReadFile(saveNum);
+
+        SceneManager.LoadScene(save.currentLevel_save);
+        currentLevel = save.currentLevel_save;
+        currentSave = saveNum;
+        yield return new WaitForSeconds(.05f);
+        GameObject.Find("Player").GetComponent<Transform>().position = save.playerPos_save;
     }
 
 
@@ -147,6 +157,8 @@ public class SaveSystem : MonoBehaviour
         public float playerHealth;
         public int pebbles;
         public int platform;
+        public int fire;
+        public int ice;
     }
 
     [System.Serializable]
