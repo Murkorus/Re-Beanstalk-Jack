@@ -23,6 +23,8 @@ public class PlayerCombatController : MonoBehaviour
     [Space(5)]
 
 
+
+
     [Header("Slingshot settings")]
     [SerializeField] private float slingshotDamage;
     [SerializeField] private float slingshotChargeTime;
@@ -32,15 +34,11 @@ public class PlayerCombatController : MonoBehaviour
     public Transform projectilePoint;
 
     //Trajectory
-    public GameObject point;
+    public GameObject slingshotPoint;
     GameObject[] points;
     public int numberOfPoints;
     public float spaceBetweenPoints;
     Vector2 direction;
-
-
-
-
 
 
     [Header("Slingshot projectiles")]
@@ -60,6 +58,10 @@ public class PlayerCombatController : MonoBehaviour
     public int slingshotIceCount;
 
     [Space(10)]
+
+
+
+
 
 
     [Header("Dodge settings")]
@@ -162,16 +164,16 @@ public class PlayerCombatController : MonoBehaviour
         points = new GameObject[numberOfPoints];
         for (int i = 0; i < numberOfPoints; i++)
         {
-            points[i] = Instantiate(point, projectilePoint.position, Quaternion.identity);
+            points[i] = Instantiate(slingshotPoint, projectilePoint.position, Quaternion.identity);
             points[i].SetActive(false);
         }
     }
 
     public void Slingshot() {
-        Vector2 slingshotPos = point.transform.position;
+        Vector2 slingshotPos = transform.position;
         Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         direction = mousePos - slingshotPos;
-        point.transform.right = direction;
+        slingshotPoint.transform.right = direction;
 
 
         if (!isPerformingHeavyAttack && !isPerformingLightAttack)
@@ -234,14 +236,14 @@ public class PlayerCombatController : MonoBehaviour
         if (currentProjectile == "normal")
         {
             GameObject newProjectile = Instantiate(slingshotPebbleGO, projectilePoint.position, projectilePoint.rotation);
-            newProjectile.GetComponent<Rigidbody2D>().velocity = point.transform.right * projectileForce;
+            newProjectile.GetComponent<Rigidbody2D>().velocity = slingshotPoint.transform.right * projectileForce;
             //newProjectile.GetComponent<Projectile>().force = projectileForce;
             GameObject.Find("Player").GetComponent<PlayerStats>().removePebbles(1);
         }
         if(currentProjectile == "platform")
         {
             GameObject newProjectile = Instantiate(slingshotPlatformGO, projectilePoint.position, projectilePoint.rotation);
-            newProjectile.GetComponent<Rigidbody2D>().velocity = point.transform.right * projectileForce;
+            newProjectile.GetComponent<Rigidbody2D>().velocity = slingshotPoint.transform.right * projectileForce;
             GameObject.Find("Player").GetComponent<PlayerStats>().removePlatform(1);
         }
     }

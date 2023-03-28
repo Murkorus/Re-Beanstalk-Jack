@@ -1,0 +1,2124 @@
+fileFormatVersion: 2
+guid: 7679ebe3edc2fe94c85f4aa946ee0ecd
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 20
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GoreTilemap_0
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 902
+        width: 25
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8acff8225ad047f4a91b47f92d443283
+      internalID: 348145509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeadTree1
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 802
+        width: 105
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70503af061019c34498b0fd596c13914
+      internalID: 1526581680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeadTree4
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 795
+        width: 139
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eabd64380fd6924b9b24a4fe94c3fe1
+      internalID: -1161667932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoreTilemap_3
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 504
+        width: 576
+        height: 470
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c4a89443e48368409cffd0da79c88fd
+      internalID: 1172880389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoreTilemap_4
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 816
+        width: 36
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2352e3859e3f5924cabc6355fb1a6bf7
+      internalID: 1477289488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoreTilemap_5
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 877
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd7449d6b55666f4a9a1ae3d9a1ac612
+      internalID: 1863073891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoreTilemap_6
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 877
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a20e6f708b7cd4c45acc7a74ac9d9a11
+      internalID: 744395073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoreTilemap_7
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 877
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2df0fc366ddc1fb4a8a7c4661336f6a0
+      internalID: 1826574655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoreTilemap_8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 877
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7a81521cb7f8264ea7c83b2d314c27b
+      internalID: -216034427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoreTilemap_9
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 864
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccd6b1a02059d434da710b06010ccea5
+      internalID: -1354521601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoreTilemap_10
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 864
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d1197e55f5f5f146a6d566d52b12cea
+      internalID: -444786476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoreTilemap_11
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 864
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32f82e9cde7982549bbff9d41cd4de89
+      internalID: 2110134814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoreTilemap_12
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 864
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c512c02596351ff40b0e6c395fbf0a5b
+      internalID: -1418728696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoreTilemap_13
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 850
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 433b5d2a19167e14881fcfb02258b5c4
+      internalID: -1289109817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoreTilemap_14
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 850
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bee9dda7b190d3348977c830aae3c82f
+      internalID: 526761958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoreTilemap_15
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 850
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c543d260fa029b4ba9e603047a64035
+      internalID: 406048513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoreTilemap_16
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 850
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77db3961341b137418727177bd266481
+      internalID: 1085497806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoreTilemap_17
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 816
+        width: 11
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06640c08ff33d61438f5685144c7a464
+      internalID: -1221004012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoreTilemap_18
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 831
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 351ffb01ddac58f43861caef272d39fc
+      internalID: 844665759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoreTilemap_19
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 831
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a5f74e983c695a4ea88dc18c0edb488
+      internalID: 1255781049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoreTilemap_20
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 831
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1d74a6303befbc4182acb4a00fcad76
+      internalID: 1759058618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoreTilemap_21
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 831
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e2f48b865d5e514b816ef30c685870d
+      internalID: -57249083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoreTilemap_22
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 818
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ba8d50dc6e447248bc02c1910ac211f
+      internalID: -1469406744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoreTilemap_23
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 818
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bde6d280d7e594e4ab4c5eb1d3093daa
+      internalID: 2096374525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoreTilemap_24
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 818
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06f5ba5e84b0fc14d9244e8dc50f248f
+      internalID: 351308493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoreTilemap_25
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 818
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 306ca473119a81348917873cdfd5d4d1
+      internalID: -701819757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoreTilemap_26
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 804
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20b058b70af25644c8bdf6a3321d87b6
+      internalID: -916303163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoreTilemap_27
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 804
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2073686e47fda2c4faa87c676fb16bab
+      internalID: -1966630253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoreTilemap_28
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 804
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 700536ed7a884bc43aa3e3a5b8315088
+      internalID: -244362968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoreTilemap_29
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 804
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d304c82b0c6bfd49a248ca619b4a90a
+      internalID: 645570543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoreTilemap_30
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 768
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1744ab58bd523f54ca15cfc69680a44f
+      internalID: 1073152627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoreTilemap_31
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 755
+        width: 24
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fdcde3371017dd4eb74894a7d750632
+      internalID: 2112927544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeadTree2
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 685
+        width: 105
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 727d38d2c55344a439fa129f386edb3a
+      internalID: 1323022923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoreTilemap_33
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 753
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cbc87bb5217c3841b5729672806a205
+      internalID: 1268533764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoreTilemap_34
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 753
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0787e5f92424df47abe42563ac4bffd
+      internalID: 621685398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bloody_Ground_LeftCorner
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 750
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 260ff71cb0e8b0a4e9acd3f4822e0455
+      internalID: 462222447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bloody_Ground
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 750
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51705047576a4c5458fde6a73ba4552e
+      internalID: -1450683922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bloody_Ground_RightCorner
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 750
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07cf04d7bcbf0274bbbfb4cd53277a39
+      internalID: -380256511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bloody_Ground_LeftCorner_Ver2
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 750
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b82870255225a1a428613808c11214fa
+      internalID: 1738311868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bloody_Ground_Ver2
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 750
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f870c00c71fec694dbcc78aa49228001
+      internalID: -1542190031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bloody_Ground_RightCorner_Ver2
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 750
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7642a721e341a3541bf2a32b3289ffbe
+      internalID: -1594131949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoreTilemap_41
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 750
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3d5883baa3919d4d9f7b1e346970eae
+      internalID: 1650572357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoreTilemap_42
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 753
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80b058ece9a769649a60ce42cbad4b1a
+      internalID: -1767992361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoreTilemap_43
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 730
+        width: 48
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d3ce2df83086e340b8da7206e771323
+      internalID: -1336978370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bloody_Ground_LeftSide
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 732
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5abcefae45a40494f98770e58f88faef
+      internalID: 1847583662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoreTilemap_45
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 732
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d74a09cdd1423674ca8b788b6b95fc77
+      internalID: -1303161394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bloody_Ground_RightSide
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 732
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 062721ce9bb934d4c9941e0d21711619
+      internalID: 1767329879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bloody_Ground_LeftSide_Ver2
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 732
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fae4afd012cf6654eac78f6dccb17056
+      internalID: 1644928680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoreTilemap_48
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 732
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f317c01e06e1cc4ca3b8db68ae87895
+      internalID: 635618896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bloody_Ground_RightSide_Ver2
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 732
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cf076e7ed3b3ff4aad5c52513a0f002
+      internalID: 522373365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoreTilemap_50
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 732
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7395799909d5c0e4ebb7cdc6a9153af6
+      internalID: -286370377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoreTilemap_51
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 732
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31183c8cc437a9d4db7f6fdbe74862d9
+      internalID: -2114792540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoreTilemap_52
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 733
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68b76828030fd8a46a08cabc16421026
+      internalID: -218783199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoreTilemap_53
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 733
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1fad5b0a4bff71488969856f85c6ec4
+      internalID: 1958975051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoreTilemap_54
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 712
+        width: 48
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebd326a4504353c498911be17983840e
+      internalID: -1135879583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoreTilemap_55
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 714
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c95159f64091fb94ca225f217827fa8b
+      internalID: -2060821101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoreTilemap_56
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 714
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b38702b42c8ccbd4fb431bb04407ae4a
+      internalID: 1913889066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoreTilemap_57
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 714
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f41a750450acc44599ef015b3a8b1e2
+      internalID: 1599369270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bloody_Ground_Corner1_Ver2
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 714
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67810893dc1d15747a44f75e22e5d928
+      internalID: 349159634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bloody_Ground_Corner2_Ver2
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 714
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0b470c362a26b34eb9c04d2bdeca0be
+      internalID: 689857671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: E_Bloody_Ground
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 714
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa6ff5a2ff07645469c4e660f08465d4
+      internalID: 1638248556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: E_Bloody_Ground_Corner2_Ver2
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 714
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dea0398e69f947b4ca8547a5dd117bab
+      internalID: 1624260590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoreTilemap_62
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 714
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb0ad659f37bcd3469f226b864bd75d4
+      internalID: 2031531544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoreTilemap_63
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 694
+        width: 48
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e0f84cf7680c424ab7c58fe5671ec9e
+      internalID: -2038818942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Darkness
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 697
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccb11ce5e34596b4ea61d6f6d3d1cf43
+      internalID: 725091193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoreTilemap_65
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 690
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dc62424c531ad447936a2a34ae7cd8d
+      internalID: -1982964426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoreTilemap_66
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 695
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 160362b27d8a00b40857b4e1b566cc3f
+      internalID: 2087254033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoreTilemap_67
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 696
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b3562484c6a1744bb59b1da556c0cd3
+      internalID: 833016013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bloody_Ground_Corner3_Ver2
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 695
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f49e798b4961dfc4ea2b0a57b72c97a9
+      internalID: -1575969862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bloody_Ground_Corner4_Ver2
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 695
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e95afc2c7b30e340bf8fc5efe071c7a
+      internalID: 1887550606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoreTilemap_70
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 694
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc63c12fb4726c74bb0a7a7db1959b24
+      internalID: -1361166901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoreTilemap_71
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 694
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3bcff9637c651c4782ca86ba350e4d6
+      internalID: -136333000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoreTilemap_72
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 694
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b6c74c11e4969947ad6ad61c359fedc
+      internalID: 816768870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bloody_Ground_Corner5_Ver2
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 671
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b0cef7d456346b4ebcacf03c303bb36
+      internalID: -1660331298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bloody_Ground_Corner_Ver2
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 671
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63ba653c952723b42828a48934f8fb3e
+      internalID: -503075418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoreTilemap_75
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 635
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef2c0529d53ffa745845b0902f2fa34f
+      internalID: 1984097472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoreTilemap_76
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 635
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 644ee526373565e4185097ee8a2985c8
+      internalID: 1499517520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeadTree3
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 568
+        width: 105
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82050fa3c2814be42894044789501972
+      internalID: -1455442746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoreTilemap_78
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 607
+        width: 139
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abc56910e31d2c54f97b34504917baca
+      internalID: -1377002125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoreTilemap_79
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 594
+        width: 26
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e43a12351713b134ba4223edd5fa4435
+      internalID: -445672339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoreTilemap_80
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 605
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05909c2cb17b3f843b2895f1ca87dfe5
+      internalID: 1499194400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoreTilemap_81
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 605
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f944f946094ddc45bd2341bb3ceff05
+      internalID: -2048897554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoreTilemap_82
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 594
+        width: 21
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb29c7f560569ee4aa994463fff86963
+      internalID: 1584622496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoreTilemap_83
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 593
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5925076f3cfc90d4f9814e2c91e4d481
+      internalID: -667220184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoreTilemap_84
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 593
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 236d8c42350901d43a24b5f58c1fedd5
+      internalID: 1162777126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoreTilemap_85
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 580
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24a34dc72a69ca840bd70fd68c815f02
+      internalID: -927148608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoreTilemap_86
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 580
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbd17ef4bb35f3445a85320f3917da82
+      internalID: -1964870912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoreTilemap_87
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 580
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06d95532dddbdd8448849a6912d58d31
+      internalID: -374265896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoreTilemap_88
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 576
+        height: 259
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 189c4ad56cfd9cc4bb1e4193ff3550a2
+      internalID: 1111070491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: E_Bloody_Ground_Bottom
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 695
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfd8552404e1ca04a8d4375dd9561fa0
+      internalID: -1189477064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoreTilemap_1
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 0
+        width: 576
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86e1e6b5efc5c514cbf09ee008d7097c
+      internalID: -1354376678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      GoreTilemap_28: -244362968
+      GoreTilemap_54: -1135879583
+      GoreTilemap_48: 635618896
+      Bloody_Ground_LeftCorner: 462222447
+      GoreTilemap_53: 1958975051
+      GoreTilemap_82: 1584622496
+      GoreTilemap_50: -286370377
+      GoreTilemap_45: -1303161394
+      GoreTilemap_42: -1767992361
+      GoreTilemap_23: 2096374525
+      GoreTilemap_62: 2031531544
+      Bloody_Ground_RightSide: 1767329879
+      GoreTilemap_14: 526761958
+      GoreTilemap_34: 621685398
+      GoreTilemap_26: -916303163
+      GoreTilemap_80: 1499194400
+      GoreTilemap_8: -216034427
+      GoreTilemap_12: -1418728696
+      Bloody_Ground_RightSide_Ver2: 522373365
+      GoreTilemap_10: -444786476
+      Bloody_Ground_Corner5_Ver2: -1660331298
+      GoreTilemap_7: 1826574655
+      Bloody_Ground: -1450683922
+      GoreTilemap_21: -57249083
+      Bloody_Ground_Corner2_Ver2: 689857671
+      GoreTilemap_66: 2087254033
+      GoreTilemap_63: -2038818942
+      Bloody_Ground_RightCorner: -380256511
+      GoreTilemap_29: 645570543
+      GoreTilemap_41: 1650572357
+      GoreTilemap_16: 1085497806
+      E_Bloody_Ground_Bottom: -1189477064
+      GoreTilemap_18: 844665759
+      E_Bloody_Ground_Corner2_Ver2: 1624260590
+      GoreTilemap_52: -218783199
+      GoreTilemap_81: -2048897554
+      GoreTilemap_22: -1469406744
+      GoreTilemap_85: -927148608
+      GoreTilemap_3: 1172880389
+      GoreTilemap_15: 406048513
+      GoreTilemap_25: -701819757
+      GoreTilemap_83: -667220184
+      Bloody_Ground_LeftCorner_Ver2: 1738311868
+      GoreTilemap_88: 1111070491
+      GoreTilemap_43: -1336978370
+      GoreTilemap_31: 2112927544
+      GoreTilemap_20: 1759058618
+      GoreTilemap_57: 1599369270
+      GoreTilemap_72: 816768870
+      GoreTilemap_56: 1913889066
+      GoreTilemap_51: -2114792540
+      GoreTilemap_87: -374265896
+      Bloody_Ground_Corner4_Ver2: 1887550606
+      Bloody_Ground_Corner3_Ver2: -1575969862
+      GoreTilemap_84: 1162777126
+      Bloody_Ground_Corner1_Ver2: 349159634
+      GoreTilemap_0: 348145509
+      GoreTilemap_9: -1354521601
+      GoreTilemap_79: -445672339
+      DeadTree1: 1526581680
+      DeadTree3: -1455442746
+      DeadTree2: 1323022923
+      GoreTilemap_75: 1984097472
+      GoreTilemap_13: -1289109817
+      E_Bloody_Ground: 1638248556
+      GoreTilemap_86: -1964870912
+      GoreTilemap_71: -136333000
+      Darkness: 725091193
+      GoreTilemap_55: -2060821101
+      GoreTilemap_33: 1268533764
+      GoreTilemap_65: -1982964426
+      GoreTilemap_24: 351308493
+      GoreTilemap_6: 744395073
+      GoreTilemap_1: -1354376678
+      GoreTilemap_27: -1966630253
+      Bloody_Ground_LeftSide_Ver2: 1644928680
+      GoreTilemap_78: -1377002125
+      GoreTilemap_19: 1255781049
+      GoreTilemap_4: 1477289488
+      Bloody_Ground_RightCorner_Ver2: -1594131949
+      GoreTilemap_70: -1361166901
+      DeadTree4: -1161667932
+      GoreTilemap_76: 1499517520
+      GoreTilemap_30: 1073152627
+      GoreTilemap_11: 2110134814
+      GoreTilemap_5: 1863073891
+      Bloody_Ground_Ver2: -1542190031
+      GoreTilemap_17: -1221004012
+      GoreTilemap_67: 833016013
+      Bloody_Ground_Corner_Ver2: -503075418
+      Bloody_Ground_LeftSide: 1847583662
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

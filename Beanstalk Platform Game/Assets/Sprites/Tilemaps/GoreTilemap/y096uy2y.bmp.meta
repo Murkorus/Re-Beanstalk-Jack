@@ -1,0 +1,2078 @@
+fileFormatVersion: 2
+guid: 70a7c633b96020545a24ce7e420e5178
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 20
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Skull
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 902
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8120bb4c06e1e2c4d80cddcdccdddd84
+      internalID: -568512195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeadTree1
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 802
+        width: 105
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adcbe3383d4f5af46aef71db339b9015
+      internalID: 963164764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeadTree4
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 795
+        width: 139
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f45069740ba6fdc41bf0c6fc5656d6e5
+      internalID: -197497589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: y096uy2y_3
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 504
+        width: 576
+        height: 470
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8543516693610144bcf72f21cd7aa18
+      internalID: -1553489339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HangingSkeleton
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 816
+        width: 36
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ed0f58493c7920439d1609ebe57a2a2
+      internalID: -434049419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: y096uy2y_5
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 877
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3411273ee0825a9419ee991e5e57b7b2
+      internalID: 1656933137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: y096uy2y_6
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 877
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fbad0e4df2053e43a8b89291fe1ffaa
+      internalID: 1722013934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: y096uy2y_7
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 877
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8dd331c1f8fa6a47b4dda0606d71d6f
+      internalID: -109193991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: y096uy2y_8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 877
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffd67ee32ce1ab3478521839a45de15e
+      internalID: -664644104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: y096uy2y_9
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 864
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc356950d3349124695d88e07a015c33
+      internalID: -1090544243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: y096uy2y_10
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 864
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ff3f72039e67f54791401b1b9b2ac8b
+      internalID: -815389540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: y096uy2y_11
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 864
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28b3fdb23046f7143a8a8633b85c689b
+      internalID: -1276857307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: y096uy2y_12
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 864
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3778672767addc84f88ff2f2ddde1f20
+      internalID: -41564953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: y096uy2y_13
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 850
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9bf9454406e4e2438a343db0471df0f
+      internalID: -1218834683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: y096uy2y_14
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 850
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d03a995e55a317447b71cc6ffcf7d568
+      internalID: -118257424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: y096uy2y_15
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 850
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9226f25a5b81a743b362f510bc00f82
+      internalID: 1624938362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: y096uy2y_16
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 850
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a1d23cd508a4134390cc32177001516
+      internalID: 1787315778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkullOnSpike
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 816
+        width: 11
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76a66e403be20c34cb53c12562a068b0
+      internalID: -2145627934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: y096uy2y_18
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 831
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1229d8e71d5c2847a57a5332d7ac76c
+      internalID: -1349986372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: y096uy2y_19
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 831
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8926b19f833e0b449ca63cdb90b00bb
+      internalID: 1589130547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: y096uy2y_20
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 831
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77a1e454e229bbb469880af45430e4d7
+      internalID: -1886623538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: y096uy2y_21
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 831
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02376bb2ce77ba04482d5d1eb1fb5de4
+      internalID: 1905837411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: y096uy2y_22
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 818
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca491157cf2016d4aa6093514de0bd00
+      internalID: 864289078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: y096uy2y_23
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 818
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 234954c5d0721924591c981688307d49
+      internalID: 1032484606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: y096uy2y_24
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 818
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 942c12de8040dd24086820ef2a2349b2
+      internalID: -341912729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: y096uy2y_25
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 818
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eac2e72929d6054ebf803009c945373
+      internalID: 1515436555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: y096uy2y_26
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 804
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93a40f07b1175f645855a9f23ca2fc40
+      internalID: 1570943428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: y096uy2y_27
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 804
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d2319dd7c8a786458cd54fbbde42e94
+      internalID: 165527300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: y096uy2y_28
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 804
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d657f973740ce74bb285e1e238f07c7
+      internalID: -1700980290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: y096uy2y_29
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 804
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38f2ef3852e516f40afa08277484f937
+      internalID: 642401333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GiantSkull
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 768
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2ecedc2241b1104fbd57a5b37962329
+      internalID: -439430707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkullBanner
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 755
+        width: 24
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e0abbbc5fa30be4aabd278561274d75
+      internalID: 916035446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeadTree2
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 685
+        width: 105
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d837ff52816b9f447a2a6b65ed410d52
+      internalID: -1503051316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: y096uy2y_33
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 753
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3042c8fe4844ce74186f6a9f1a65be72
+      internalID: 1318822319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: y096uy2y_34
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 753
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c47002ddbeb52a34fae64611fab590dd
+      internalID: -16533445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bloody_Ground_LeftCorner_Ver1
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 750
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98068329751f3bc4995892b547ad79b6
+      internalID: 358546483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bloody_Ground_Ver1
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 750
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54855e1c36ce4ed48a69b0bb17bfa6d9
+      internalID: 1517264987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bloody_Ground_RightCorner_Ver1
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 750
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f824ff6cef133c448a3e6f46f7bda261
+      internalID: 1081611650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bloody_Ground_LeftCorner_Ver2
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 750
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e02f67e52f3209a4ca59319fc27e2754
+      internalID: 403573204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bloody_Ground_Ver2
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 750
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d3628b3ad590f4429e62dadb60f37d7
+      internalID: -681942626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bloody_Ground_RightCorner_Ver2
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 750
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d768b2f370bb3534f93cd033f98a8c81
+      internalID: -869553382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bloody_Ground_DownRamp_Ver2
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 750
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75969442cafdda74f8c6e7fa1ab0c651
+      internalID: 1138085925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: y096uy2y_42
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 753
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c29ac007084f0af489e6300388cfcc68
+      internalID: -2128886388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood1
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 730
+        width: 48
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ddb7487cee61174bb252ddb477d6508
+      internalID: -822305516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bloody_Ground_LeftSide_Ver1
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 732
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccf02876f8a62944ca67b01b436429ff
+      internalID: -2050850709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bloody_Ground_Middle_Ver1
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 732
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 742b9c670e156bd4a9dc290dab652512
+      internalID: 1743666267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bloody_Ground_RightSide_Ver1
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 732
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d5aab439f68d8449af8a4fcea01bc9f
+      internalID: 2131904823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bloody_Ground_LeftSide_Ver2
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 732
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e189e46fd549b6d4aa3b27b83daa5ba1
+      internalID: -2119597342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: y096uy2y_48
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 732
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2adac446bb91c2e46b90c616e18ad3e1
+      internalID: -1068621343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bloody_Ground_RightSide_Ver2
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 732
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 140078dbde4694d4db237508105ba803
+      internalID: -208181512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bloody_Ground_UpRamp_Ver2
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 732
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ebfa5fbfb15fe943a3d00c762e98e6e
+      internalID: -1376546770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: y096uy2y_51
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 732
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfd058956b866cb46afcc0427efbdc55
+      internalID: 883797859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: y096uy2y_52
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 733
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18d535e7eb0da8b428a683a051d998e0
+      internalID: -1819671164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: y096uy2y_53
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 733
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0437b08be7d45ce4ab9c53d3c90ffc70
+      internalID: 67492720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood2
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 712
+        width: 48
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c276c0706d8ff184797d0c625da850dc
+      internalID: -1803119196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: y096uy2y_55
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 714
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7ab36436b9227340a106061c0a16c50
+      internalID: -228711381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: y096uy2y_56
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 714
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26d8b3852f2b9b649a2079052ba49dc0
+      internalID: -1006557697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Darkness
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 714
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e34900a3a67b58146b653e7cadd79cf5
+      internalID: 1721674680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bloody_Ground_Turn3
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 714
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 287f686ba0cdc7c42a05337c43027868
+      internalID: 973931134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bloody_Ground_Turn4
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 714
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ce203df0826d3c419e597edd15fccde
+      internalID: -21659023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: y096uy2y_60
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 714
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f94de9d0c34f24348b24c6423bd036ad
+      internalID: 252797740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: y096uy2y_61
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 714
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49d93e5b195f8ce448e56a550666025a
+      internalID: -389538831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: y096uy2y_62
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 714
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 782de6144b282d348a2b84574767ddb0
+      internalID: -1112865669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood3
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 694
+        width: 48
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4682649e52ceded49bbdf68341c23ff7
+      internalID: -1094986144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: y096uy2y_64
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 690
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fc78bd804893bc42837cb6f87294288
+      internalID: -543933966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: y096uy2y_65
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 695
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccd5f14767a92174ca84a7e6ba83b160
+      internalID: -1068064611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: y096uy2y_66
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 696
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9408b4201ffd6b34b9098f07f73bb6a8
+      internalID: -1639477668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bloody_Ground_Turn1
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 695
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 423800fdbc6d8a44588985c15918a36c
+      internalID: 1323034891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bloody_Ground_Turn2
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 695
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2465e68c7aa2744087fe51c1d0fd2d6
+      internalID: -995139814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: y096uy2y_69
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 694
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c96ee14943f9da040a121c5ea08b5986
+      internalID: -1892215950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: y096uy2y_70
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 694
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb51ef7fced20f54ca2947c8aa648dc3
+      internalID: 1011384950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: y096uy2y_71
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 694
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9dfecb56864aff4db3f5686a49f5d90
+      internalID: 1501813820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bloody_Ground_LeftEnd
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 674
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb5f9a0a86a52cd4bb6d9ce01b893c44
+      internalID: -1320010920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bloody_Ground_RightEnd
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 674
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c02531391592dc54ebdebc4e50e0039e
+      internalID: -82459666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: y096uy2y_74
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 635
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8335dc446ddb7ad4983c283427586898
+      internalID: -1932662079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: y096uy2y_75
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 635
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84fa21c32d3c79448a965df3c4b676c4
+      internalID: 748695198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeadTree3
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 568
+        width: 105
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 066fe3fee3a1634429057629260ad860
+      internalID: 255670438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bush
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 607
+        width: 139
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bfa0353f2f13494a88ec5073dfbcaee
+      internalID: -1078289194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TallSign
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 594
+        width: 26
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab1e3b2bb8430e7479b9f7a612a7a3d5
+      internalID: 971512363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: y096uy2y_79
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 605
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0437fb9c6c0a67540b72cc96b32685e6
+      internalID: 828273501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: y096uy2y_80
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 605
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4390fe778816d2044a986ab46b0461cb
+      internalID: -1234335730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalSign
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 594
+        width: 21
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bfd5616867e33e4c8500737edc83d0e
+      internalID: 333141137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: y096uy2y_82
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 593
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0e4a5ce287b79340ad988497116543d
+      internalID: -1631686188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: y096uy2y_83
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 593
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ac50236397bd614b998307ecc37a71f
+      internalID: 1699937617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: y096uy2y_84
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 580
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74d8ace8c4e00184fb7362da47e1c3ce
+      internalID: 1753403440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: y096uy2y_85
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 580
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7736c7b6ba676804bb41c05c4b80771d
+      internalID: 949943147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: y096uy2y_86
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 580
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f37982f6bb02f6645828b06069bad7f5
+      internalID: -148792801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Background1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 576
+        height: 259
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09313e8f0f218d44eba7373fe2ab0d44
+      internalID: 147040552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Purple_Background2
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 0
+        width: 576
+        height: 259
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fecd0a2e4aae07b49919f937d76a931c
+      internalID: 334692135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chain
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 904
+        width: 3
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1269bd31b96a62b4ca4e7dd730d0785b
+      internalID: 1483055721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Purple_Background1: 147040552
+      y096uy2y_5: 1656933137
+      y096uy2y_10: -815389540
+      y096uy2y_64: -543933966
+      Bloody_Ground_Middle_Ver1: 1743666267
+      y096uy2y_82: -1631686188
+      Bloody_Ground_RightSide_Ver1: 2131904823
+      Bloody_Ground_Turn4: -21659023
+      y096uy2y_55: -228711381
+      SkullBanner: 916035446
+      y096uy2y_85: 949943147
+      HangingSkeleton: -434049419
+      y096uy2y_16: 1787315778
+      y096uy2y_83: 1699937617
+      Bloody_Ground_RightSide_Ver2: -208181512
+      y096uy2y_6: 1722013934
+      y096uy2y_26: 1570943428
+      Bloody_Ground_LeftEnd: -1320010920
+      y096uy2y_52: -1819671164
+      y096uy2y_24: -341912729
+      y096uy2y_15: 1624938362
+      y096uy2y_61: -389538831
+      y096uy2y_25: 1515436555
+      Bloody_Ground_Turn1: 1323034891
+      y096uy2y_12: -41564953
+      y096uy2y_14: -118257424
+      y096uy2y_74: -1932662079
+      y096uy2y_56: -1006557697
+      y096uy2y_65: -1068064611
+      GiantSkull: -439430707
+      y096uy2y_53: 67492720
+      Bloody_Ground_RightEnd: -82459666
+      Blood1: -822305516
+      Bloody_Ground_LeftSide_Ver1: -2050850709
+      y096uy2y_13: -1218834683
+      Bloody_Ground_LeftCorner_Ver2: 403573204
+      y096uy2y_42: -2128886388
+      y096uy2y_7: -109193991
+      y096uy2y_70: 1011384950
+      Skull: -568512195
+      y096uy2y_29: 642401333
+      y096uy2y_23: 1032484606
+      Bloody_Ground_Turn2: -995139814
+      y096uy2y_75: 748695198
+      Bloody_Ground_UpRamp_Ver2: -1376546770
+      y096uy2y_86: -148792801
+      Bloody_Ground_Ver1: 1517264987
+      Bloody_Ground_Turn3: 973931134
+      y096uy2y_69: -1892215950
+      y096uy2y_51: 883797859
+      y096uy2y_19: 1589130547
+      y096uy2y_27: 165527300
+      Chain: 1483055721
+      NormalSign: 333141137
+      Bloody_Ground_RightCorner_Ver1: 1081611650
+      y096uy2y_71: 1501813820
+      DeadTree1: 963164764
+      DeadTree3: 255670438
+      y096uy2y_11: -1276857307
+      DeadTree2: -1503051316
+      y096uy2y_22: 864289078
+      Bloody_Ground_DownRamp_Ver2: 1138085925
+      y096uy2y_8: -664644104
+      y096uy2y_60: 252797740
+      Darkness: 1721674680
+      y096uy2y_34: -16533445
+      Blood3: -1094986144
+      SkullOnSpike: -2145627934
+      y096uy2y_9: -1090544243
+      Blood2: -1803119196
+      y096uy2y_48: -1068621343
+      y096uy2y_33: 1318822319
+      y096uy2y_84: 1753403440
+      y096uy2y_3: -1553489339
+      y096uy2y_18: -1349986372
+      Bloody_Ground_LeftSide_Ver2: -2119597342
+      y096uy2y_62: -1112865669
+      Bloody_Ground_RightCorner_Ver2: -869553382
+      y096uy2y_80: -1234335730
+      DeadTree4: -197497589
+      y096uy2y_79: 828273501
+      y096uy2y_21: 1905837411
+      y096uy2y_28: -1700980290
+      Bush: -1078289194
+      Bloody_Ground_LeftCorner_Ver1: 358546483
+      TallSign: 971512363
+      Purple_Background2: 334692135
+      Bloody_Ground_Ver2: -681942626
+      y096uy2y_66: -1639477668
+      y096uy2y_20: -1886623538
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

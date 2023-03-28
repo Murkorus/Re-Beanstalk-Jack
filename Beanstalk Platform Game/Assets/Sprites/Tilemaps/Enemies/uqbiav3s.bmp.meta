@@ -1,0 +1,1530 @@
+fileFormatVersion: 2
+guid: 5499be465882bb049aeb1d65af2540ed
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 20
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: uqbiav3s_0
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 434
+        width: 25
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be70a4a4dad749e449ab915dd3e64e9c
+      internalID: 176595659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uqbiav3s_1
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 434
+        width: 25
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 788b16cd24bd8c34c989a173fa209d98
+      internalID: 956649642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uqbiav3s_2
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 434
+        width: 26
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0f19c4550276a94aad9002e69e87ec1
+      internalID: 1679286430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uqbiav3s_3
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 435
+        width: 21
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3f45bfe778581f49b4e305cbb22c9f6
+      internalID: -1091049262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uqbiav3s_4
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 435
+        width: 20
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eb0e9e00ed8f544dba9599fe34f2306
+      internalID: -606806981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uqbiav3s_5
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 435
+        width: 21
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57188a4e8761be14e84a9ba5f7ca8f65
+      internalID: 23364544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uqbiav3s_6
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 435
+        width: 17
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 800f7e4b638e6be45b0768197b95d2dc
+      internalID: 1712278240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uqbiav3s_7
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 370
+        width: 27
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c96db5e178405144bb4477afaee4b43
+      internalID: 369555482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uqbiav3s_8
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 369
+        width: 36
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ef4a0f2fa726254aadddb5d57fc466a
+      internalID: 1242920005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uqbiav3s_9
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 370
+        width: 27
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47d1b6dd24044e445ac5629886b1b488
+      internalID: 1926364327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DemonGiant_Trans1
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 367
+        width: 21
+        height: 65
+      alignment: 9
+      pivot: {x: 0.52380955, y: 0.4923077}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc0e54ab23847f14580e2b9931f0602c
+      internalID: 1726438500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DemonGiant_Trans2
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 367
+        width: 20
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 636ac9790aefe7c48af9896b06e74108
+      internalID: -174599370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DemonGiant_Trans3
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 367
+        width: 17
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5882353, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2c055e4e7b7d174391fce9aa93c2ae4
+      internalID: 1595160184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DemonGiant_Trans4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 367
+        width: 16
+        height: 63
+      alignment: 9
+      pivot: {x: 0.6875, y: 0.50793654}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0f4d085151b4b946b67fff7474d1df1
+      internalID: -1592895523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DemonGiant_Trans5
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 367
+        width: 15
+        height: 63
+      alignment: 9
+      pivot: {x: 0.6, y: 0.50793654}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c36ffa31a92a33241a4f84aeed765aad
+      internalID: 102654317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uqbiav3s_15
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 297
+        width: 22
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d768cae6ab3d4041a66255be60e4cac
+      internalID: 2137987526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uqbiav3s_16
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 297
+        width: 20
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 712bab3a2f100dd4dba4ad5a1f165530
+      internalID: 581392553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uqbiav3s_17
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 297
+        width: 17
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00fb6e2867c3f8a458db299724db3389
+      internalID: -1366061059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uqbiav3s_18
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 297
+        width: 16
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a97bb212ebbc2148ad9bdc56147914e
+      internalID: -27615352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uqbiav3s_19
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 297
+        width: 20
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37b9567aa92affd4b8a1a0a9381a3918
+      internalID: 256027769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DemonGiant_Trans6
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 297
+        width: 15
+        height: 63
+      alignment: 9
+      pivot: {x: 0.6, y: 0.50793654}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 200e51dfdef10814caf496785f113f43
+      internalID: -1746753778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DemonGiant_Trans7
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 297
+        width: 17
+        height: 62
+      alignment: 9
+      pivot: {x: 0.5294118, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15cc8ed2e0d46f443a726ac500960862
+      internalID: 763472708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DemonGiant_Trans8
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 296
+        width: 20
+        height: 63
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49206352}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 254be94052488f44eaea9a42fc338783
+      internalID: 196757574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DemonGiant_Trans9
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 295
+        width: 20
+        height: 63
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49206352}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3881f53db19a3a84cb6baf111f038ea7
+      internalID: 1452373249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DemonGiant_Trans10
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 295
+        width: 19
+        height: 63
+      alignment: 9
+      pivot: {x: 0.5263158, y: 0.49206352}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a078555167f1534e86654fa54cbd400
+      internalID: -1726965386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uqbiav3s_25
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 228
+        width: 22
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e0c35a5060a502479c16ac2d28deb41
+      internalID: 66529216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uqbiav3s_26
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 229
+        width: 22
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfed500e65d6152458cc1c687db5cc8d
+      internalID: -710727108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DemonGiant_Idle1
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 228
+        width: 16
+        height: 63
+      alignment: 9
+      pivot: {x: 0.5625, y: 0.42857146}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73e2403c50d7a4d469cc06ce0e944ea2
+      internalID: -413126912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DemonGiant_Idle2
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 228
+        width: 16
+        height: 62
+      alignment: 9
+      pivot: {x: 0.5625, y: 0.43548387}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d3b71239e64d6a4cbea6ccbbe53e6f2
+      internalID: 2114431615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DemonGiant_Idle3
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 228
+        width: 16
+        height: 61
+      alignment: 9
+      pivot: {x: 0.5625, y: 0.44262293}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f74cafe7e0db89a43a7723a646b957b4
+      internalID: -1843186986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DemonGiant_Trans11
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 231
+        width: 18
+        height: 63
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49206352}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d1408f2855bec745990a4e08895c89b
+      internalID: 690148200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DemonGiant_Trans12
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 231
+        width: 18
+        height: 63
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49206352}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 938af95a759c0f0448052dcef4880697
+      internalID: 1199347705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DemonGiant_Trans13
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 231
+        width: 19
+        height: 63
+      alignment: 9
+      pivot: {x: 0.47368422, y: 0.49206352}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad51ed60ec58d2c4a80e5bffb40f6aeb
+      internalID: 1442347045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DemonGiant_Trans14
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 230
+        width: 19
+        height: 63
+      alignment: 9
+      pivot: {x: 0.47368422, y: 0.49206352}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a938ed3dec68ff40953a5371bd53ab6
+      internalID: 131792857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DemonGiant_Trans15
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 230
+        width: 20
+        height: 63
+      alignment: 9
+      pivot: {x: 0.45000002, y: 0.49206352}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 688b4eeafb83d914290726a76bb51f4e
+      internalID: -794606891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uqbiav3s_35
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 207
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c39941b35941f0b489b1262c1a51ec68
+      internalID: -1726164200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uqbiav3s_36
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 208
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04e31e432ea1537428b01972b7434965
+      internalID: -1692895709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uqbiav3s_37
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 208
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de880df335bf2e1479c4997373539b54
+      internalID: 1643584886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uqbiav3s_38
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 195
+        width: 11
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f4a6ada77fac434892bc32b03b95855
+      internalID: -2029884103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uqbiav3s_39
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 194
+        width: 10
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce9e284d8ee0f15449f99ca12f54cde2
+      internalID: -53463390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uqbiav3s_40
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 195
+        width: 11
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7f538d2ce5be5249b2b332758f78cee
+      internalID: 1490779002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DemonGiant_Trans16
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 165
+        width: 20
+        height: 63
+      alignment: 9
+      pivot: {x: 0.45000002, y: 0.49206352}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef0985ffcbf47124a81e1b370171a7e5
+      internalID: -543860184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DemonGiant_Trans17
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 165
+        width: 20
+        height: 63
+      alignment: 9
+      pivot: {x: 0.45000002, y: 0.49206352}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4977a10653588b547ac4c9c42fe75621
+      internalID: 335981536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DemonGiant_Trans18
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 165
+        width: 22
+        height: 63
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49206352}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc77ead39479bfd4cacd9be503ef619f
+      internalID: -2091055414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DemonGiant_Trans19
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 165
+        width: 27
+        height: 63
+      alignment: 9
+      pivot: {x: 0.4814815, y: 0.49206352}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e66ac3b0bbbdc5744aa1d1198c0c5cc9
+      internalID: 534652865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DemonGiant_Trans20
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 164
+        width: 27
+        height: 63
+      alignment: 9
+      pivot: {x: 0.4814815, y: 0.49206352}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e50aee469ffc21140b57b7f4cc91d9ae
+      internalID: -2117789845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uqbiav3s_46
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 191
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a91935006ed3b34b945bf1d5d268a8e
+      internalID: 160984096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uqbiav3s_47
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 191
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aafffc531095970478710292dcf4eae7
+      internalID: 2117986445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uqbiav3s_48
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 190
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cd47248b99bc5e47bf6076b01b47f81
+      internalID: 45999792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uqbiav3s_49
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 173
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1045806b2fc8cee4bba51ef0406828fc
+      internalID: 1400058028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uqbiav3s_50
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 171
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9cc50f29c0ce9847af0371aec06d9fa
+      internalID: -1029937921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uqbiav3s_51
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 172
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2da5bed1a0a0817459e6f4db90eea380
+      internalID: -2121464392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uqbiav3s_52
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 164
+        width: 9
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1a4c5fa9b916f2409946535ae169068
+      internalID: -1646239392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uqbiav3s_53
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 164
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c266a52e00d866b44b16bfd50afa37b6
+      internalID: 1301165560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uqbiav3s_54
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 164
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b62ac8402f2710498a5b1fff957cac2
+      internalID: -1435257865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uqbiav3s_55
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 134
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d03e01cb39487c41ad2feeb0dc6cd3a
+      internalID: 290177865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DemonGiant_Trans21
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 98
+        width: 27
+        height: 63
+      alignment: 9
+      pivot: {x: 0.4814815, y: 0.49206352}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 468696b942900ef47a562c5be6e31d4b
+      internalID: 1569766405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DemonGiant_Trans22
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 98
+        width: 27
+        height: 62
+      alignment: 9
+      pivot: {x: 0.4814815, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4341e7f51f85625488d6a46d0a421e2b
+      internalID: 870346917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DemonGiant_Trans23
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 98
+        width: 27
+        height: 62
+      alignment: 9
+      pivot: {x: 0.4814815, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc189b55e2d32db40a44e9c17dc93dfe
+      internalID: -231274840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DemonGiant_Trans24
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 98
+        width: 27
+        height: 63
+      alignment: 9
+      pivot: {x: 0.4814815, y: 0.49206352}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b46e89f9fd42204c91b6abed64a4efc
+      internalID: -2067466513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DemonGiant_Trans25
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 98
+        width: 27
+        height: 63
+      alignment: 9
+      pivot: {x: 0.4814815, y: 0.49206352}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92d3e357b5d3e654da7b0db6eeb8ba42
+      internalID: 1816606065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DemonGiant_Trans26
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 30
+        width: 27
+        height: 63
+      alignment: 9
+      pivot: {x: 0.4814815, y: 0.49206352}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a331739b8b4d93f4d9f31956a6fd4387
+      internalID: -1522333895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DemonGiant_Trans27
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 29
+        width: 27
+        height: 63
+      alignment: 9
+      pivot: {x: 0.4814815, y: 0.49206352}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 002c89f6f90658749b0d6c5f015d4672
+      internalID: -1784591310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DemonGiant_Trans28
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 29
+        width: 27
+        height: 63
+      alignment: 9
+      pivot: {x: 0.4814815, y: 0.49206352}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e267f9d15ece7640ba53c7ebbd177df
+      internalID: 1526570566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      uqbiav3s_0: 176595659
+      uqbiav3s_52: -1646239392
+      DemonGiant_Trans16: -543860184
+      uqbiav3s_7: 369555482
+      DemonGiant_Idle1: -413126912
+      uqbiav3s_26: -710727108
+      uqbiav3s_16: 581392553
+      DemonGiant_Trans2: -174599370
+      uqbiav3s_19: 256027769
+      DemonGiant_Trans25: 1816606065
+      uqbiav3s_5: 23364544
+      DemonGiant_Trans19: 534652865
+      uqbiav3s_25: 66529216
+      DemonGiant_Trans21: 1569766405
+      uqbiav3s_18: -27615352
+      uqbiav3s_39: -53463390
+      DemonGiant_Trans23: -231274840
+      uqbiav3s_4: -606806981
+      DemonGiant_Trans28: 1526570566
+      DemonGiant_Trans11: 690148200
+      uqbiav3s_49: 1400058028
+      DemonGiant_Trans6: -1746753778
+      DemonGiant_Trans15: -794606891
+      DemonGiant_Trans10: -1726965386
+      uqbiav3s_3: -1091049262
+      DemonGiant_Trans3: 1595160184
+      DemonGiant_Trans20: -2117789845
+      uqbiav3s_8: 1242920005
+      uqbiav3s_2: 1679286430
+      DemonGiant_Trans27: -1784591310
+      DemonGiant_Trans22: 870346917
+      DemonGiant_Trans26: -1522333895
+      uqbiav3s_37: 1643584886
+      DemonGiant_Trans12: 1199347705
+      uqbiav3s_40: 1490779002
+      DemonGiant_Trans17: 335981536
+      uqbiav3s_17: -1366061059
+      DemonGiant_Trans18: -2091055414
+      uqbiav3s_1: 956649642
+      uqbiav3s_6: 1712278240
+      uqbiav3s_9: 1926364327
+      uqbiav3s_15: 2137987526
+      uqbiav3s_35: -1726164200
+      DemonGiant_Trans1: 1726438500
+      uqbiav3s_36: -1692895709
+      DemonGiant_Trans8: 196757574
+      DemonGiant_Trans24: -2067466513
+      uqbiav3s_47: 2117986445
+      uqbiav3s_48: 45999792
+      uqbiav3s_46: 160984096
+      uqbiav3s_38: -2029884103
+      uqbiav3s_53: 1301165560
+      uqbiav3s_54: -1435257865
+      uqbiav3s_55: 290177865
+      uqbiav3s_51: -2121464392
+      DemonGiant_Trans14: 131792857
+      DemonGiant_Trans5: 102654317
+      DemonGiant_Trans9: 1452373249
+      DemonGiant_Idle3: -1843186986
+      DemonGiant_Idle2: 2114431615
+      DemonGiant_Trans7: 763472708
+      DemonGiant_Trans13: 1442347045
+      uqbiav3s_50: -1029937921
+      DemonGiant_Trans4: -1592895523
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

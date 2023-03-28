@@ -62,7 +62,7 @@ public class Slingshot : MonoBehaviour
         Vector2 slingshotPos = transform.position;
         Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         direction = mousePos - slingshotPos;
-        point.transform.right = direction;
+        transform.right = direction;
 
 
 
