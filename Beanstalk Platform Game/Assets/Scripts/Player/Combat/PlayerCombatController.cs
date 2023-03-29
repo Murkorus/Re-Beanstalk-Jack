@@ -235,16 +235,19 @@ public class PlayerCombatController : MonoBehaviour
     public void shootSlingshot() {
         if (currentProjectile == "normal")
         {
-            GameObject newProjectile = Instantiate(slingshotPebbleGO, projectilePoint.position, projectilePoint.rotation);
-            newProjectile.GetComponent<Rigidbody2D>().velocity = slingshotPoint.transform.right * projectileForce;
-            //newProjectile.GetComponent<Projectile>().force = projectileForce;
-            GameObject.Find("Player").GetComponent<PlayerStats>().removePebbles(1);
+            if(GameObject.Find("Player").GetComponent<PlayerStats>().pebbles > 0) {
+                GameObject newProjectile = Instantiate(slingshotPebbleGO, projectilePoint.position, projectilePoint.rotation);
+                newProjectile.GetComponent<Rigidbody2D>().velocity = slingshotPoint.transform.right * projectileForce;
+                GameObject.Find("Player").GetComponent<PlayerStats>().removePebbles(1);
+            }
         }
         if(currentProjectile == "platform")
         {
-            GameObject newProjectile = Instantiate(slingshotPlatformGO, projectilePoint.position, projectilePoint.rotation);
-            newProjectile.GetComponent<Rigidbody2D>().velocity = slingshotPoint.transform.right * projectileForce;
-            GameObject.Find("Player").GetComponent<PlayerStats>().removePlatform(1);
+            if(GameObject.Find("Player").GetComponent<PlayerStats>().platformBeans > 0)  {
+                GameObject newProjectile = Instantiate(slingshotPlatformGO, projectilePoint.position, projectilePoint.rotation);
+                newProjectile.GetComponent<Rigidbody2D>().velocity = slingshotPoint.transform.right * projectileForce;
+                GameObject.Find("Player").GetComponent<PlayerStats>().removePlatform(1);
+            }
         }
     }
 
