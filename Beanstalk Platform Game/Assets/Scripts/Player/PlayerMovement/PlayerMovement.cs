@@ -60,8 +60,7 @@ public class PlayerMovement : MonoBehaviour
 	[SerializeField] private Vector3 _rayOffsetLeft;
 
 	//Hanging offset;
-	[SerializeField] private Vector3 _hangingOffsetRight;
-	[SerializeField] private Vector3 _hangingOffsetLeft;
+	[SerializeField] private Vector3 _hangingOffset;
 	[SerializeField] private Vector2 _ledgeJump;
 	private GameObject groundCheckGO;
 	
@@ -131,17 +130,14 @@ public class PlayerMovement : MonoBehaviour
                 Freeze(true);
 
                 //Position player
-
-
-
-				
+                
 				if(IsFacingRight) {
 					RaycastHit2D hit = Physics2D.Raycast(transform.position + _rayOffsetRight, -Vector2.up);
-                	transform.position = hit.point - new Vector2(_hangingOffsetRight.x, _hangingOffsetRight.y);
+                	transform.position = hit.point - new Vector2(_hangingOffset.x, _hangingOffset.y);
 				}
 				if(!IsFacingRight) {
 					RaycastHit2D hit = Physics2D.Raycast(transform.position + _rayOffsetLeft, -Vector2.up);
-                	transform.position = hit.point - new Vector2(_hangingOffsetLeft.x, _hangingOffsetLeft.y);
+                	transform.position = hit.point - new Vector2(-_hangingOffset.x, _hangingOffset.y);
 				}
             }
         }
@@ -258,9 +254,9 @@ public class PlayerMovement : MonoBehaviour
 		}
         GameObject.Find("CameraLook").transform.position = rayHit.point;
 		if(IsFacingRight)
-        	transform.position = rayHit.point - new Vector2(_hangingOffsetRight.x, _hangingOffsetRight.y);
+        	transform.position = rayHit.point - new Vector2(_hangingOffset.x, _hangingOffset.y);
 		else
-        	transform.position = rayHit.point - new Vector2(_hangingOffsetLeft.x, _hangingOffsetLeft.y);
+        	transform.position = rayHit.point - new Vector2(-_hangingOffset.x, _hangingOffset.y);
 
 
         yield return new WaitForSeconds(0.75f);

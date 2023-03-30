@@ -169,6 +169,7 @@ MonoBehaviour:
   accelInAir: 1
   deccelInAir: 0.2
   doConserveMomentum: 1
+  isDodging: 0
   moveInput: {x: 0, y: 0}
   _groundCheckPoint: {fileID: 5679937232200186374}
   _groundCheckSize: {x: 0.45, y: 0.03}
@@ -188,8 +189,7 @@ MonoBehaviour:
   isHanging: 0
   _rayOffsetRight: {x: 0.65, y: 5, z: 0}
   _rayOffsetLeft: {x: -0.65, y: 5, z: 0}
-  _hangingOffsetRight: {x: 0.5, y: 0.45, z: 0}
-  _hangingOffsetLeft: {x: -0.5, y: 0.45, z: 0}
+  _hangingOffset: {x: 0, y: 0, z: 0}
   _ledgeJump: {x: -250, y: 175}
 --- !u!114 &3078223899945449309
 MonoBehaviour:
@@ -210,7 +210,6 @@ MonoBehaviour:
   isJumping: 0
   isFalling: 0
   usingSlingshot: 0
-  slingshot: {fileID: 3078223900002749491}
   gooseOnBack: 1
   isFacingRight: 1
 --- !u!50 &3078223899945449297
@@ -300,7 +299,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3078223900002749490}
-  - component: {fileID: 3078223900002749491}
   m_Layer: 7
   m_Name: Slingshot
   m_TagString: Untagged
@@ -323,34 +321,6 @@ Transform:
   m_Father: {fileID: 3078223899945449307}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3078223900002749491
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3078223900002749489}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53ae12a541ff0844db4adad93a88c7fe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Stones: 5
-  maxStones: 4
-  Player: {fileID: 3078223899945449319}
-  Pebble: {fileID: 572257231913690876, guid: 59e8ec17c13e0964b96b2c2c3c33d332, type: 3}
-  PlatformBean: {fileID: 0}
-  projectileForce: 4
-  projectilePoint: {fileID: 3078223899945449307}
-  currentProjectile: normal
-  isCharging: 0
-  isWalking: 0
-  carryingGoose: 0
-  canShoot: 0
-  chargeTime: 1
-  point: {fileID: 5877308583327490201, guid: ecb915653f6821a48b93a63dc5af97ac, type: 3}
-  numberOfPoints: 15
-  spaceBetweenPoints: 0.05
 --- !u!1 &5679937231683256163
 GameObject:
   m_ObjectHideFlags: 0

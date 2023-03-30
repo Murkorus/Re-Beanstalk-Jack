@@ -88,13 +88,11 @@ public class UISelector : MonoBehaviour
             if (i == currentSelected)
             {
                 ButtonsList[i].GetComponent<Image>().color = selectedColor;
-                ButtonsList[i].GetComponentInChildren<TextMeshProUGUI>().color = new Color(255, 255, 255, 255);
-                selectedUIAnimation.transform.position = ButtonsList[i].transform.position;
+                //selectedUIAnimation.transform.position = ButtonsList[i].transform.position;
             }
             else
             {
                 ButtonsList[i].GetComponent<Image>().color = normalColor;
-                ButtonsList[i].GetComponentInChildren<TextMeshProUGUI>().color = new Color(0, 0, 0, 255);
             }
         }
     }

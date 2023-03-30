@@ -1774,72 +1774,44 @@ CompositeCollider2D:
   m_ColliderPaths:
   - m_Collider: {fileID: 72007719}
     m_ColliderPaths:
-    - - X: 7249900
-        Y: -7750041
-      - X: 7249900
-        Y: -250100
-      - X: 7750041
-        Y: -250100
-      - X: 7750100
-        Y: -250041
-      - X: 7750100
-        Y: 7750041
-      - X: 7750041
-        Y: 7750100
-      - X: -7249900
-        Y: 7750100
-      - X: -7249900
-        Y: 22750041
-      - X: -7249959
-        Y: 22750100
-      - X: -45250041
-        Y: 22750100
-      - X: -45250100
-        Y: 22750041
-      - X: -45250100
-        Y: -7750041
-      - X: -45250041
-        Y: -7750100
-      - X: 7249959
-        Y: -7750100
-    - - X: 90250100
-        Y: -60250041
-      - X: 90250100
-        Y: 250041
-      - X: 90250041
-        Y: 250100
-      - X: 29749959
-        Y: 250100
-      - X: 29749900
-        Y: 250041
-      - X: 29749900
-        Y: -22249900
-      - X: -52750041
-        Y: -22249900
-      - X: -52750100
-        Y: -22249959
-      - X: -52750100
-        Y: -60250041
-      - X: -52750041
-        Y: -60250100
-      - X: 90250041
-        Y: -60250100
+    - - X: 7750000
+        Y: 7750000
+      - X: -7250000
+        Y: 7750000
+      - X: -7250000
+        Y: 22750000
+      - X: -45250000
+        Y: 22750000
+      - X: -45250000
+        Y: -7750000
+      - X: 7750000
+        Y: -7750000
+    - - X: 90250000
+        Y: 250000
+      - X: 29750000
+        Y: 250000
+      - X: 29750000
+        Y: -22250000
+      - X: -52750000
+        Y: -22250000
+      - X: -52750000
+        Y: -60250000
+      - X: 90250000
+        Y: -60250000
   m_CompositePaths:
     m_Paths:
-    - - {x: 0.7249666, y: -0.77501}
-      - {x: 0.7250194, y: -0.02501}
-      - {x: 0.77501, y: -0.0249748}
-      - {x: 0.7749748, y: 0.77501}
-      - {x: -0.72499, y: 0.77503943}
-      - {x: -0.72502524, y: 2.27501}
-      - {x: -4.52501, y: 2.2749748}
-      - {x: -4.524975, y: -0.77501}
-    - - {x: 9.024975, y: -6.02501}
-      - {x: 9.024975, y: 0.02501}
-      - {x: 2.9749901, y: 0.0249748}
-      - {x: 2.9749606, y: -2.2249901}
-      - {x: -5.27501, y: -2.2250252}
-      - {x: -5.274975, y: -6.02501}
+    - - {x: 0.7749707, y: -0.77500004}
+      - {x: 0.7749707, y: 0.77500004}
+      - {x: -0.725, y: 0.7750294}
+      - {x: -0.7250293, y: 2.275}
+      - {x: -4.525, y: 2.2749708}
+      - {x: -4.524971, y: -0.77500004}
+    - - {x: 9.02497, y: -6.025}
+      - {x: 9.02497, y: 0.025}
+      - {x: 2.9750001, y: 0.024970701}
+      - {x: 2.9749706, y: -2.2250001}
+      - {x: -5.275, y: -2.2250292}
+      - {x: -5.274971, y: -6.025}
   m_VertexDistance: 0.0005
   m_OffsetDistance: 0.00005
 --- !u!50 &72007718
@@ -2460,14 +2432,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 772873969}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.8459572, y: -0.9096372, z: -0.48350045}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.3767972, y: 0.585645, z: -0.50894785}
+  m_LocalScale: {x: 1.0526316, y: 1.0526316, z: 1.0526316}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1963109995}
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_Father: {fileID: 1857506023}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &772873971
 Animator:
@@ -3000,7 +2972,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1092017545
 GameObject:
@@ -3941,26 +3913,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53ae12a541ff0844db4adad93a88c7fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Stones: 5
-  maxStones: 5
-  Player: {fileID: 1857506014}
-  Pebble: {fileID: 572257231913690876, guid: 59e8ec17c13e0964b96b2c2c3c33d332, type: 3}
-  PlatformBean: {fileID: 0}
-  projectileForce: 0
-  projectilePoint: {fileID: 7738862410781627519, guid: ecb915653f6821a48b93a63dc5af97ac, type: 3}
-  currentProjectile: 
-  direction: {x: 0, y: 0}
-  isAttacking: 0
-  isCharging: 0
-  isWalking: 0
-  carryingGoose: 0
-  canShoot: 0
-  chargeTime: 0
-  totalTime: 0
-  point: {fileID: 1631598504}
-  points: []
-  numberOfPoints: 10
-  spaceBetweenPoints: 0.5
 --- !u!1 &1638013683
 GameObject:
   m_ObjectHideFlags: 0
@@ -4609,8 +4561,7 @@ MonoBehaviour:
   isHanging: 0
   _rayOffsetRight: {x: 0.65, y: 5, z: 0}
   _rayOffsetLeft: {x: -0.65, y: 5, z: 0}
-  _hangingOffsetRight: {x: 0.5, y: 0.45, z: 0}
-  _hangingOffsetLeft: {x: -0.5, y: 0.45, z: 0}
+  _hangingOffset: {x: 0.635, y: 0.45, z: 0}
   _ledgeJump: {x: -250, y: 200}
 --- !u!95 &1857506022
 Animator:
@@ -4650,6 +4601,7 @@ Transform:
   - {fileID: 641430818}
   - {fileID: 1074407716}
   - {fileID: 1631598505}
+  - {fileID: 772873970}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
