@@ -71,7 +71,10 @@ public class PlayerCombatController : MonoBehaviour
     [Header("Weapon wheel")]
     [SerializeField] private int weaponWheelselected;
     [SerializeField] private List<string> projectiles;
+    [SerializeField] private List<GameObject> weaponWheelSlots;
+    [SerializeField] private List<float> weaponWheelSlotsDistance;
     [SerializeField] private GameObject weaponWheelGO;
+    private float smallestNumber;
 
 
 
@@ -271,6 +274,7 @@ public class PlayerCombatController : MonoBehaviour
 #region weapon wheel
 
     public void weaponWheel() {
+        GetClosestSlot();
         if(Input.GetKey(KeyCode.Q)) {
             weaponWheelGO.SetActive(true);
         } else {
@@ -284,8 +288,18 @@ public class PlayerCombatController : MonoBehaviour
 
 
     public void GetClosestSlot() {
-        
+        smallestNumber = Mathf.Infinity;
+        for(int i = 0; i < weaponWheelSlots.Count; i++ ) {
+                float distance = Vector2.Distance(Input.mousePosition, weaponWheelSlots[i].GetComponent<RectTransform>().transform.position);
+                weaponWheelSlotsDistance[i] = distance;
+                Debug.Log("Distance to " + weaponWheelSlots[i] + distance);
+                if(distance < smallestNumber) {
+                    smallestNumber = distance;
+                    weaponWheelselected = i;
+                }
+            }
     }
+    
 
 #endregion
 
@@ -299,6 +313,5 @@ public class PlayerCombatController : MonoBehaviour
         if(value = isPerformingLightAttack) {
             isPerformingLightAttack = false;
         }
-         yield return null;
     }
 }
