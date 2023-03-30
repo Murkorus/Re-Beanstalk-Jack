@@ -61,15 +61,20 @@ public class PlayerCombatController : MonoBehaviour
 
 
 
-
-
-
     [Header("Dodge settings")]
     [SerializeField] private float dodgeForce;
     [SerializeField] private float dodgeTime;
     [SerializeField] private float iFrames;
     public bool isDodging;
     
+
+    [Header("Weapon wheel")]
+    [SerializeField] private int weaponWheelselected;
+    [SerializeField] private List<string> projectiles;
+    [SerializeField] private GameObject weaponWheelGO;
+
+
+
 
      [Header("Other scripts")]
      public PlayerMovement pm;
@@ -110,6 +115,7 @@ public class PlayerCombatController : MonoBehaviour
 
 
         Slingshot();
+        weaponWheel();
     }
 
 
@@ -262,7 +268,26 @@ public class PlayerCombatController : MonoBehaviour
 
 #endregion
 
+#region weapon wheel
 
+    public void weaponWheel() {
+        if(Input.GetKey(KeyCode.Q)) {
+            weaponWheelGO.SetActive(true);
+        } else {
+            weaponWheelGO.SetActive(false);
+        }
+    }
+
+    public void changeProjectile(int slot) {
+        currentProjectile = projectiles[slot];
+    }
+
+
+    public void GetClosestSlot() {
+        
+    }
+
+#endregion
 
 
     IEnumerator eventTime(bool value, float time) {

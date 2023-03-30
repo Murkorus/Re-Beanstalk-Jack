@@ -2287,6 +2287,90 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Pebble1
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 258
+        width: 3
+        height: 3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a4c067c6b8f8134b8a73db76114f4b3
+      internalID: 1884774952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pebble2
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 258
+        width: 3
+        height: 3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da94994d8424a774db33de923bce5537
+      internalID: 430261699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pebble3
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 258
+        width: 3
+        height: 3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25fde64ffa0a01648b3fcccc8dd37aad
+      internalID: -2083074819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pebble4
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 258
+        width: 3
+        height: 3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8cba3472c848d04caeb739577a5c65b
+      internalID: 2069086731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -2301,6 +2385,7 @@ TextureImporter:
       5hfuqp7o_77: -472356858
       5hfuqp7o_81: -703037881
       5hfuqp7o_83: -471735982
+      Pebble2: 430261699
       5hfuqp7o_93: 1743639033
       5hfuqp7o_2: -1047714005
       5hfuqp7o_65: -412172305
@@ -2331,6 +2416,7 @@ TextureImporter:
       5hfuqp7o_89: -539154432
       Move_slingshot3: -244481816
       5hfuqp7o_33: -2114250121
+      Pebble4: 2069086731
       5hfuqp7o_67: -2059759614
       Jump_Norma2: -2127858225
       5hfuqp7o_41: 332059182
@@ -2349,11 +2435,12 @@ TextureImporter:
       Idle_FacingForwad_2: 1130342991
       5hfuqp7o_35: -2049381711
       5hfuqp7o_84: -644714182
+      Pebble1: 1884774952
       5hfuqp7o_40: -1883800548
-      5hfuqp7o_53: -1924120093
       5hfuqp7o_7: -2007297217
-      5hfuqp7o_88: 1545816711
       Move_slingshot1: 2065959702
+      5hfuqp7o_88: 1545816711
+      5hfuqp7o_53: -1924120093
       5hfuqp7o_63: -1782024350
       5hfuqp7o_42: -1046646137
       Idle_Goose_FacingSide_1: 259006583
@@ -2370,6 +2457,7 @@ TextureImporter:
       5hfuqp7o_100: 154849814
       5hfuqp7o_8: -1352445959
       5hfuqp7o_80: -1729919623
+      Pebble3: -2083074819
       5hfuqp7o_98: 1064285514
       5hfuqp7o_4: -867702152
       5hfuqp7o_38: 1194955293

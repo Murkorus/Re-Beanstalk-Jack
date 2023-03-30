@@ -17,7 +17,6 @@ public class PlayerAnimationController : MonoBehaviour
     public bool isFalling;
 
     public bool usingSlingshot;
-    public Slingshot slingshot;
 
     public bool gooseOnBack;
 
