@@ -511,7 +511,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 5.5, y: 350}
-  m_SizeDelta: {x: 1098.41, y: 200}
+  m_SizeDelta: {x: 1200, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &127728173
 MonoBehaviour:
@@ -941,7 +941,7 @@ RectTransform:
   m_GameObject: {fileID: 218255508}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.75, y: 0.75, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1228541847}
@@ -1204,7 +1204,7 @@ RectTransform:
   m_GameObject: {fileID: 327388115}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.75, y: 0.75, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1228541847}
@@ -1212,7 +1212,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -806.3, y: -250}
+  m_AnchoredPosition: {x: -783.2, y: -250}
   m_SizeDelta: {x: 260.66666, y: 94}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &327388117
@@ -2729,7 +2729,7 @@ RectTransform:
   m_GameObject: {fileID: 876113817}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.75, y: 0.75, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1228541847}
@@ -2737,7 +2737,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -606, y: 50}
+  m_AnchoredPosition: {x: -642.8, y: 50}
   m_SizeDelta: {x: 660.6667, y: 94}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &876113819
@@ -3172,8 +3172,8 @@ MonoBehaviour:
   - {fileID: 218255508}
   - {fileID: 327388115}
   selectedUIAnimation: {fileID: 0}
-  selectedColor: {r: 1, g: 1, b: 1, a: 0.5882353}
-  normalColor: {r: 1, g: 1, b: 1, a: 0}
+  selectedColor: {r: 0.7294118, g: 1, b: 1, a: 1}
+  normalColor: {r: 1, g: 1, b: 1, a: 1}
   isUsingMouse: 0
   uimanager: {fileID: 432043580}
 --- !u!4 &947713395
