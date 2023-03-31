@@ -104,12 +104,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GoreTilemap_0
+      name: Small Skull
       rect:
         serializedVersion: 2
         x: 104
-        y: 902
-        width: 25
+        y: 1406
+        width: 11
         height: 12
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -125,55 +125,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DeadTree1
-      rect:
-        serializedVersion: 2
-        x: 154
-        y: 802
-        width: 105
-        height: 106
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 70503af061019c34498b0fd596c13914
-      internalID: 1526581680
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DeadTree4
-      rect:
-        serializedVersion: 2
-        x: 324
-        y: 795
-        width: 139
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9eabd64380fd6924b9b24a4fe94c3fe1
-      internalID: -1161667932
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: GoreTilemap_3
       rect:
         serializedVersion: 2
         x: 576
-        y: 504
-        width: 576
-        height: 470
+        y: 1008
+        width: 1152
+        height: 264
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -188,11 +146,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GoreTilemap_4
+      name: SkeletonRemains
       rect:
         serializedVersion: 2
         x: 99
-        y: 816
+        y: 1320
         width: 36
         height: 65
       alignment: 0
@@ -213,7 +171,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 487
-        y: 877
+        y: 1381
         width: 6
         height: 11
       alignment: 0
@@ -234,7 +192,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 497
-        y: 877
+        y: 1381
         width: 6
         height: 11
       alignment: 0
@@ -255,7 +213,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 505
-        y: 877
+        y: 1381
         width: 6
         height: 10
       alignment: 0
@@ -276,7 +234,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 512
-        y: 877
+        y: 1381
         width: 6
         height: 10
       alignment: 0
@@ -297,7 +255,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 487
-        y: 864
+        y: 1368
         width: 6
         height: 11
       alignment: 0
@@ -318,7 +276,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 497
-        y: 864
+        y: 1368
         width: 6
         height: 11
       alignment: 0
@@ -339,7 +297,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 505
-        y: 864
+        y: 1368
         width: 6
         height: 10
       alignment: 0
@@ -360,7 +318,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 512
-        y: 864
+        y: 1368
         width: 6
         height: 10
       alignment: 0
@@ -381,7 +339,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 487
-        y: 850
+        y: 1354
         width: 6
         height: 11
       alignment: 0
@@ -402,7 +360,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 497
-        y: 850
+        y: 1354
         width: 6
         height: 11
       alignment: 0
@@ -423,7 +381,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 505
-        y: 850
+        y: 1354
         width: 6
         height: 10
       alignment: 0
@@ -444,7 +402,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 512
-        y: 850
+        y: 1354
         width: 6
         height: 10
       alignment: 0
@@ -461,11 +419,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GoreTilemap_17
+      name: Skull on spike
       rect:
         serializedVersion: 2
         x: 81
-        y: 816
+        y: 1320
         width: 11
         height: 31
       alignment: 0
@@ -486,7 +444,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 487
-        y: 831
+        y: 1335
         width: 6
         height: 10
       alignment: 0
@@ -507,7 +465,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 494
-        y: 831
+        y: 1335
         width: 6
         height: 10
       alignment: 0
@@ -528,7 +486,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 502
-        y: 831
+        y: 1335
         width: 6
         height: 11
       alignment: 0
@@ -549,7 +507,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 512
-        y: 831
+        y: 1335
         width: 6
         height: 11
       alignment: 0
@@ -570,7 +528,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 487
-        y: 818
+        y: 1322
         width: 6
         height: 10
       alignment: 0
@@ -591,7 +549,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 494
-        y: 818
+        y: 1322
         width: 6
         height: 10
       alignment: 0
@@ -612,7 +570,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 502
-        y: 818
+        y: 1322
         width: 6
         height: 11
       alignment: 0
@@ -633,7 +591,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 512
-        y: 818
+        y: 1322
         width: 6
         height: 11
       alignment: 0
@@ -654,7 +612,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 487
-        y: 804
+        y: 1308
         width: 6
         height: 10
       alignment: 0
@@ -675,7 +633,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 494
-        y: 804
+        y: 1308
         width: 6
         height: 10
       alignment: 0
@@ -696,7 +654,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 502
-        y: 804
+        y: 1308
         width: 6
         height: 11
       alignment: 0
@@ -717,7 +675,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 512
-        y: 804
+        y: 1308
         width: 6
         height: 11
       alignment: 0
@@ -734,11 +692,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GoreTilemap_30
+      name: BigSKull
       rect:
         serializedVersion: 2
         x: 75
-        y: 768
+        y: 1272
         width: 18
         height: 25
       alignment: 0
@@ -755,11 +713,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GoreTilemap_31
+      name: SkullBanner
       rect:
         serializedVersion: 2
         x: 106
-        y: 755
+        y: 1259
         width: 24
         height: 43
       alignment: 0
@@ -776,32 +734,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DeadTree2
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 685
-        width: 105
-        height: 106
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 727d38d2c55344a439fa129f386edb3a
-      internalID: 1323022923
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: GoreTilemap_33
       rect:
         serializedVersion: 2
         x: 432
-        y: 753
+        y: 1257
         width: 16
         height: 16
       alignment: 0
@@ -822,7 +759,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 475
-        y: 753
+        y: 1257
         width: 16
         height: 16
       alignment: 0
@@ -839,137 +776,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bloody_Ground_LeftCorner
-      rect:
-        serializedVersion: 2
-        x: 285
-        y: 750
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 260ff71cb0e8b0a4e9acd3f4822e0455
-      internalID: 462222447
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bloody_Ground
-      rect:
-        serializedVersion: 2
-        x: 308
-        y: 750
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 51705047576a4c5458fde6a73ba4552e
-      internalID: -1450683922
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bloody_Ground_RightCorner
-      rect:
-        serializedVersion: 2
-        x: 328
-        y: 750
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 07cf04d7bcbf0274bbbfb4cd53277a39
-      internalID: -380256511
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bloody_Ground_LeftCorner_Ver2
-      rect:
-        serializedVersion: 2
-        x: 350
-        y: 750
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b82870255225a1a428613808c11214fa
-      internalID: 1738311868
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bloody_Ground_Ver2
-      rect:
-        serializedVersion: 2
-        x: 373
-        y: 750
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f870c00c71fec694dbcc78aa49228001
-      internalID: -1542190031
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bloody_Ground_RightCorner_Ver2
-      rect:
-        serializedVersion: 2
-        x: 393
-        y: 750
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7642a721e341a3541bf2a32b3289ffbe
-      internalID: -1594131949
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GoreTilemap_41
+      name: Bloody_Ramp_Down
       rect:
         serializedVersion: 2
         x: 411
-        y: 750
+        y: 1254
         width: 16
         height: 16
       alignment: 0
@@ -990,7 +801,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 455
-        y: 753
+        y: 1257
         width: 16
         height: 15
       alignment: 0
@@ -1011,7 +822,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 81
-        y: 730
+        y: 1234
         width: 48
         height: 9
       alignment: 0
@@ -1028,32 +839,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bloody_Ground_LeftSide
-      rect:
-        serializedVersion: 2
-        x: 285
-        y: 732
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5abcefae45a40494f98770e58f88faef
-      internalID: 1847583662
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: GoreTilemap_45
       rect:
         serializedVersion: 2
         x: 308
-        y: 732
+        y: 1236
         width: 16
         height: 16
       alignment: 0
@@ -1070,53 +860,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bloody_Ground_RightSide
-      rect:
-        serializedVersion: 2
-        x: 328
-        y: 732
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 062721ce9bb934d4c9941e0d21711619
-      internalID: 1767329879
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bloody_Ground_LeftSide_Ver2
-      rect:
-        serializedVersion: 2
-        x: 350
-        y: 732
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fae4afd012cf6654eac78f6dccb17056
-      internalID: 1644928680
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: GoreTilemap_48
       rect:
         serializedVersion: 2
         x: 373
-        y: 732
+        y: 1236
         width: 16
         height: 16
       alignment: 0
@@ -1133,32 +881,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bloody_Ground_RightSide_Ver2
-      rect:
-        serializedVersion: 2
-        x: 393
-        y: 732
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8cf076e7ed3b3ff4aad5c52513a0f002
-      internalID: 522373365
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GoreTilemap_50
+      name: Bloody_Ramp_Up
       rect:
         serializedVersion: 2
         x: 412
-        y: 732
+        y: 1236
         width: 15
         height: 16
       alignment: 0
@@ -1179,7 +906,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 432
-        y: 732
+        y: 1236
         width: 16
         height: 16
       alignment: 0
@@ -1200,7 +927,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 456
-        y: 733
+        y: 1237
         width: 15
         height: 16
       alignment: 0
@@ -1221,7 +948,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 475
-        y: 733
+        y: 1237
         width: 16
         height: 16
       alignment: 0
@@ -1242,7 +969,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 81
-        y: 712
+        y: 1216
         width: 48
         height: 13
       alignment: 0
@@ -1263,7 +990,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 285
-        y: 714
+        y: 1218
         width: 16
         height: 16
       alignment: 0
@@ -1284,7 +1011,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 308
-        y: 714
+        y: 1218
         width: 16
         height: 16
       alignment: 0
@@ -1305,7 +1032,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 328
-        y: 714
+        y: 1218
         width: 16
         height: 16
       alignment: 0
@@ -1322,95 +1049,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bloody_Ground_Corner1_Ver2
-      rect:
-        serializedVersion: 2
-        x: 350
-        y: 714
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 67810893dc1d15747a44f75e22e5d928
-      internalID: 349159634
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bloody_Ground_Corner2_Ver2
-      rect:
-        serializedVersion: 2
-        x: 393
-        y: 714
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c0b470c362a26b34eb9c04d2bdeca0be
-      internalID: 689857671
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: E_Bloody_Ground
-      rect:
-        serializedVersion: 2
-        x: 411
-        y: 714
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: aa6ff5a2ff07645469c4e660f08465d4
-      internalID: 1638248556
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: E_Bloody_Ground_Corner2_Ver2
-      rect:
-        serializedVersion: 2
-        x: 432
-        y: 714
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dea0398e69f947b4ca8547a5dd117bab
-      internalID: 1624260590
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: GoreTilemap_62
       rect:
         serializedVersion: 2
         x: 475
-        y: 714
+        y: 1218
         width: 16
         height: 16
       alignment: 0
@@ -1431,7 +1074,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 82
-        y: 694
+        y: 1198
         width: 48
         height: 9
       alignment: 0
@@ -1448,34 +1091,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Darkness
+      name: TinyBone1
       rect:
         serializedVersion: 2
-        x: 285
-        y: 697
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ccb11ce5e34596b4ea61d6f6d3d1cf43
-      internalID: 725091193
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GoreTilemap_65
-      rect:
-        serializedVersion: 2
-        x: 313
-        y: 690
-        width: 8
-        height: 8
+        x: 326
+        y: 1199
+        width: 6
+        height: 5
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1490,12 +1112,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GoreTilemap_66
+      name: TinyBone2
       rect:
         serializedVersion: 2
-        x: 326
-        y: 695
-        width: 6
+        x: 334
+        y: 1200
+        width: 5
         height: 5
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1511,13 +1133,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GoreTilemap_67
+      name: D_Bloody_Corner_Left
       rect:
         serializedVersion: 2
-        x: 334
-        y: 696
-        width: 5
-        height: 5
+        x: 350
+        y: 1199
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1532,53 +1154,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bloody_Ground_Corner3_Ver2
-      rect:
-        serializedVersion: 2
-        x: 350
-        y: 695
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f49e798b4961dfc4ea2b0a57b72c97a9
-      internalID: -1575969862
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bloody_Ground_Corner4_Ver2
-      rect:
-        serializedVersion: 2
-        x: 393
-        y: 695
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9e95afc2c7b30e340bf8fc5efe071c7a
-      internalID: 1887550606
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: GoreTilemap_70
       rect:
         serializedVersion: 2
-        x: 432
-        y: 694
+        x: 455
+        y: 1198
         width: 16
         height: 16
       alignment: 0
@@ -1598,8 +1178,8 @@ TextureImporter:
       name: GoreTilemap_71
       rect:
         serializedVersion: 2
-        x: 455
-        y: 694
+        x: 475
+        y: 1198
         width: 16
         height: 16
       alignment: 0
@@ -1616,11 +1196,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GoreTilemap_72
+      name: N_Bloody_Ending_Left
       rect:
         serializedVersion: 2
-        x: 475
-        y: 694
+        x: 350
+        y: 1178
         width: 16
         height: 16
       alignment: 0
@@ -1637,53 +1217,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bloody_Ground_Corner5_Ver2
-      rect:
-        serializedVersion: 2
-        x: 350
-        y: 671
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0b0cef7d456346b4ebcacf03c303bb36
-      internalID: -1660331298
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bloody_Ground_Corner_Ver2
-      rect:
-        serializedVersion: 2
-        x: 393
-        y: 671
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 63ba653c952723b42828a48934f8fb3e
-      internalID: -503075418
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: GoreTilemap_75
       rect:
         serializedVersion: 2
-        x: 76
-        y: 635
+        x: 96
+        y: 1139
         width: 16
         height: 17
       alignment: 0
@@ -1700,13 +1238,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GoreTilemap_76
+      name: Deadtree3
       rect:
         serializedVersion: 2
-        x: 96
-        y: 635
-        width: 16
-        height: 17
+        x: 157
+        y: 1072
+        width: 105
+        height: 106
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1721,34 +1259,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DeadTree3
-      rect:
-        serializedVersion: 2
-        x: 157
-        y: 568
-        width: 105
-        height: 106
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 82050fa3c2814be42894044789501972
-      internalID: -1455442746
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: GoreTilemap_78
       rect:
         serializedVersion: 2
-        x: 272
-        y: 607
-        width: 139
-        height: 52
+        x: 426
+        y: 1098
+        width: 26
+        height: 60
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1766,10 +1283,10 @@ TextureImporter:
       name: GoreTilemap_79
       rect:
         serializedVersion: 2
-        x: 426
-        y: 594
-        width: 26
-        height: 60
+        x: 76
+        y: 1109
+        width: 16
+        height: 17
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1787,8 +1304,8 @@ TextureImporter:
       name: GoreTilemap_80
       rect:
         serializedVersion: 2
-        x: 76
-        y: 605
+        x: 96
+        y: 1109
         width: 16
         height: 17
       alignment: 0
@@ -1808,10 +1325,10 @@ TextureImporter:
       name: GoreTilemap_81
       rect:
         serializedVersion: 2
-        x: 96
-        y: 605
-        width: 16
-        height: 17
+        x: 461
+        y: 1098
+        width: 21
+        height: 25
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1829,10 +1346,10 @@ TextureImporter:
       name: GoreTilemap_82
       rect:
         serializedVersion: 2
-        x: 461
-        y: 594
-        width: 21
-        height: 25
+        x: 492
+        y: 1097
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1850,8 +1367,8 @@ TextureImporter:
       name: GoreTilemap_83
       rect:
         serializedVersion: 2
-        x: 492
-        y: 593
+        x: 514
+        y: 1097
         width: 16
         height: 16
       alignment: 0
@@ -1871,10 +1388,10 @@ TextureImporter:
       name: GoreTilemap_84
       rect:
         serializedVersion: 2
-        x: 514
-        y: 593
+        x: 58
+        y: 1084
         width: 16
-        height: 16
+        height: 9
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1892,8 +1409,8 @@ TextureImporter:
       name: GoreTilemap_85
       rect:
         serializedVersion: 2
-        x: 58
-        y: 580
+        x: 78
+        y: 1084
         width: 16
         height: 9
       alignment: 0
@@ -1913,8 +1430,8 @@ TextureImporter:
       name: GoreTilemap_86
       rect:
         serializedVersion: 2
-        x: 78
-        y: 580
+        x: 98
+        y: 1084
         width: 16
         height: 9
       alignment: 0
@@ -1934,10 +1451,10 @@ TextureImporter:
       name: GoreTilemap_87
       rect:
         serializedVersion: 2
-        x: 98
-        y: 580
-        width: 16
-        height: 9
+        x: 276
+        y: 1041
+        width: 140
+        height: 56
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1956,9 +1473,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 576
-        height: 259
+        y: 504
+        width: 577
+        height: 279
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1973,11 +1490,74 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: E_Bloody_Ground_Bottom
+      name: Deadtree1
       rect:
         serializedVersion: 2
-        x: 411
-        y: 695
+        x: 154
+        y: 1306
+        width: 105
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86e1e6b5efc5c514cbf09ee008d7097c
+      internalID: -1354376678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deadtree4
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 1299
+        width: 139
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e2a396ff8370004ab430d78936f304b
+      internalID: 879895570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Deadtree2
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1189
+        width: 105
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42dcb81266e51f047945f672dec60d55
+      internalID: -1733614188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_Bloody_Corner_Left
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 1254
         width: 16
         height: 16
       alignment: 0
@@ -1987,20 +1567,629 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bfd8552404e1ca04a8d4375dd9561fa0
-      internalID: -1189477064
+      spriteID: 6a66956b8e9d0eb41b77fbbc7c8dfc31
+      internalID: 437022260
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GoreTilemap_1
+      name: P_Bloody_Ground
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 1254
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b196b3f122595a4586ccb6365b31b10
+      internalID: 384725611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_Bloody_Corner_Right
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 1254
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89b429c486e33f148916472f11632064
+      internalID: 275546489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N_Bloody_Corner_Left
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 1254
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dd87b743e37a2a4eb61b6c9895a9fa9
+      internalID: -2039356474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N_Bloody_Ground
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 1254
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3413b94ceeff95845aa7dd98c6d429b8
+      internalID: -187705476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N_Bloody_Corner_Right
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 1254
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2e729d17a0b2a242a2c597a11760d94
+      internalID: 2138726483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_Bloody_Side_Left
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 1236
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fa1a8cc803127143bc7320e190b8708
+      internalID: 1457704440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P_Bloody_Side_Right
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 1236
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9648ca427e7c4fb48a994b3010ea88d6
+      internalID: 2051237307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N_Bloody_Side_Left
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 1236
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17391fdad88c3634c9436139c305865f
+      internalID: -1280163520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N_Bloody_Side_Right
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 1236
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 808b5894d70dc4447bc4f7bef85e01a5
+      internalID: 1533167457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N_Bloody_InvertedCorner_Left
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 1218
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54b9aad4d2624bb4f9b2c5dd4ab50bbb
+      internalID: 1813426275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N_Bloody_InvertedCorner_Lef
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 1218
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e1e7f031a1a87c4995548b4dc8cf9e4
+      internalID: -908668780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D_Bloody_Ground
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 1218
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 808bce9f8bd83084787ab5b454f26501
+      internalID: -53232402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N_Bloody_InvertedCorner_Right
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 1218
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6f98a72bfa1f3c40a906077a12eb098
+      internalID: 1435795237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TinySkull
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 1194
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e043a7d19415a94398218f77a64931b
+      internalID: 50572942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D_Bloody_Corner_Right
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 1199
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56c320631d76c7f4fa69b0dcf8520f07
+      internalID: -1096139876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoreTilemap_69
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 1198
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 086342f1ad4e24b428ba186511ad55be
+      internalID: -378404159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N_Bloody_Ending_Right
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 1178
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4587b0d6fdeda35429f42940a3f0daab
+      internalID: -707271725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoreTilemap_74
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 1139
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cae228befd48e3444b812fb757d6fd91
+      internalID: 1547824482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoreTilemap_77
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 1111
+        width: 139
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bffa67eb533bc2b4b99b3d206d67cf3a
+      internalID: 2039621395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoreTilemap_89
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 0
+        width: 549
+        height: 279
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a323b0e350889744be3ee26ec4b893f
+      internalID: 2077698311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoreTilemap_90
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 504
+        width: 575
+        height: 279
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3aa1b45e353e4a048965dedddab98305
+      internalID: 726063297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoreTilemap_91
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 504
+        width: 576
+        height: 279
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f18c10734e4f59240b3fdb1f214eb204
+      internalID: 1720298989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoreTilemap_92
       rect:
         serializedVersion: 2
         x: 576
         y: 0
         width: 576
-        height: 259
+        height: 279
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71f114af1d439564a95b81c0e92ccdf3
+      internalID: -1429783530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SingleChain
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 1408
+        width: 3
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 436bebedfd8d6894daecaa15a69888f7
+      internalID: -2006758272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N_Bloody_Corner_Left2
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 1180
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9c9348d4f2bea140a46065d70ac9c1e
+      internalID: 2083378884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N_Bloody_Corner_Right2
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 1180
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa182ffb35b8e5340831f27c4617b45b
+      internalID: 1634422013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N_Bloody_InvertedCorner_Left2
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 1161
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e458b75325f1318498afe39b33d430a5
+      internalID: 94681482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D_Bloody_Ground2
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 1161
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e84bcf9ead5716e4b885b7b7ae8cd747
+      internalID: -1265545631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N_Bloody_InvertedCorner_Right2
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 1161
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15b27e81d0e1c6a41a8a57af51a5ebe9
+      internalID: 1412143272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Darkness
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 1200
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2008,8 +2197,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 86e1e6b5efc5c514cbf09ee008d7097c
-      internalID: -1354376678
+      spriteID: d0b9afadfff357742ad76509bb9d3a2b
+      internalID: 2064878583
       vertices: []
       indices: 
       edges: []
@@ -2028,94 +2217,103 @@ TextureImporter:
       GoreTilemap_28: -244362968
       GoreTilemap_54: -1135879583
       GoreTilemap_48: 635618896
-      Bloody_Ground_LeftCorner: 462222447
+      GoreTilemap_92: -1429783530
+      N_Bloody_InvertedCorner_Left2: 94681482
       GoreTilemap_53: 1958975051
       GoreTilemap_82: 1584622496
-      GoreTilemap_50: -286370377
+      Skull on spike: -1221004012
       GoreTilemap_45: -1303161394
+      Small Skull: 348145509
       GoreTilemap_42: -1767992361
       GoreTilemap_23: 2096374525
       GoreTilemap_62: 2031531544
-      Bloody_Ground_RightSide: 1767329879
+      Bloody_Ramp_Up: -286370377
       GoreTilemap_14: 526761958
+      SkullBanner: 2112927544
       GoreTilemap_34: 621685398
       GoreTilemap_26: -916303163
+      GoreTilemap_69: -378404159
       GoreTilemap_80: 1499194400
       GoreTilemap_8: -216034427
+      N_Bloody_Corner_Right: 2138726483
       GoreTilemap_12: -1418728696
-      Bloody_Ground_RightSide_Ver2: 522373365
       GoreTilemap_10: -444786476
-      Bloody_Ground_Corner5_Ver2: -1660331298
       GoreTilemap_7: 1826574655
-      Bloody_Ground: -1450683922
+      Deadtree3: 1499517520
       GoreTilemap_21: -57249083
-      Bloody_Ground_Corner2_Ver2: 689857671
-      GoreTilemap_66: 2087254033
       GoreTilemap_63: -2038818942
-      Bloody_Ground_RightCorner: -380256511
+      N_Bloody_Corner_Left2: 2083378884
       GoreTilemap_29: 645570543
-      GoreTilemap_41: 1650572357
+      TinyBone1: -1982964426
       GoreTilemap_16: 1085497806
-      E_Bloody_Ground_Bottom: -1189477064
+      D_Bloody_Corner_Right: -1096139876
       GoreTilemap_18: 844665759
-      E_Bloody_Ground_Corner2_Ver2: 1624260590
       GoreTilemap_52: -218783199
       GoreTilemap_81: -2048897554
+      D_Bloody_Corner_Left: 833016013
+      GoreTilemap_91: 1720298989
+      N_Bloody_InvertedCorner_Left: 1813426275
       GoreTilemap_22: -1469406744
       GoreTilemap_85: -927148608
       GoreTilemap_3: 1172880389
       GoreTilemap_15: 406048513
       GoreTilemap_25: -701819757
       GoreTilemap_83: -667220184
-      Bloody_Ground_LeftCorner_Ver2: 1738311868
-      GoreTilemap_88: 1111070491
+      N_Bloody_InvertedCorner_Lef: -908668780
+      SingleChain: -2006758272
       GoreTilemap_43: -1336978370
-      GoreTilemap_31: 2112927544
+      GoreTilemap_88: 1111070491
+      GoreTilemap_56: 1913889066
       GoreTilemap_20: 1759058618
       GoreTilemap_57: 1599369270
-      GoreTilemap_72: 816768870
-      GoreTilemap_56: 1913889066
+      N_Bloody_Side_Right: 1533167457
       GoreTilemap_51: -2114792540
+      P_Bloody_Side_Right: 2051237307
+      P_Bloody_Side_Left: 1457704440
       GoreTilemap_87: -374265896
-      Bloody_Ground_Corner4_Ver2: 1887550606
-      Bloody_Ground_Corner3_Ver2: -1575969862
+      P_Bloody_Corner_Right: 275546489
+      TinyBone2: 2087254033
+      N_Bloody_Side_Left: -1280163520
       GoreTilemap_84: 1162777126
-      Bloody_Ground_Corner1_Ver2: 349159634
-      GoreTilemap_0: 348145509
+      Deadtree1: -1354376678
+      Deadtree2: -1733614188
+      BigSKull: 1073152627
       GoreTilemap_9: -1354521601
+      TinySkull: 50572942
       GoreTilemap_79: -445672339
-      DeadTree1: 1526581680
-      DeadTree3: -1455442746
-      DeadTree2: 1323022923
+      GoreTilemap_90: 726063297
+      D_Bloody_Ground2: -1265545631
       GoreTilemap_75: 1984097472
+      Bloody_Ramp_Down: 1650572357
       GoreTilemap_13: -1289109817
-      E_Bloody_Ground: 1638248556
+      P_Bloody_Corner_Left: 437022260
       GoreTilemap_86: -1964870912
       GoreTilemap_71: -136333000
-      Darkness: 725091193
+      SkeletonRemains: 1477289488
+      GoreTilemap_89: 2077698311
+      Darkness: 2064878583
+      Deadtree4: 879895570
       GoreTilemap_55: -2060821101
       GoreTilemap_33: 1268533764
-      GoreTilemap_65: -1982964426
+      N_Bloody_InvertedCorner_Right: 1435795237
       GoreTilemap_24: 351308493
       GoreTilemap_6: 744395073
-      GoreTilemap_1: -1354376678
       GoreTilemap_27: -1966630253
-      Bloody_Ground_LeftSide_Ver2: 1644928680
+      GoreTilemap_77: 2039621395
+      N_Bloody_Corner_Left: -2039356474
+      N_Bloody_Ending_Left: 816768870
       GoreTilemap_78: -1377002125
       GoreTilemap_19: 1255781049
-      GoreTilemap_4: 1477289488
-      Bloody_Ground_RightCorner_Ver2: -1594131949
+      D_Bloody_Ground: -53232402
+      N_Bloody_Ending_Right: -707271725
       GoreTilemap_70: -1361166901
-      DeadTree4: -1161667932
-      GoreTilemap_76: 1499517520
-      GoreTilemap_30: 1073152627
+      GoreTilemap_74: 1547824482
+      N_Bloody_Ground: -187705476
+      N_Bloody_Corner_Right2: 1634422013
       GoreTilemap_11: 2110134814
+      N_Bloody_InvertedCorner_Right2: 1412143272
       GoreTilemap_5: 1863073891
-      Bloody_Ground_Ver2: -1542190031
-      GoreTilemap_17: -1221004012
-      GoreTilemap_67: 833016013
-      Bloody_Ground_Corner_Ver2: -503075418
-      Bloody_Ground_LeftSide: 1847583662
+      P_Bloody_Ground: 384725611
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -7,9 +7,9 @@ onBoardingDoNotAskAgain = true
 showPackageIndexes = false
 showStatusBar = false
 scopes = {
-	"last_search.2138236A" = "demongiant_trans"
+	"last_search.2138236A" = "n_bloody_corner"
 	"OpenInspectorPreview.2138236A" = "0"
-	"currentGroup.2138236A" = "asset"
+	"currentGroup.2138236A" = "all"
 }
 providers = {
 	adb = {
@@ -56,6 +56,16 @@ providers = {
 objectSelectors = {
 }
 recentSearches = [
+	"b"
+	"da"
+	"D"
+	"N_Bloody_Corner_Left2"
+	"c"
+	"i"
+	"n"
+	"D_Bloody_Ground"
+	"N_Bloody_Corner_Right2"
+	"."
 	"dem"
 	"fl"
 	"cl"

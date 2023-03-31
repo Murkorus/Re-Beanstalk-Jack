@@ -74,7 +74,8 @@ public class PlayerCombatController : MonoBehaviour
     [SerializeField] private List<GameObject> weaponWheelSlots;
     [SerializeField] private List<float> weaponWheelSlotsDistance;
     [SerializeField] private GameObject weaponWheelGO;
-    private float smallestNumber;
+    private float smallestDistance;
+    private bool usingWeaponWheel;
 
 
 
@@ -122,7 +123,7 @@ public class PlayerCombatController : MonoBehaviour
     }
 
 
-
+#region Melee
     public void heavyAttack() {
         isPerformingHeavyAttack = true;
         StartCoroutine(eventTime(isPerformingHeavyAttack, heavyAttackTime));
@@ -135,7 +136,7 @@ public class PlayerCombatController : MonoBehaviour
         StartCoroutine(eventTime(isPerformingLightAttack, lightAttackTime));
         Debug.Log("Light attack");
     }
-
+#endregion
 
     public void slingshot() {
         isChargingSlingshot = true;
@@ -277,8 +278,10 @@ public class PlayerCombatController : MonoBehaviour
         GetClosestSlot();
         if(Input.GetKey(KeyCode.Q)) {
             weaponWheelGO.SetActive(true);
+            usingWeaponWheel = true;
         } else {
             weaponWheelGO.SetActive(false);
+            usingWeaponWheel = false;   
         }
     }
 
@@ -288,16 +291,18 @@ public class PlayerCombatController : MonoBehaviour
 
 
     public void GetClosestSlot() {
-        smallestNumber = Mathf.Infinity;
-        for(int i = 0; i < weaponWheelSlots.Count; i++ ) {
+        if(usingWeaponWheel) {
+            smallestDistance = Mathf.Infinity;
+            for(int i = 0; i < weaponWheelSlots.Count; i++ ) {
                 float distance = Vector2.Distance(Input.mousePosition, weaponWheelSlots[i].GetComponent<RectTransform>().transform.position);
                 weaponWheelSlotsDistance[i] = distance;
                 Debug.Log("Distance to " + weaponWheelSlots[i] + distance);
-                if(distance < smallestNumber) {
-                    smallestNumber = distance;
+                if(distance < smallestDistance) {
+                    smallestDistance = distance;
                     weaponWheelselected = i;
                 }
             }
+        }
     }
     
 
