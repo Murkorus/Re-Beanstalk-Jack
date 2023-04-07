@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerStats : MonoBehaviour
 {
-    public float health;
+    public int health;
     public int pebbles;
     public int platformBeans;
     void Start()
@@ -20,11 +20,17 @@ public class PlayerStats : MonoBehaviour
         if(health <= 0) {
             PlayerDeath();
         }
+
+        if (Input.GetKeyDown(KeyCode.O))
+        {
+            takeDamage(1);
+        }
     }
 
     #region health
-    public void takeDamage(float amount) {
+    public void takeDamage(int amount) {
         health -= amount;
+        GameObject.Find("Player").GetComponentInChildren<HealthDisplay>().updateHealth();
     }
 
     public void PlayerDeath() {

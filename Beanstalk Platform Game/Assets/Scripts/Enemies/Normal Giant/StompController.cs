@@ -19,7 +19,7 @@ public class StompController : MonoBehaviour
     [Header("Stomp settings")]
     public bool isLeft;
     [SerializeField] private float speed;
-    [SerializeField] private float damage;
+    [SerializeField] private int damage;
 
 
     [Header("Collision Detection")]
@@ -86,10 +86,5 @@ public class StompController : MonoBehaviour
             stompParticles1.startColor = randColor;
             stompParticles2.startColor = randColor;
         }
-
-
-        
-
-
     }
 }

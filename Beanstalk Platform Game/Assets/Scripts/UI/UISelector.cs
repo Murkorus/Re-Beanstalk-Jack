@@ -88,7 +88,7 @@ public class UISelector : MonoBehaviour
             if (i == currentSelected)
             {
                 ButtonsList[i].GetComponent<Image>().color = selectedColor;
-                //selectedUIAnimation.transform.position = ButtonsList[i].transform.position;
+                selectedUIAnimation.transform.position = ButtonsList[i].transform.position;
             }
             else
             {

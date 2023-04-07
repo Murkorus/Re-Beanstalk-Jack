@@ -130,7 +130,7 @@ TextureImporter:
         serializedVersion: 2
         x: 576
         y: 1008
-        width: 1152
+        width: 576
         height: 264
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -2191,7 +2191,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2199,6 +2199,27 @@ TextureImporter:
       bones: []
       spriteID: d0b9afadfff357742ad76509bb9d3a2b
       internalID: 2064878583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoreTilemap_0
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1008
+        width: 576
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 314aed6d2ede9da4fad0a802f9fbba50
+      internalID: -487730375
       vertices: []
       indices: 
       edges: []
@@ -2282,6 +2303,7 @@ TextureImporter:
       TinySkull: 50572942
       GoreTilemap_79: -445672339
       GoreTilemap_90: 726063297
+      GoreTilemap_0: -487730375
       D_Bloody_Ground2: -1265545631
       GoreTilemap_75: 1984097472
       Bloody_Ramp_Down: 1650572357

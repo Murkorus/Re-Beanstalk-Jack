@@ -3171,7 +3171,7 @@ MonoBehaviour:
   - {fileID: 876113817}
   - {fileID: 218255508}
   - {fileID: 327388115}
-  selectedUIAnimation: {fileID: 0}
+  selectedUIAnimation: {fileID: 1424075856}
   selectedColor: {r: 0.7294118, g: 1, b: 1, a: 1}
   normalColor: {r: 1, g: 1, b: 1, a: 1}
   isUsingMouse: 0
@@ -5297,7 +5297,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1424075857
 RectTransform:
   m_ObjectHideFlags: 0

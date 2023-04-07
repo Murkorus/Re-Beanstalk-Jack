@@ -121,7 +121,7 @@ public class SaveSystem : MonoBehaviour
     {
         save.currentSave_save = saveNum;
         save.currentLevel_save = 4;
-        save.playerHealth = 100;
+        save.playerHealth = 6;
         save.pebbles = 25;
         save.platform = 0;
         save.fire = 0;
@@ -154,7 +154,7 @@ public class SaveSystem : MonoBehaviour
         public int currentLevel_save;
         public Vector3 playerPos_save;
 
-        public float playerHealth;
+        public int playerHealth;
         public int pebbles;
         public int platform;
         public int fire;

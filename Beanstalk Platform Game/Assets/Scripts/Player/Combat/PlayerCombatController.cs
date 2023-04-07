@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class PlayerCombatController : MonoBehaviour
@@ -76,6 +77,7 @@ public class PlayerCombatController : MonoBehaviour
     [SerializeField] private GameObject weaponWheelGO;
     private float smallestDistance;
     private bool usingWeaponWheel;
+    private TextMeshProUGUI weaponWheelText;
 
 
 
@@ -88,6 +90,7 @@ public class PlayerCombatController : MonoBehaviour
     void Start()
     {
         InitializeSlingshot();
+        weaponWheelText = GameObject.Find("SelectedInWeaponWheel").GetComponent<TextMeshProUGUI>();
     }
 
     // Update is called once per frame
@@ -302,6 +305,18 @@ public class PlayerCombatController : MonoBehaviour
                     weaponWheelselected = i;
                 }
             }
+
+            if (weaponWheelselected == 0)
+                currentProjectile = "normal";
+            if (weaponWheelselected == 1)
+                currentProjectile = "platform";
+            if (weaponWheelselected == 2)
+                currentProjectile = "fire";
+            if (weaponWheelselected == 3)
+                currentProjectile = "ice";
+            if (weaponWheelselected == 4)
+                currentProjectile = "mind";
+            weaponWheelText.text = currentProjectile;
         }
     }
     
