@@ -47,16 +47,14 @@ public class PlayerCombatController : MonoBehaviour
     public float projectileForce;
 
     public GameObject slingshotPebbleGO;
-    public int slingshotPebblesCount;
 
     public GameObject slingshotPlatformGO;
-    public int slingshotPlatformsCount;
 
     public GameObject slingshotFireGO;
-    public int slingshotFireCount;
 
     public GameObject slingshotIceGO;
-    public int slingshotIceCount;
+
+    public GameObject slingshotMindGO;
 
     [Space(10)]
 
@@ -211,6 +209,30 @@ public class PlayerCombatController : MonoBehaviour
                                 projectileForce = Mathf.Clamp(projectileForce, 2, 4);
                             }
                         }
+                        if (currentProjectile == "fire")
+                        {
+                            if(GameObject.Find("Player").GetComponent<PlayerStats>().fireBean > 0) {
+                                chargeTime += Time.deltaTime * 3;
+                                projectileForce = chargeTime * 7.5f + 2;
+                                projectileForce = Mathf.Clamp(projectileForce, 2, 10);
+                            }
+                        }
+                        if (currentProjectile == "ice")
+                        {
+                            if(GameObject.Find("Player").GetComponent<PlayerStats>().iceBean > 0) {
+                                chargeTime += Time.deltaTime * 3;
+                                projectileForce = chargeTime * 7.5f + 2;
+                                projectileForce = Mathf.Clamp(projectileForce, 2, 10);
+                            }
+                        }
+                        if (currentProjectile == "mind")
+                        {
+                            if(GameObject.Find("Player").GetComponent<PlayerStats>().mindBean > 0) {
+                                chargeTime += Time.deltaTime * 3;
+                                projectileForce = chargeTime * 7.5f + 2;
+                                projectileForce = Mathf.Clamp(projectileForce, 2, 10);
+                            }
+                        }
                     }
                     if (Input.GetMouseButtonUp(1))
                     {
@@ -260,6 +282,30 @@ public class PlayerCombatController : MonoBehaviour
                 GameObject newProjectile = Instantiate(slingshotPlatformGO, projectilePoint.position, projectilePoint.rotation);
                 newProjectile.GetComponent<Rigidbody2D>().velocity = slingshotPoint.transform.right * projectileForce;
                 GameObject.Find("Player").GetComponent<PlayerStats>().removePlatform(1);
+            }
+        }
+        if(currentProjectile == "fire")
+        {
+            if(GameObject.Find("Player").GetComponent<PlayerStats>().fireBean > 0)  {
+                GameObject newProjectile = Instantiate(slingshotFireGO, projectilePoint.position, projectilePoint.rotation);
+                newProjectile.GetComponent<Rigidbody2D>().velocity = slingshotPoint.transform.right * projectileForce;
+                GameObject.Find("Player").GetComponent<PlayerStats>().removeFire(1);
+            }
+        }
+        if(currentProjectile == "ice")
+        {
+            if(GameObject.Find("Player").GetComponent<PlayerStats>().iceBean > 0)  {
+                GameObject newProjectile = Instantiate(slingshotIceGO, projectilePoint.position, projectilePoint.rotation);
+                newProjectile.GetComponent<Rigidbody2D>().velocity = slingshotPoint.transform.right * projectileForce;
+                GameObject.Find("Player").GetComponent<PlayerStats>().removeIce(1);
+            }
+        }
+        if(currentProjectile == "mind")
+        {
+            if(GameObject.Find("Player").GetComponent<PlayerStats>().mindBean > 0)  {
+                GameObject newProjectile = Instantiate(slingshotMindGO, projectilePoint.position, projectilePoint.rotation);
+                newProjectile.GetComponent<Rigidbody2D>().velocity = slingshotPoint.transform.right * projectileForce;
+                GameObject.Find("Player").GetComponent<PlayerStats>().removeMind(1);
             }
         }
     }

@@ -3026,6 +3026,37 @@ Transform:
   m_Father: {fileID: 509014913}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &150440069
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 150440070}
+  m_Layer: 8
+  m_Name: BackDetection
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &150440070
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 150440069}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.5, y: -0.85, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 982214702}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &177140701
 GameObject:
   m_ObjectHideFlags: 0
@@ -3109,6 +3140,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 113763639}
   m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &233941350
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 233941351}
+  m_Layer: 8
+  m_Name: FrontDetection
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &233941351
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 233941350}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.5, y: -0.85, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 982214702}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &249129222
 GameObject:
@@ -4487,7 +4549,9 @@ Transform:
   m_LocalPosition: {x: 4.49, y: 0.72, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 233941351}
+  - {fileID: 150440070}
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4503,6 +4567,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abba720c555b31247814ab0ca378beab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 982214700}
+  RB: {fileID: 982214704}
   currentState: 0
   isAngry: 0
   isPerformingAttack: 0
@@ -4515,7 +4581,21 @@ MonoBehaviour:
   runSpeed: 6
   AccelAmount: 12
   DeccelAmount: 0
-  RB: {fileID: 982214704}
+  isAvoiding: 0
+  avoidDistance: 25.49
+  avoidDistanceMax: 34.5
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  isChecking: 0
+  hitPlayer: 0
+  FrontDetection: {fileID: 233941350}
+  BackDetection: {fileID: 150440069}
+  canMoveBack: 0
+  canMoveForward: 0
 --- !u!50 &982214704
 Rigidbody2D:
   serializedVersion: 4
@@ -6648,13 +6728,10 @@ MonoBehaviour:
   currentProjectile: normal
   projectileForce: 0
   slingshotPebbleGO: {fileID: 572257231913690876, guid: 59e8ec17c13e0964b96b2c2c3c33d332, type: 3}
-  slingshotPebblesCount: 0
   slingshotPlatformGO: {fileID: 572257231913690876, guid: 59e8ec17c13e0964b96b2c2c3c33d332, type: 3}
-  slingshotPlatformsCount: 0
   slingshotFireGO: {fileID: 0}
-  slingshotFireCount: 0
   slingshotIceGO: {fileID: 0}
-  slingshotIceCount: 0
+  slingshotMindGO: {fileID: 0}
   dodgeForce: 375
   dodgeTime: 0.15
   iFrames: 0
@@ -6695,6 +6772,10 @@ MonoBehaviour:
   health: 6
   pebbles: 5
   platformBeans: 5
+  fireBean: 0
+  iceBean: 0
+  mindBean: 0
+  screenshake: {fileID: 1999821892}
 --- !u!58 &1857506017
 CircleCollider2D:
   m_ObjectHideFlags: 0

@@ -56,6 +56,11 @@ public class SaveSystem : MonoBehaviour
         save.currentLevel_save = currentLevel;
         save.playerPos_save = GameObject.Find("Player").transform.position;
         save.playerHealth = GameObject.Find("Player").GetComponent<PlayerStats>().health;
+        save.pebbles = GameObject.Find("Player").GetComponent<PlayerStats>().pebbles;
+        save.platform = GameObject.Find("Player").GetComponent<PlayerStats>().platformBeans;
+        save.fire = GameObject.Find("Player").GetComponent<PlayerStats>().fireBean;
+        save.ice = GameObject.Find("Player").GetComponent<PlayerStats>().iceBean;
+        save.mind = GameObject.Find("Player").GetComponent<PlayerStats>().mindBean;
 
         WriteSave(saveNum);
     }
@@ -126,6 +131,7 @@ public class SaveSystem : MonoBehaviour
         save.platform = 0;
         save.fire = 0;
         save.ice = 0;
+        save.mind = 0;
         string json = JsonUtility.ToJson(save);
         Debug.Log(json);
         string path = Application.persistentDataPath + "/Save" + saveNum + ".json";
@@ -159,6 +165,7 @@ public class SaveSystem : MonoBehaviour
         public int platform;
         public int fire;
         public int ice;
+        public int mind;
     }
 
     [System.Serializable]
