@@ -149,10 +149,11 @@ public class PlayerCombatController : MonoBehaviour
     public void dodge() {
         isDodging = true;
         StartCoroutine(dodgeRoutine(dodgeTime));
-        StartCoroutine(eventTime(isDodging, 2));
+        StartCoroutine(eventTime(isDodging, 1));
     }
 
-    IEnumerator dodgeRoutine(float time) {
+    IEnumerator dodgeRoutine(float time)
+    {
         pm.isDodging = true;
         pm.RB.velocity = new Vector2(0, 0);
         if(pm.IsFacingRight) {
@@ -163,9 +164,8 @@ public class PlayerCombatController : MonoBehaviour
         }
         yield return new WaitForSeconds(time);
         pm.isDodging = false;
-        isDodging = false;
-
     }
+    
 #endregion
 
 
@@ -345,7 +345,6 @@ public class PlayerCombatController : MonoBehaviour
             for(int i = 0; i < weaponWheelSlots.Count; i++ ) {
                 float distance = Vector2.Distance(Input.mousePosition, weaponWheelSlots[i].GetComponent<RectTransform>().transform.position);
                 weaponWheelSlotsDistance[i] = distance;
-                Debug.Log("Distance to " + weaponWheelSlots[i] + distance);
                 if(distance < smallestDistance) {
                     smallestDistance = distance;
                     weaponWheelselected = i;
@@ -378,6 +377,11 @@ public class PlayerCombatController : MonoBehaviour
         }
         if(value = isPerformingLightAttack) {
             isPerformingLightAttack = false;
+        }
+
+        if (value = isDodging)
+        {
+            isDodging = false;
         }
     }
 }

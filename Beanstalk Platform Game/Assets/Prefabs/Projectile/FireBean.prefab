@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2534492435410789320}
   - component: {fileID: 2119540907799584942}
   - component: {fileID: 4376695095872806017}
+  - component: {fileID: 6154590367061240580}
   m_Layer: 0
   m_Name: FireBean
   m_TagString: Untagged
@@ -106,3 +107,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
+--- !u!114 &6154590367061240580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 572257231913690876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e9b00f6793e11f428933a2442bd2c0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

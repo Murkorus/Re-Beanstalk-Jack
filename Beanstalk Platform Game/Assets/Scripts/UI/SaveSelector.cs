@@ -26,7 +26,14 @@ public class SaveSelector : MonoBehaviour
         getSceneNames();
 
         infoFile = savesys.getInformation();
+        UpdateButtons();
+    }
 
+    // Update is called once per frame
+    public void UpdateButtons()
+    {
+        infoFile = savesys.getInformation();
+        
         foreach (Transform child in saveSlot1.transform)
         {
             if(child.name == "Progress")
@@ -67,12 +74,6 @@ public class SaveSelector : MonoBehaviour
                 }
             }
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     public void getSceneNames()

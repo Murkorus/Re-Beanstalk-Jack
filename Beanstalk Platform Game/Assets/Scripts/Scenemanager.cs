@@ -7,18 +7,6 @@ using static MainMenuManager;
 
 public class Scenemanager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
 
     public void switchToScene(int sceneIndex)
     {
@@ -37,8 +25,6 @@ public class Scenemanager : MonoBehaviour
 
 
     #region FIELDS
-    public GameObject fadeInGO;
-    public Color transparentColor;
 
     public GameObject CanvasGO;
 

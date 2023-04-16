@@ -104,7 +104,7 @@ public class BabyGiant : MonoBehaviour
 
 
         //player collsion
-        if (isChecking && !hitPlayer)
+        if (isChecking && !hitPlayer && !GameObject.Find("Player").GetComponent<PlayerCombatController>().isDodging)
         {
             if(Physics2D.OverlapCircle(transform.position, 0.5f, playerLayer))
             {
@@ -150,6 +150,11 @@ public class BabyGiant : MonoBehaviour
             {
                 Debug.Log("Player is too close");
                 StartCoroutine(dashAttack());
+            }
+
+            if (xDistance > avoidDistanceMax)
+            {
+                currentState = 1;
             }
         }
     }

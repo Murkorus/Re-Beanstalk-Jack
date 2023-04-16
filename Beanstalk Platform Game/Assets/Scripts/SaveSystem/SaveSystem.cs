@@ -18,6 +18,8 @@ public class SaveSystem : MonoBehaviour
     public int currentLevel;
     public Vector3 playerPos;
 
+    public int currentSelectedSave;
+
     public string[] sceneNames;
 
 
@@ -26,7 +28,7 @@ public class SaveSystem : MonoBehaviour
 
     void Awake()
     {
-        DontDestroyOnLoad(transform.gameObject);
+        
     }
 
     public void Start()
@@ -38,6 +40,8 @@ public class SaveSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(GameObject.Find("UISelector"))
+            currentSelectedSave = GameObject.Find("UISelector").GetComponent<UISelector>().currentSelected + 1;
         if (Input.GetKeyDown(KeyCode.L))
         {
             SaveAll(currentSave);
@@ -45,6 +49,11 @@ public class SaveSystem : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.K))
         {
             Load(currentSave); 
+        }
+
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            deleteSave(currentSelectedSave);
         }
     }
 
@@ -77,6 +86,7 @@ public class SaveSystem : MonoBehaviour
     //Load
     public void Load(int saveNum)
     {
+        DontDestroyOnLoad(transform.gameObject);
         StartCoroutine(loadLevel(saveNum));
     }
 
@@ -139,6 +149,16 @@ public class SaveSystem : MonoBehaviour
 
         Load(saveNum);
     }
+    
+    
+    //Delete save
+    public void deleteSave(int saveNum)
+    {
+        string path = Application.persistentDataPath + "/Save" + saveNum + ".json";
+        File.Delete(path);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
 
 
 

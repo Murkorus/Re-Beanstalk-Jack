@@ -34,16 +34,9 @@ public class PlayerMovement : MonoBehaviour
 	private bool _isJumping;
 	private float _jumpTime;
 	public float maxJumpTime;
-
-	[Header("Coyote time")]
-	private float _coyoteTimeLeft;
-	public float coyoteTime;
 	
-	public bool IsWallJumping;
-	public bool _isJumpFalling;
 	public bool isGrounded;
-
-
+	
 	[Header("Ledge Settings")]
 	public GameObject WallDetection;
 	public bool wallDetected;
@@ -53,6 +46,7 @@ public class PlayerMovement : MonoBehaviour
 	private bool freezePlayer;
 	public bool isHanging;
 	private bool isClimbing;
+	private bool hasPositioned;
 
 	[Header("Ledge offset")]
 	//Ray offset
@@ -78,15 +72,12 @@ public class PlayerMovement : MonoBehaviour
 
 	private void Update()
 	{
-		if(!isDodging) {
-			
-		}
 		LastOnGroundTime -= Time.deltaTime;
 
-		if(!freezePlayer)
+		if(!freezePlayer || !isDodging)
         	moveInput.x = Input.GetAxisRaw("Horizontal");
 
-		if (moveInput.x != 0)
+		if (moveInput.x != 0 && !isHanging)
 			CheckDirectionToFace(moveInput.x > 0);
 		
 		//Ground Check
@@ -100,13 +91,12 @@ public class PlayerMovement : MonoBehaviour
 			isGrounded = false;
 		}
 
-		
+		//Jump
 		if(Input.GetButtonDown("Jump") && isGrounded) {
 			RB.velocity = new Vector2(RB.velocity.x, RB.velocity.y + jumpForce);
 		}
 
 		//Ledge detection
-		
 		if(Physics2D.OverlapBox(WallDetection.transform.position, WallDetection.transform.localScale, 0, _groundLayer)) {
 			wallDetected = true;
 		} else {
@@ -123,29 +113,43 @@ public class PlayerMovement : MonoBehaviour
 		RaycastHit2D distanceToGround = Physics2D.Raycast(this.groundCheckGO.transform.position, -Vector2.up);
         if (ledgeDetected && !wallDetected && distanceToGround.distance > 0.75f && !isClimbing)
         {
-            if (Input.GetButtonDown("Jump"))
+            if (Input.GetButton("Jump"))
             {
                 //Freeze the player
                 isHanging = true;
                 Freeze(true);
 
                 //Position player
-                
-				if(IsFacingRight) {
-					RaycastHit2D hit = Physics2D.Raycast(transform.position + _rayOffsetRight, -Vector2.up);
-                	transform.position = hit.point - new Vector2(_hangingOffset.x, _hangingOffset.y);
-				}
-				if(!IsFacingRight) {
-					RaycastHit2D hit = Physics2D.Raycast(transform.position + _rayOffsetLeft, -Vector2.up);
-                	transform.position = hit.point - new Vector2(-_hangingOffset.x, _hangingOffset.y);
-				}
             }
-        }
+
+			if(isHanging) 
+			{
+				if(!hasPositioned) {
+					if(IsFacingRight) {
+						RaycastHit2D hit = Physics2D.Raycast(transform.position + _rayOffsetRight, -Vector2.up);
+                		transform.position = hit.point - new Vector2(_hangingOffset.x, _hangingOffset.y);
+					}
+					if(!IsFacingRight) {
+						RaycastHit2D hit = Physics2D.Raycast(transform.position + _rayOffsetLeft, -Vector2.up);
+                		transform.position = hit.point - new Vector2(-_hangingOffset.x, _hangingOffset.y);
+					} 
+					hasPositioned = true;
+				}
+			}
+
+			if(Input.GetButtonUp("Jump")) {
+				hasPositioned = false;
+			}
+        } else {
+			isHanging = false;
+			hasPositioned = false;
+		}
 
 		//When releasing Hang
         if(Input.GetButtonUp("Jump") && isHanging && !isClimbing ) {
             isHanging = false;
             Freeze(false);
+			hasPositioned = false;
         }
 
 		//Wall jump to the Left
@@ -155,8 +159,8 @@ public class PlayerMovement : MonoBehaviour
 
             isClimbing = false;
             Freeze(false);
-
-			RB.AddForce(_ledgeJump, ForceMode2D.Force);
+			RB.AddForce(new Vector2(_ledgeJump.x, _ledgeJump.y), ForceMode2D.Force);
+			hasPositioned = false;
         }
 
 		//Wall jump to the right
@@ -167,6 +171,7 @@ public class PlayerMovement : MonoBehaviour
             isClimbing = false;
             Freeze(false);
 			RB.AddForce(new Vector2(Mathf.Abs(_ledgeJump.x), _ledgeJump.y), ForceMode2D.Force);
+			hasPositioned = false;
         }
 
 

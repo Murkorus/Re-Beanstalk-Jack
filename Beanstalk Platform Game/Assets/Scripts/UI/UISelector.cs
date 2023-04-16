@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class UISelector : MonoBehaviour
 {
     [SerializeField]    
-    private int currentSelected;
+    public int currentSelected;
 
     [SerializeField] private List<GameObject> ButtonsList;
     [SerializeField] private GameObject selectedUIAnimation;
