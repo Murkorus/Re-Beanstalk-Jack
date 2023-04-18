@@ -104,15 +104,15 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: uqbiav3s_0
+      name: DemonGiant_Stomp1
       rect:
         serializedVersion: 2
         x: 18
         y: 434
         width: 25
         height: 63
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.35999998, y: 0.42857146}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -125,15 +125,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: uqbiav3s_1
+      name: DemonGiant_Stomp2
       rect:
         serializedVersion: 2
         x: 53
         y: 434
         width: 25
         height: 63
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.35999998, y: 0.42857146}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -146,15 +146,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: uqbiav3s_2
+      name: DemonGiant_Stomp3
       rect:
         serializedVersion: 2
         x: 87
         y: 434
         width: 26
         height: 63
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.34615386, y: 0.42857146}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -251,15 +251,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: uqbiav3s_7
+      name: DemonGiant_Stomp4
       rect:
         serializedVersion: 2
         x: 17
         y: 370
         width: 27
         height: 63
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.33333334, y: 0.42857146}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -272,15 +272,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: uqbiav3s_8
+      name: DemonGiant_Stomp5
       rect:
         serializedVersion: 2
-        x: 47
+        x: 51
         y: 369
-        width: 36
+        width: 32
         height: 63
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.28125, y: 0.42857146}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -293,15 +293,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: uqbiav3s_9
+      name: DemonGiant_Stomp6
       rect:
         serializedVersion: 2
         x: 108
         y: 370
         width: 27
         height: 63
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.33333334, y: 0.42857146}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -419,7 +419,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: uqbiav3s_15
+      name: DemonGiant_Walk1
       rect:
         serializedVersion: 2
         x: 20
@@ -440,7 +440,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: uqbiav3s_16
+      name: DemonGiant_Walk2
       rect:
         serializedVersion: 2
         x: 45
@@ -461,7 +461,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: uqbiav3s_17
+      name: DemonGiant_Walk3
       rect:
         serializedVersion: 2
         x: 71
@@ -482,7 +482,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: uqbiav3s_18
+      name: DemonGiant_Walk4
       rect:
         serializedVersion: 2
         x: 91
@@ -503,15 +503,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: uqbiav3s_19
+      name: DemonGiant_Walk5
       rect:
         serializedVersion: 2
         x: 111
         y: 297
         width: 20
         height: 63
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.4, y: 0.42857146}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -629,15 +629,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: uqbiav3s_25
+      name: DemonGiant_Walk6
       rect:
         serializedVersion: 2
         x: 19
         y: 228
         width: 22
         height: 63
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.40909094, y: 0.42857146}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -650,15 +650,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: uqbiav3s_26
+      name: DemonGiant_Walk7
       rect:
         serializedVersion: 2
         x: 45
         y: 229
         width: 22
         height: 63
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.45454547, y: 0.42857146}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1458,23 +1458,24 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      uqbiav3s_0: 176595659
+      DemonGiant_Trans4: -1592895523
       uqbiav3s_52: -1646239392
       DemonGiant_Trans16: -543860184
-      uqbiav3s_7: 369555482
       DemonGiant_Idle1: -413126912
-      uqbiav3s_26: -710727108
-      uqbiav3s_16: 581392553
       DemonGiant_Trans2: -174599370
-      uqbiav3s_19: 256027769
+      DemonGiant_Stomp6: 1926364327
+      DemonGiant_Stomp2: 956649642
+      DemonGiant_Walk6: 66529216
       DemonGiant_Trans25: 1816606065
       uqbiav3s_5: 23364544
+      DemonGiant_Stomp3: 1679286430
       DemonGiant_Trans19: 534652865
-      uqbiav3s_25: 66529216
+      DemonGiant_Stomp4: 369555482
       DemonGiant_Trans21: 1569766405
-      uqbiav3s_18: -27615352
       uqbiav3s_39: -53463390
       DemonGiant_Trans23: -231274840
+      DemonGiant_Walk5: 256027769
+      DemonGiant_Stomp5: 1242920005
       uqbiav3s_4: -606806981
       DemonGiant_Trans28: 1526570566
       DemonGiant_Trans11: 690148200
@@ -1485,21 +1486,19 @@ TextureImporter:
       uqbiav3s_3: -1091049262
       DemonGiant_Trans3: 1595160184
       DemonGiant_Trans20: -2117789845
-      uqbiav3s_8: 1242920005
-      uqbiav3s_2: 1679286430
       DemonGiant_Trans27: -1784591310
       DemonGiant_Trans22: 870346917
       DemonGiant_Trans26: -1522333895
       uqbiav3s_37: 1643584886
       DemonGiant_Trans12: 1199347705
+      DemonGiant_Walk3: -1366061059
       uqbiav3s_40: 1490779002
+      DemonGiant_Stomp1: 176595659
       DemonGiant_Trans17: 335981536
-      uqbiav3s_17: -1366061059
       DemonGiant_Trans18: -2091055414
-      uqbiav3s_1: 956649642
       uqbiav3s_6: 1712278240
-      uqbiav3s_9: 1926364327
-      uqbiav3s_15: 2137987526
+      DemonGiant_Walk4: -27615352
+      DemonGiant_Walk1: 2137987526
       uqbiav3s_35: -1726164200
       DemonGiant_Trans1: 1726438500
       uqbiav3s_36: -1692895709
@@ -1511,6 +1510,7 @@ TextureImporter:
       uqbiav3s_38: -2029884103
       uqbiav3s_53: 1301165560
       uqbiav3s_54: -1435257865
+      DemonGiant_Walk2: 581392553
       uqbiav3s_55: 290177865
       uqbiav3s_51: -2121464392
       DemonGiant_Trans14: 131792857
@@ -1521,7 +1521,7 @@ TextureImporter:
       DemonGiant_Trans7: 763472708
       DemonGiant_Trans13: 1442347045
       uqbiav3s_50: -1029937921
-      DemonGiant_Trans4: -1592895523
+      DemonGiant_Walk7: -710727108
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

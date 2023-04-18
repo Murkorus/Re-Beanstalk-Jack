@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class FireProjectile : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public LayerMask groundLayer;
+    public GameObject firePrefab;
 
-    // Update is called once per frame
+    // Update is called once per frame  
     void Update()
     {
-        
+        if(Physics2D.OverlapCircle(transform.position, .05f, groundLayer)) {
+            Instantiate(firePrefab, transform.position - new Vector3(0, 0.15f, 0), Quaternion.identity);
+            Destroy(this.gameObject);
+        }
     }
 }

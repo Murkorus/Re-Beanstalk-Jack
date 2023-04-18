@@ -39,4 +39,8 @@ public class BeanPlatform : MonoBehaviour
     {
         Destroy(this.gameObject);
     }
+
+    public void playSound() {
+        GetComponentInChildren<AudioSource>().Play();
+    }
 }

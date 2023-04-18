@@ -33,7 +33,6 @@ public class PlayerMovement : MonoBehaviour
 	[Header("Jump")]
 	private bool _isJumping;
 	private float _jumpTime;
-	public float maxJumpTime;
 	
 	public bool isGrounded;
 	
@@ -153,10 +152,9 @@ public class PlayerMovement : MonoBehaviour
         }
 
 		//Wall jump to the Left
-        if(IsFacingRight && Input.GetKeyDown(KeyCode.A) && isHanging && !isClimbing) {
+        if(IsFacingRight && Input.GetKeyDown(KeyCode.A) && isHanging && !isClimbing && !Input.GetKey(KeyCode.D)) {
             Debug.Log("Edge jump to the Right");
             isHanging = false;
-
             isClimbing = false;
             Freeze(false);
 			RB.AddForce(new Vector2(_ledgeJump.x, _ledgeJump.y), ForceMode2D.Force);
@@ -164,7 +162,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
 		//Wall jump to the right
-        if(!IsFacingRight && Input.GetKeyDown(KeyCode.D) && isHanging && !isClimbing) {
+        if(!IsFacingRight && Input.GetKeyDown(KeyCode.D) && isHanging && !isClimbing && !Input.GetKey(KeyCode.A)) {
             Debug.Log("Edge jump to the Left");
             isHanging = false;
 

@@ -114,7 +114,7 @@ public class PlayerCombatController : MonoBehaviour
                 }
                 attackHoldTime = 0;
             }
-        if(Input.GetKeyDown(KeyCode.LeftControl) && !isDodging && pm.isGrounded && !isPerformingHeavyAttack && !isPerformingLightAttack) {
+        if(Input.GetKeyDown(KeyCode.LeftControl) && !isDodging && !isPerformingHeavyAttack && !isPerformingLightAttack) {
             dodge();
         }
 
@@ -138,10 +138,6 @@ public class PlayerCombatController : MonoBehaviour
         Debug.Log("Light attack");
     }
 #endregion
-
-    public void slingshot() {
-        isChargingSlingshot = true;
-    }
 
 
 
@@ -181,16 +177,17 @@ public class PlayerCombatController : MonoBehaviour
     }
 
     public void Slingshot() {
-        Vector2 slingshotPos = transform.position;
-        Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        direction = mousePos - slingshotPos;
-        slingshotPoint.transform.right = direction;
 
 
         if (!isPerformingHeavyAttack && !isPerformingLightAttack)
                 {
                     if (Input.GetMouseButton(1))
                     {
+                        Vector2 slingshotPos = transform.position;
+                        Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                        direction = mousePos - slingshotPos;
+                        slingshotPoint.transform.right = direction;
+                        
                         isChargingSlingshot = true;
                         //AM.GetComponent<AnimationManager>().isCharging = true;
                         if (currentProjectile == "normal")

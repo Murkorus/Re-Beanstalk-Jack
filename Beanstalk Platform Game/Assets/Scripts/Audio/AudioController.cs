@@ -2,13 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AudioManager : MonoBehaviour
+public class AudioController : MonoBehaviour
 {
-    // Start is called before the first frame update 
-
-
-    public bool playWind;
-
+    public AudioClip ambience;
+    public AudioClip music;
+    
     void Start()
     {
         
@@ -17,9 +15,6 @@ public class AudioManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(playWind)
-        {
-
-        }
+        
     }
 }
