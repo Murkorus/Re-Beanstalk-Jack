@@ -13,7 +13,7 @@ public class FireParticles : MonoBehaviour
     public AudioSource AS;
     void Start()
     {
-        StartCoroutine(DestroyWaitTime(3));
+        StartCoroutine(DestroyWaitTime(6));
     }
 
     IEnumerator DestroyWaitTime(float time) {

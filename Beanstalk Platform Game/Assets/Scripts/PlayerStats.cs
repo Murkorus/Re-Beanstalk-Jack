@@ -12,9 +12,12 @@ public class PlayerStats : MonoBehaviour
         public int mindBean;
         
         public screenShake screenshake;
+
         
         void Start()
         {
+            screenshake = GameObject.Find("CM vcam1").GetComponent<screenShake>();
+
             health = GameObject.Find("SaveSystem").GetComponent<SaveSystem>().save.playerHealth;
             pebbles = GameObject.Find("SaveSystem").GetComponent<SaveSystem>().save.pebbles;
             platformBeans = GameObject.Find("SaveSystem").GetComponent<SaveSystem>().save.platform;
@@ -32,13 +35,13 @@ public class PlayerStats : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.O))
             {
-                takeDamage(1);
+                takeDamage();
             }
         }
 
         #region health
-        public void takeDamage(int amount) {
-            health -= amount;
+        public void takeDamage() {
+            health -= 1;
             GameObject.Find("Player").GetComponentInChildren<HealthDisplay>().removeHealthToList();
             screenshake.shake(0.25f, 1f, .1f);
         }
@@ -58,6 +61,10 @@ public class PlayerStats : MonoBehaviour
 
         public void addPebbles(int amount) {
             pebbles += amount;
+        }
+
+        public void addSinglePebble() {
+            pebbles++;
         }
         #endregion
 

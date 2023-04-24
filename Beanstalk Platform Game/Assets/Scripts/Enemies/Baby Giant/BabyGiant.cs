@@ -80,7 +80,7 @@ public class BabyGiant : MonoBehaviour
         {
             if(Physics2D.OverlapCircle(transform.position, 0.5f, playerLayer))
             {
-                GameObject.Find("Player").GetComponent<PlayerStats>().takeDamage(1);
+                GameObject.Find("Player").GetComponent<PlayerStats>().takeDamage();
                 hitPlayer = true;
             }
         }

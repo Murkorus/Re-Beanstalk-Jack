@@ -16,10 +16,11 @@ public class BeanPlatform : MonoBehaviour
         float playerSide = GameObject.Find("Player").transform.position.x - transform.position.x;
         Debug.Log(playerSide);
         if(playerSide < 0) {
-            GetComponent<SpriteRenderer>().flipX = false;
+            GetComponent<Transform>().transform.localScale = new Vector3(1, 1, 1);
         }
         if(playerSide > 0) {
-            GetComponent<SpriteRenderer>().flipX = true;
+            GetComponent<Transform>().transform.localScale = new Vector3(-1, 1, 1);
+
         }
     }
 
