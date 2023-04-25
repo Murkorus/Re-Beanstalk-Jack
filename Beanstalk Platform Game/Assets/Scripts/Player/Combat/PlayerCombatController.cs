@@ -140,6 +140,7 @@ public class PlayerCombatController : MonoBehaviour
         isDodging = true;
         StartCoroutine(dodgeRoutine(dodgeTime));
         StartCoroutine(eventTime(isDodging, 1));
+        Debug.Log("Dodge");
     }
 
     IEnumerator dodgeRoutine(float time)

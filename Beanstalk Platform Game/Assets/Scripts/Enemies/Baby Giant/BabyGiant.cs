@@ -11,6 +11,7 @@ public class BabyGiant : MonoBehaviour
     public Rigidbody2D RB;
     [Space(10)]
     
+    public bool lookOverride; //if yes don't search for player if false allow search of player;
     
     public int currentState; //1 = Waiting, 2 = Attacking, 3 = avoiding player
     public bool isAngry;
@@ -89,7 +90,6 @@ public class BabyGiant : MonoBehaviour
         //Drop detection
         if (!Physics2D.OverlapCircle(BackDetection.transform.position, .15f, groundLayer))
         {
-            Debug.Log("Close to edge in the back");
             canMoveBack = false;
         }
         else
@@ -98,7 +98,6 @@ public class BabyGiant : MonoBehaviour
         }
         if (!Physics2D.OverlapCircle(FrontDetection.transform.position, .15f, groundLayer))
         {
-            Debug.Log("Close to edge in the front");
             canMoveForward = false;
         }
         else
@@ -110,7 +109,7 @@ public class BabyGiant : MonoBehaviour
 
     public void FixedUpdate()
     {
-        if (xDistance > DistanceToPlayerThreshold && currentState == 1)
+        if (xDistance > DistanceToPlayerThreshold && currentState == 1 && !lookOverride)
         {
             runTowardsPlayer();
         }
@@ -190,15 +189,9 @@ public class BabyGiant : MonoBehaviour
         {
             yDistance = Mathf.Abs(yDistance);
             if (yDistance < 0.16)
-            {
-                Debug.Log("is on the same floor: " + yDistance);
-            
+            {       
                 //attack
                 StartCoroutine(dashAttack());
-            }
-            else
-            {
-                Debug.Log(("Isn't on the same floor: " + yDistance));
             }
         }
     }

@@ -20,6 +20,8 @@ public class SaveSystem : MonoBehaviour
 
     public int currentSelectedSave;
 
+    public GameObject UISelectorPrefab;
+
     public string[] sceneNames;
 
 
@@ -156,7 +158,7 @@ public class SaveSystem : MonoBehaviour
     {
         string path = Application.persistentDataPath + "/Save" + saveNum + ".json";
         File.Delete(path);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        GameObject.Find("UISelector").GetComponent<SaveSelector>().RefreshButtons();
     }
 
 

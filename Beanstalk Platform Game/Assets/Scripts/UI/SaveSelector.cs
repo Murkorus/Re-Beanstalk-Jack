@@ -29,6 +29,16 @@ public class SaveSelector : MonoBehaviour
         UpdateButtons();
     }
 
+
+    public void RefreshButtons() {
+        int saveNumber = 1;
+        infoFile.save1Level_info = 0;
+        infoFile.save2Level_info = 0;
+        infoFile.save3Level_info = 0;
+        infoFile = savesys.getInformation();
+        UpdateButtons();
+    }
+
     // Update is called once per frame
     public void UpdateButtons()
     {
@@ -116,6 +126,9 @@ public class SaveSelector : MonoBehaviour
         {
             Debug.Log("File doesn't exists");
             savesys.newSave(saveNumber);
+            GameObject SaveSelectPrefab = GameObject.Find("SaveSystem");
+            Destroy(GameObject.Find("SaveSystem"));
+            Instantiate(SaveSelectPrefab, new Vector3(0, 0, 0), Quaternion.identity);
         }
     }
 }

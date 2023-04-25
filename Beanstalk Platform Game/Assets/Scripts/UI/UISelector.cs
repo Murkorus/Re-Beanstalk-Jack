@@ -19,7 +19,7 @@ public class UISelector : MonoBehaviour
     private bool hasSwitched;
     [SerializeField] private bool isUsingMouse;
 
-    [SerializeField] UIManager uimanager;
+    public UIManager uimanager;
 
     void Start()
     {

@@ -33,6 +33,7 @@ public class DemonGiant : MonoBehaviour
 
     [Header("Detection")]
     [SerializeField] private GameObject WallDetection;
+    [SerializeField] private GameObject FloorDetection;
     [SerializeField] private GameObject PlayerDetection;
     public LayerMask wallLayer;
     public LayerMask playerLayer;
@@ -49,17 +50,39 @@ public class DemonGiant : MonoBehaviour
         {
             //Play idle animation
             anim.Play("DemonGiant_Idle");
+            isWalking = false;
         }
         if(currentState == 2) //Walking
         {
             //Play walking animation
             anim.Play("DemonGiant_Walk");
+            isWalking = true;
         }
 
         if(Input.GetKeyDown(KeyCode.H)) {
             attack();
         }
+
+        if(Physics2D.OverlapBox(WallDetection.transform.position, WallDetection.transform.localScale, 0, wallLayer)) {
+            ïsFacingRight = !ïsFacingRight;
+        }
+        if(!Physics2D.OverlapBox(FloorDetection.transform.position, WallDetection.transform.localScale, 0, wallLayer)) {
+            ïsFacingRight = !ïsFacingRight;
+        }
+        
+        if(isWalking) {
+            if(ïsFacingRight && !isAttacking) {
+                transform.position = new Vector3(transform.position.x + 2 * Time.deltaTime, transform.position.y, transform.position.z);
+                transform.localScale = new Vector3(1, 1, 1);
+
+            }
+            if(!ïsFacingRight && !isAttacking) {
+                transform.position = new Vector3(transform.position.x + -2 * Time.deltaTime, transform.position.y, transform.position.z);
+                transform.localScale = new Vector3(-1, 1, 1);
+            }
+        }
     }
+    
 
 
     public void attack()
