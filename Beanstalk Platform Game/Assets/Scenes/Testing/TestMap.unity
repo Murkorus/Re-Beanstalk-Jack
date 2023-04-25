@@ -1221,7 +1221,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 4.5
+  orthographic size: 0
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -2598,6 +2598,18 @@ CompositeCollider2D:
       - X: 136000000
         Y: -32000000
     - - X: 87999992
+        Y: 8000000
+      - X: 8000100
+        Y: 8000000
+      - X: 8000100
+        Y: 8000041
+      - X: 8000041
+        Y: 8000100
+      - X: -41
+        Y: 8000100
+      - X: -100
+        Y: 8000041
+      - X: -100
         Y: 8000000
       - X: -79999992
         Y: 8000000
