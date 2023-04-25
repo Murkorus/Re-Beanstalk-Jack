@@ -4,23 +4,21 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    float health;
-    public AudioClip audio;
-    public GameObject audioPrefab;
-
-    public void start() {
-        
-    }
-
+    [SerializeField] float health;
 
     private void Death() {
         Destroy(this.gameObject);
-        Instantiate(audioPrefab, transform.position, Quaternion.identity);
+    }
+
+    public void Update() {
+        if(health <= 0) {
+            Death();
+        }
     }
     public void damage(float damage) {
         health -= damage;
         if(health <= 0) {
-
+            Death();
         }
     }
 }

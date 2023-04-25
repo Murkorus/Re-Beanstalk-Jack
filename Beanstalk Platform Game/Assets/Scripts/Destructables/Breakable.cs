@@ -22,7 +22,8 @@ public class Breakable : MonoBehaviour
             //Drop item based on level
             Vector3 offset = new Vector3(Random.Range(-0.0f, 0.50f), 0, 0);
             for(int u = 0; u < level; u++) {
-                Instantiate(drops[Random.Range(0, level - 1)], transform.position + offset, Quaternion.identity);    
+                GameObject PickupGO = Instantiate(drops[Random.Range(0, level - 1)], transform.position + offset, Quaternion.identity);  
+                PickupGO.transform.parent = GameObject.Find("----- Pickup -----").GetComponent<Transform>();  
             }
             offset = new Vector3(Random.Range(-0.5f, 0.5f), 0, 0);
         }

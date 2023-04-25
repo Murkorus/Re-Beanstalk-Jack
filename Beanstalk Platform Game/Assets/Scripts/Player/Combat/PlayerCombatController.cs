@@ -100,16 +100,35 @@ public class PlayerCombatController : MonoBehaviour
         for (int i = 0; i < enemiesToDamage.Length; i++)
         {
             //cratesToDamage[i].GetComponent<CrateObject>().takeDamage(damage);
+            if(enemiesToDamage[i].GetComponent<Enemy>() != null) {
+                //Damage
+                enemiesToDamage[i].GetComponent<Enemy>().damage(AttackDamage);
+
+                //Knockback
+                Vector3 moveDirection = transform.position - enemiesToDamage[i].transform.position;
+                enemiesToDamage[i].GetComponent<Rigidbody2D>().AddForce( moveDirection.normalized * Random.Range(-20f, -50f));
+
+                //Debug
+                Debug.Log("Hit enemy");
+            }
+
             Debug.Log("Hit enemy");
         }
         //Breakable
         Collider2D[] breakableToDamage = Physics2D.OverlapCircleAll(AttackPoint.transform.position, .45f, breakableLayer);
         for (int i = 0; i < breakableToDamage.Length; i++)
         {
-            breakableToDamage[i].GetComponent<Breakable>().damage(AttackDamage);
-            Vector3 moveDirection = transform.position - breakableToDamage[i].transform.position;
-            breakableToDamage[i].GetComponent<Rigidbody2D>().AddForce( moveDirection.normalized * Random.Range(-20f, -50f));
-            Debug.Log("Hit breakable");
+            if(breakableToDamage[i].GetComponent<Breakable>() != null) {
+                //Damage
+                breakableToDamage[i].GetComponent<Breakable>().damage(AttackDamage);
+
+                //Knockback
+                Vector3 moveDirection = transform.position - breakableToDamage[i].transform.position;
+                breakableToDamage[i].GetComponent<Rigidbody2D>().AddForce( moveDirection.normalized * Random.Range(-20f, -50f));
+
+                //Debug
+                Debug.Log("Hit breakable");
+            }
         }
     }
 #endregion

@@ -28,6 +28,7 @@ public class PlayerMovement : MonoBehaviour
 	[SerializeField] private Transform _groundCheckPoint;
 	[SerializeField] private Vector2 _groundCheckSize = new Vector2(0.49f, 0.03f);
 	[SerializeField] private LayerMask _groundLayer;
+	[SerializeField] private LayerMask _ledgeLayer;
 	public Rigidbody2D RB { get; private set; }
 
 	[Header("Jump")]
@@ -96,13 +97,13 @@ public class PlayerMovement : MonoBehaviour
 		}
 
 		//Ledge detection
-		if(Physics2D.OverlapBox(WallDetection.transform.position, WallDetection.transform.localScale, 0, _groundLayer)) {
+		if(Physics2D.OverlapBox(WallDetection.transform.position, WallDetection.transform.localScale, 0, _ledgeLayer)) {
 			wallDetected = true;
 		} else {
 			wallDetected = false;
 		}
 
-		if(Physics2D.OverlapCircle(LedgeDetection.transform.position, ledgeRadius, _groundLayer)) {
+		if(Physics2D.OverlapCircle(LedgeDetection.transform.position, ledgeRadius, _ledgeLayer)) {
 			ledgeDetected = true;
 		} else {
 			ledgeDetected = false;
