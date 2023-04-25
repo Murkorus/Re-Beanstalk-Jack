@@ -6,54 +6,35 @@ using UnityEngine;
 public class PlayerCombatController : MonoBehaviour
 {
     [Header("Dagger settings")]
-    [SerializeField] private float heavyAttackDamage = 20f;
-    [SerializeField] private float heavyAttackTime = 3f;
-    public bool isPerformingHeavyAttack;
-    public float heavyAttackThreshold;
-
-    [Space(10)]
-
-
-    [SerializeField] private float lightAttackDamage = 10f;
-    [SerializeField] private float lightAttackTime = 1f;
-    public bool isPerformingLightAttack;
-    public float attackHoldTime;
-    public bool isChargingAttack;
-
-
-    [Space(5)]
-
-
+    [SerializeField] private float AttackDamage = 20f;
+    public bool isPerformingAttack;
+    public GameObject AttackPoint;
+    public LayerMask enemyLayer;
+    public LayerMask breakableLayer;
 
 
     [Header("Slingshot settings")]
     [SerializeField] private float slingshotDamage;
     [SerializeField] private float slingshotChargeTime;
-    public bool isChargingSlingshot;
+    [HideInInspector] public bool isChargingSlingshot;
     private float chargeTime;
-    private float totalTime;
-    public Transform projectilePoint;
+    [HideInInspector] public Transform projectilePoint;
 
     //Trajectory
-    public GameObject slingshotPoint;
+    [HideInInspector] public GameObject slingshotPoint;
     GameObject[] points;
-    public int numberOfPoints;
-    public float spaceBetweenPoints;
+    [HideInInspector] public int numberOfPoints;
+    [HideInInspector] public float spaceBetweenPoints;
     Vector2 direction;
 
 
     [Header("Slingshot projectiles")]
     [SerializeField] private string currentProjectile;
     public float projectileForce;
-
     public GameObject slingshotPebbleGO;
-
     public GameObject slingshotPlatformGO;
-
     public GameObject slingshotFireGO;
-
     public GameObject slingshotIceGO;
-
     public GameObject slingshotMindGO;
 
     [Space(10)]
@@ -64,7 +45,7 @@ public class PlayerCombatController : MonoBehaviour
     [SerializeField] private float dodgeForce;
     [SerializeField] private float dodgeTime;
     [SerializeField] private float iFrames;
-    public bool isDodging;
+    [HideInInspector] public bool isDodging;
     
 
     [Header("Weapon wheel")]
@@ -76,8 +57,6 @@ public class PlayerCombatController : MonoBehaviour
     private float smallestDistance;
     private bool usingWeaponWheel;
     private TextMeshProUGUI weaponWheelText;
-
-
 
 
      [Header("Other scripts")]
@@ -94,27 +73,11 @@ public class PlayerCombatController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetMouseButtonDown(0)) {
-            if(!isPerformingLightAttack && !isPerformingHeavyAttack && !isDodging) {
-                if(isChargingSlingshot)
-                    isChargingSlingshot = false;
-                isChargingAttack = true;
-                
-            }
-        }
         //attack charge check
-        if(isChargingAttack)
-            attackHoldTime += Time.deltaTime;
-            if(Input.GetMouseButtonUp(0)) {
-                isChargingAttack = false;
-                if(attackHoldTime > heavyAttackThreshold) {
-                    heavyAttack();
-                } else {
-                    lightAttack();
-                }
-                attackHoldTime = 0;
-            }
-        if(Input.GetKeyDown(KeyCode.LeftControl) && !isDodging && pm.isGrounded && !isPerformingHeavyAttack && !isPerformingLightAttack) {
+        if(Input.GetButtonDown("Fire1")) {
+            Attack();
+        }
+        if(Input.GetKeyDown(KeyCode.LeftControl) && !isDodging && !isPerformingAttack) {
             dodge();
         }
 
@@ -125,23 +88,31 @@ public class PlayerCombatController : MonoBehaviour
 
 
 #region Melee
-    public void heavyAttack() {
-        isPerformingHeavyAttack = true;
-        StartCoroutine(eventTime(isPerformingHeavyAttack, heavyAttackTime));
-        Debug.Log("Heavy attack");
-    }
 
 
-    public void lightAttack() {
-        isPerformingLightAttack = true;
-        StartCoroutine(eventTime(isPerformingLightAttack, lightAttackTime));
+    public void Attack() {
+        isPerformingAttack = true;
+        StartCoroutine(eventTime(isPerformingAttack, .1f));
         Debug.Log("Light attack");
+
+        //Breakable
+        Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(AttackPoint.transform.position, .45f, enemyLayer);
+        for (int i = 0; i < enemiesToDamage.Length; i++)
+        {
+            //cratesToDamage[i].GetComponent<CrateObject>().takeDamage(damage);
+            Debug.Log("Hit enemy");
+        }
+        //Breakable
+        Collider2D[] breakableToDamage = Physics2D.OverlapCircleAll(AttackPoint.transform.position, .45f, breakableLayer);
+        for (int i = 0; i < breakableToDamage.Length; i++)
+        {
+            breakableToDamage[i].GetComponent<Breakable>().damage(AttackDamage);
+            Vector3 moveDirection = transform.position - breakableToDamage[i].transform.position;
+            breakableToDamage[i].GetComponent<Rigidbody2D>().AddForce( moveDirection.normalized * Random.Range(-20f, -50f));
+            Debug.Log("Hit breakable");
+        }
     }
 #endregion
-
-    public void slingshot() {
-        isChargingSlingshot = true;
-    }
 
 
 
@@ -181,16 +152,17 @@ public class PlayerCombatController : MonoBehaviour
     }
 
     public void Slingshot() {
-        Vector2 slingshotPos = transform.position;
-        Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        direction = mousePos - slingshotPos;
-        slingshotPoint.transform.right = direction;
 
 
-        if (!isPerformingHeavyAttack && !isPerformingLightAttack)
+        if (!isPerformingAttack)
                 {
                     if (Input.GetMouseButton(1))
                     {
+                        Vector2 slingshotPos = transform.position;
+                        Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                        direction = mousePos - slingshotPos;
+                        slingshotPoint.transform.right = direction;
+                        
                         isChargingSlingshot = true;
                         //AM.GetComponent<AnimationManager>().isCharging = true;
                         if (currentProjectile == "normal")
@@ -372,11 +344,8 @@ public class PlayerCombatController : MonoBehaviour
     IEnumerator eventTime(bool value, float time) {
         yield return new WaitForSeconds(time);
             
-        if(value = isPerformingHeavyAttack) {
-            isPerformingHeavyAttack = false;
-        }
-        if(value = isPerformingLightAttack) {
-            isPerformingLightAttack = false;
+        if(value = isPerformingAttack) {
+            isPerformingAttack = false;
         }
 
         if (value = isDodging)

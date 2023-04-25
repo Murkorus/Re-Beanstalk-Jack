@@ -31,7 +31,6 @@ public class BabyGiant : MonoBehaviour
     
     [Header("Avoid settings")]    
     public bool isAvoiding;
-    public float avoidDistance;
     public float avoidDistanceMax;
     
 
@@ -76,39 +75,12 @@ public class BabyGiant : MonoBehaviour
         else if(PlayerSide < 0 && !isChecking)
             gameObject.GetComponent<SpriteRenderer>().flipX = true;
 
-
-
-        //Animations
-        if (isAngry)
-        {
-            if (RB.velocity.x > 0.1 || RB.velocity.x < -0.1)
-            {
-                anim.Play("BabyGiant_Walking_Angry");
-            }
-            else
-            {
-                anim.Play("BabyGiant_Idle_Angry");
-            }
-        }
-        else
-        {
-            if (RB.velocity.x > 0.1 || RB.velocity.x < -0.1)
-            {
-                anim.Play("LittleShit_Walking_normal");
-            }
-            else
-            {
-                anim.Play("BabyGiant_Idle_normal");
-            }
-        }
-
-
         //player collsion
         if (isChecking && !hitPlayer && !GameObject.Find("Player").GetComponent<PlayerCombatController>().isDodging)
         {
             if(Physics2D.OverlapCircle(transform.position, 0.5f, playerLayer))
             {
-                GameObject.Find("Player").GetComponent<PlayerStats>().takeDamage(1);
+                GameObject.Find("Player").GetComponent<PlayerStats>().takeDamage();
                 hitPlayer = true;
             }
         }
