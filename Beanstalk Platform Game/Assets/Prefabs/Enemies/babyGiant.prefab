@@ -76,6 +76,7 @@ GameObject:
   - component: {fileID: 4988264481498197270}
   - component: {fileID: 4988264481498197257}
   - component: {fileID: 4988264481498197256}
+  - component: {fileID: 1415719532838407158}
   m_Layer: 8
   m_Name: babyGiant
   m_TagString: Untagged
@@ -199,7 +200,6 @@ MonoBehaviour:
   AccelAmount: 12
   DeccelAmount: 0
   isAvoiding: 0
-  avoidDistance: 5
   avoidDistanceMax: 2
   playerLayer:
     serializedVersion: 2
@@ -260,3 +260,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.65, y: 1.4}
   m_EdgeRadius: 0
+--- !u!114 &1415719532838407158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4988264481498197266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c570911d0028d8c468d09bec3a52816c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audio: {fileID: 0}
+  audioPrefab: {fileID: 0}
