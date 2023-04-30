@@ -8,8 +8,8 @@ public class DemonGiant : MonoBehaviour
 {
     [Header("Basic settings")]
     public float stompDamage;
-    public float angryTime;
-    private float angryTimer;
+    [SerializeField] private float _angryTime;
+    private float _angryTimer;
 
 
     [Header("Booleans")]
@@ -17,6 +17,7 @@ public class DemonGiant : MonoBehaviour
     [SerializeField] private bool isWalking;
     [SerializeField] private bool ïsFacingRight;
     [SerializeField] private bool isAttacking;
+    [SerializeField] private bool isAngry;
 
     [Header("Stomp")]
     [SerializeField] private GameObject stompSpawnPosition;
@@ -35,6 +36,7 @@ public class DemonGiant : MonoBehaviour
     [SerializeField] private GameObject WallDetection;
     [SerializeField] private GameObject FloorDetection;
     [SerializeField] private GameObject PlayerDetection;
+    private bool playerDetected;
     public LayerMask wallLayer;
     public LayerMask playerLayer;
 
@@ -69,6 +71,13 @@ public class DemonGiant : MonoBehaviour
         if(!Physics2D.OverlapBox(FloorDetection.transform.position, WallDetection.transform.localScale, 0, wallLayer)) {
             ïsFacingRight = !ïsFacingRight;
         }
+
+        if(Physics2D.OverlapBox(PlayerDetection.transform.position, PlayerDetection.transform.localScale, 0, playerLayer)) {
+            playerDetected = true;
+            _angryTimer = 0;
+        } else {
+            playerDetected = false;
+        }
         
         if(isWalking) {
             if(ïsFacingRight && !isAttacking) {
@@ -79,6 +88,17 @@ public class DemonGiant : MonoBehaviour
             if(!ïsFacingRight && !isAttacking) {
                 transform.position = new Vector3(transform.position.x + -2 * Time.deltaTime, transform.position.y, transform.position.z);
                 transform.localScale = new Vector3(-1, 1, 1);
+            }
+        }
+
+        if(playerDetected) {
+            if(_angryTimer < _angryTime) {
+                _angryTimer += Time.time;
+                isAngry = true;
+            } else  {
+                print("giant is no longer angry");
+                playerDetected = false;
+                isAngry = false;
             }
         }
     }

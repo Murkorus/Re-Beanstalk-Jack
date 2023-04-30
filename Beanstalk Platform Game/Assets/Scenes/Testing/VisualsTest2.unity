@@ -5032,6 +5032,7 @@ GameObject:
   - component: {fileID: 249129227}
   - component: {fileID: 249129228}
   - component: {fileID: 249129229}
+  - component: {fileID: 249129230}
   m_Layer: 8
   m_Name: DemonGiant
   m_TagString: Untagged
@@ -5143,11 +5144,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stompDamage: 1
-  angryTime: 5
+  _angryTime: 5
   currentState: 0
   isWalking: 0
   "\xEFsFacingRight": 0
   isAttacking: 0
+  isAngry: 0
   stompSpawnPosition: {fileID: 2083125607}
   stompPrefab: {fileID: 897423719509127123, guid: cfe2f219a326d7943ae6d89d8fb3f647, type: 3}
   attackCooldown: 0
@@ -5288,6 +5290,32 @@ MonoBehaviour:
   audioDistanceThreshold: 0
   fadeIn: 0
   fadeOut: 0
+--- !u!61 &249129230
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 249129222}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.050000012, y: 0.22500002}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5625, y: 0.42857146}
+    oldSize: {x: 0.8, y: 3.15}
+    newSize: {x: 0.8, y: 3.15}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.8, y: 3.15}
+  m_EdgeRadius: 0
 --- !u!1 &271246034
 GameObject:
   m_ObjectHideFlags: 0
@@ -5342,7 +5370,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2394529071301648744, guid: 3184079bd08009f4a8f01370e0f9a8d4, type: 3}
       propertyPath: level
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2394529071301648744, guid: 3184079bd08009f4a8f01370e0f9a8d4, type: 3}
       propertyPath: breakPrefab
@@ -5483,7 +5511,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2394529071301648744, guid: 3184079bd08009f4a8f01370e0f9a8d4, type: 3}
       propertyPath: level
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2394529071301648744, guid: 3184079bd08009f4a8f01370e0f9a8d4, type: 3}
       propertyPath: breakPrefab
@@ -5628,7 +5656,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2394529071301648744, guid: 3184079bd08009f4a8f01370e0f9a8d4, type: 3}
       propertyPath: level
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2394529071301648744, guid: 3184079bd08009f4a8f01370e0f9a8d4, type: 3}
       propertyPath: breakPrefab
@@ -5737,7 +5765,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2394529071301648744, guid: 3184079bd08009f4a8f01370e0f9a8d4, type: 3}
       propertyPath: level
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2394529071301648744, guid: 3184079bd08009f4a8f01370e0f9a8d4, type: 3}
       propertyPath: breakPrefab
@@ -5850,7 +5878,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2394529071301648744, guid: 3184079bd08009f4a8f01370e0f9a8d4, type: 3}
       propertyPath: level
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2394529071301648744, guid: 3184079bd08009f4a8f01370e0f9a8d4, type: 3}
       propertyPath: breakPrefab
@@ -6133,7 +6161,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 767921894}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.0182238, y: 0.12490375, z: 0.0129539985}
+  m_LocalPosition: {x: 4.56, y: 0.12490375, z: 0.0129539985}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6149,7 +6177,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2394529071301648744, guid: 3184079bd08009f4a8f01370e0f9a8d4, type: 3}
       propertyPath: level
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2394529071301648744, guid: 3184079bd08009f4a8f01370e0f9a8d4, type: 3}
       propertyPath: breakPrefab
@@ -11501,7 +11529,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2394529071301648744, guid: 3184079bd08009f4a8f01370e0f9a8d4, type: 3}
       propertyPath: level
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2394529071301648744, guid: 3184079bd08009f4a8f01370e0f9a8d4, type: 3}
       propertyPath: breakPrefab
@@ -11962,7 +11990,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2394529071301648744, guid: 3184079bd08009f4a8f01370e0f9a8d4, type: 3}
       propertyPath: level
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2394529071301648744, guid: 3184079bd08009f4a8f01370e0f9a8d4, type: 3}
       propertyPath: breakPrefab
@@ -12201,7 +12229,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2394529071301648744, guid: 3184079bd08009f4a8f01370e0f9a8d4, type: 3}
       propertyPath: level
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2394529071301648744, guid: 3184079bd08009f4a8f01370e0f9a8d4, type: 3}
       propertyPath: breakPrefab
@@ -12478,7 +12506,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4988264481498197270, guid: e2c4efc0e7055764ba619f6f700ed0d1, type: 3}
       propertyPath: lookOverride
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4988264481498197270, guid: e2c4efc0e7055764ba619f6f700ed0d1, type: 3}
       propertyPath: avoidDistanceMax
