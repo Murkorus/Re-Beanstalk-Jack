@@ -1,0 +1,1266 @@
+fileFormatVersion: 2
+guid: 4079df4fc372590478b850532b1381a9
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 20
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: auki3w7m_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 448
+        width: 16
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62d34508c5e2378479d491e5e4d263c7
+      internalID: 1364442679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedGiantIdle1
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 448
+        width: 16
+        height: 63
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49206352}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e726463e1fc04345a5a0bf5a02589b2
+      internalID: -176548928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedGiantIdle2
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 448
+        width: 16
+        height: 59
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5254237}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98f15f5a54cbe7441b5e94b8b2180b17
+      internalID: 1281345126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auki3w7m_3
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 448
+        width: 16
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 442b33b6c55381e49bce34a68677aa1c
+      internalID: 374916373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auki3w7m_4
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 444
+        width: 22
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbd661f11dfc5ba439784339796345a1
+      internalID: 1955586582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auki3w7m_5
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 443
+        width: 25
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb1e0d9f97ba52644a5ba7633de00da6
+      internalID: -1510373374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auki3w7m_6
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 443
+        width: 32
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c0f1f949861969428f0d388093a9dbf
+      internalID: 1184143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auki3w7m_7
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 442
+        width: 32
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f85055838e2f9f4e8a3036ad89d8d8a
+      internalID: -86388976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auki3w7m_8
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 442
+        width: 33
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1506d0495b1586449a9dd3cd26db33fb
+      internalID: -740483633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auki3w7m_9
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 442
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd017c78389645a43b2678086660177b
+      internalID: -1566172491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auki3w7m_10
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 442
+        width: 22
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dde5cf670bfcf974fa06822bd16dc2df
+      internalID: -382236273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: redGiantWalk1
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 384
+        width: 22
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a6031f8689d821498120b9b5447e504
+      internalID: -1377942140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: redGiantWalk2
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 384
+        width: 20
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18d631d7ea92d6c4c866597e9005b7a9
+      internalID: -1944981946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: redGiantWalk3
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 384
+        width: 17
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b994c292643f32f49b1998fe7375a240
+      internalID: 1528399483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: redGiantWalk4
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 384
+        width: 20
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3b837945c909f846bc2dbf05f3617e6
+      internalID: -2063722147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: redGiantWalk5
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 384
+        width: 22
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ff827cd528a22a45a197d43aaa9b6d6
+      internalID: -57914755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zz
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 384
+        width: 22
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb1da147cb6ee9b46a2846c00bb89e7d
+      internalID: -450054546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zzz
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 384
+        width: 20
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83a5e66cd3f84f949bd966d8dcca0a11
+      internalID: -521093515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zzzz
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 384
+        width: 17
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa0bfbe88eb5cfc43aa1e8150a2ecd2b
+      internalID: -788080435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zzzzzz
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 384
+        width: 20
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a3cb5db8e3ba094f8130dbe4894ab3d
+      internalID: 1563276792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: zzzzzzz
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 384
+        width: 22
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dbf0a0ffc9805141a66977eecab014d
+      internalID: -1862746807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auki3w7m_21
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 387
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1659f1d37f52a3a44bcc0990548f39f9
+      internalID: 1060104811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auki3w7m_22
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 388
+        width: 32
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 536539ed62c8426459c7aea7f71befd8
+      internalID: 1170908761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auki3w7m_23
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 388
+        width: 32
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3be7332ac394764187592103f9cc394
+      internalID: -70087178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auki3w7m_24
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 320
+        width: 25
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4ea9f4a468211a45bf9e0c120a78bee
+      internalID: 2069271691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auki3w7m_25
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 320
+        width: 25
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48bbf90faecc887439b92dba20e62701
+      internalID: -653270829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auki3w7m_26
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 320
+        width: 26
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3f2f7638ff879143aeb047169d069df
+      internalID: -642083315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stagger1
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 315
+        width: 21
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36194ad25391f2a42a4ed9338574188a
+      internalID: -20742960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stagger2
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 315
+        width: 19
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d71e1a694868b740b499b7c67f46533
+      internalID: -668567363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auki3w7m_29
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 377
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f105a354405e2374fa595a3fc18a4bd3
+      internalID: 1264667432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stagger3
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 314
+        width: 18
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2fdbb2f33c6dec42a09b7d012fec8fc
+      internalID: -95344046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auki3w7m_31
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 373
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 641f05eb6d5d0844da1f3b784ceee9aa
+      internalID: 1404159381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auki3w7m_32
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 376
+        width: 9
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06eba99f22e579446b3c17d2833e8c44
+      internalID: 1115303236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auki3w7m_33
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 256
+        width: 33
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca44fc30ecd9bd94ba00d5337ca95383
+      internalID: 1454832554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stagger4
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 314
+        width: 16
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab8d6fda4530ff9459bcd982e5f5802d
+      internalID: 296761313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RG_Throw1
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 192
+        width: 25
+        height: 63
+      alignment: 9
+      pivot: {x: 0.52, y: 0.49206352}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e145941289586ff42b6472812282bc60
+      internalID: 58682246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RG_Throw2
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 189
+        width: 32
+        height: 63
+      alignment: 9
+      pivot: {x: 0.40625, y: 0.49206352}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92e9240424ec6b34fb9bbbcb49374195
+      internalID: 1447008848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RG_Throw3
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 193
+        width: 31
+        height: 57
+      alignment: 9
+      pivot: {x: 0.3548387, y: 0.54385966}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07f12329dd26bc243837fe22f28c0dd4
+      internalID: 949743149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RG_Throw4
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 192
+        width: 30
+        height: 55
+      alignment: 9
+      pivot: {x: 0.36666667, y: 0.56363636}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b018d7a7dd5be414294845b94496f171
+      internalID: -1584992356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RG_Throw13
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 187
+        width: 53
+        height: 63
+      alignment: 9
+      pivot: {x: 0.24528302, y: 0.49206352}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c55e748cbe32c234aa0126049a167a17
+      internalID: -1157921324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RG_Throw14
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 185
+        width: 40
+        height: 63
+      alignment: 9
+      pivot: {x: 0.32500002, y: 0.49206352}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8850587a7a30d94e9716978fffba266
+      internalID: -929889814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RG_Throw15
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 185
+        width: 28
+        height: 63
+      alignment: 9
+      pivot: {x: 0.46428573, y: 0.49206352}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30b206bb497a9364daabee0454dfe92e
+      internalID: -207321033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boulder
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 188
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8b374f507dd54d47917811aa4543c55
+      internalID: 369947210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RG_Throw5
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 125
+        width: 31
+        height: 57
+      alignment: 9
+      pivot: {x: 0.3548387, y: 0.54385966}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 075595b679bce304d99e3c4ec29293e0
+      internalID: -593579646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RG_Throw6
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 125
+        width: 32
+        height: 63
+      alignment: 9
+      pivot: {x: 0.40625, y: 0.49206352}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec301a3644f61a745a816e577fac2dc3
+      internalID: 1430884372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RG_Throw7
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 123
+        width: 42
+        height: 63
+      alignment: 9
+      pivot: {x: 0.30952382, y: 0.49206352}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f46a16c92e63c6f4c83eb1cb01e8bfee
+      internalID: 566460925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RG_Throw8
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 122
+        width: 52
+        height: 63
+      alignment: 9
+      pivot: {x: 0.25, y: 0.49206352}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c67d9d10d7475e4ca4bd361a00b66ee
+      internalID: 1118005166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: auki3w7m_47
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 107
+        width: 18
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a889f179c2fc25d4ab2c2cc79f685d49
+      internalID: -1843606267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RG_Throw9
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 52
+        width: 52
+        height: 63
+      alignment: 9
+      pivot: {x: 0.25, y: 0.49206352}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb38e67ccfa921d4c8d741e75e1c4415
+      internalID: -2140636061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RG_Throw10
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 51
+        width: 49
+        height: 63
+      alignment: 9
+      pivot: {x: 0.26530612, y: 0.49206352}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b2a28ee2f52afe4280e3955d511f3aa
+      internalID: 405313532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RG_Throw11
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 52
+        width: 38
+        height: 66
+      alignment: 9
+      pivot: {x: 0.34210527, y: 0.469697}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2df0336f43f67cf4bb46da7431a781e5
+      internalID: 1610945290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RG_Throw12
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 53
+        width: 49
+        height: 63
+      alignment: 9
+      pivot: {x: 0.26530612, y: 0.49206352}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc252c7c0c1801445a792ac45dcec1b0
+      internalID: 263036128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      auki3w7m_31: 1404159381
+      auki3w7m_4: 1955586582
+      Stagger2: -668567363
+      redGiantWalk3: 1528399483
+      auki3w7m_7: -86388976
+      Boulder: 369947210
+      RG_Throw3: 949743149
+      RG_Throw6: 1430884372
+      auki3w7m_8: -740483633
+      auki3w7m_33: 1454832554
+      zzzzzzz: -1862746807
+      auki3w7m_3: 374916373
+      zzzz: -788080435
+      auki3w7m_10: -382236273
+      RG_Throw4: -1584992356
+      Stagger4: 296761313
+      auki3w7m_25: -653270829
+      auki3w7m_9: -1566172491
+      RG_Throw2: 1447008848
+      RG_Throw7: 566460925
+      RG_Throw10: 405313532
+      auki3w7m_5: -1510373374
+      redGiantWalk2: -1944981946
+      zzzzzz: 1563276792
+      Stagger1: -20742960
+      auki3w7m_26: -642083315
+      RG_Throw13: -1157921324
+      RedGiantIdle1: -176548928
+      zzz: -521093515
+      RedGiantIdle2: 1281345126
+      auki3w7m_32: 1115303236
+      auki3w7m_29: 1264667432
+      auki3w7m_0: 1364442679
+      auki3w7m_22: 1170908761
+      RG_Throw12: 263036128
+      redGiantWalk5: -57914755
+      RG_Throw5: -593579646
+      auki3w7m_23: -70087178
+      auki3w7m_21: 1060104811
+      auki3w7m_24: 2069271691
+      auki3w7m_47: -1843606267
+      zz: -450054546
+      RG_Throw8: 1118005166
+      RG_Throw15: -207321033
+      Stagger3: -95344046
+      RG_Throw1: 58682246
+      RG_Throw14: -929889814
+      RG_Throw11: 1610945290
+      auki3w7m_6: 1184143
+      RG_Throw9: -2140636061
+      redGiantWalk1: -1377942140
+      redGiantWalk4: -2063722147
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -48,22 +48,22 @@ public class DemonGiant : MonoBehaviour
     }
 
     public void Update() {
-        if(currentState == 1) //idle
+        if(currentState == 1 && !isAttacking) //idle
         {
             //Play idle animation
             anim.Play("DemonGiant_Idle");
             isWalking = false;
         }
-        if(currentState == 2) //Walking
+        if(currentState == 2 && !isAttacking) //Walking
         {
             //Play walking animation
             anim.Play("DemonGiant_Walk");
             isWalking = true;
         }
 
-        if(Input.GetKeyDown(KeyCode.H)) {
+        if(Input.GetKeyDown(KeyCode.H))
             attack();
-        }
+        
 
         if(Physics2D.OverlapBox(WallDetection.transform.position, WallDetection.transform.localScale, 0, wallLayer)) {
             ïsFacingRight = !ïsFacingRight;
@@ -75,9 +75,9 @@ public class DemonGiant : MonoBehaviour
         if(Physics2D.OverlapBox(PlayerDetection.transform.position, PlayerDetection.transform.localScale, 0, playerLayer)) {
             playerDetected = true;
             _angryTimer = 0;
-        } else {
+            isAngry = true;
+        } else
             playerDetected = false;
-        }
         
         if(isWalking) {
             if(ïsFacingRight && !isAttacking) {
@@ -91,15 +91,25 @@ public class DemonGiant : MonoBehaviour
             }
         }
 
-        if(playerDetected) {
-            if(_angryTimer < _angryTime) {
-                _angryTimer += Time.time;
-                isAngry = true;
-            } else  {
-                print("giant is no longer angry");
-                playerDetected = false;
-                isAngry = false;
-            }
+        if(isAngry)
+            currentState = 2;
+
+        if (currentState == 2 && !attackCooldown)
+        {
+            attackCooldownTimer = 0;
+            attackCooldown = true;
+            StartCoroutine(randomAttackWait());
+        }
+
+
+        if (attackCooldownTime > attackCooldownTimer && attackCooldown == true)
+        {
+            attackCooldownTimer += Time.deltaTime;
+            attackCooldown = true;
+        }
+        else
+        {
+            attackCooldown = false;
         }
     }
     
@@ -107,21 +117,35 @@ public class DemonGiant : MonoBehaviour
 
     public void attack()
     {
-        isAttacking = true;
-        attackCooldown = true;
+        attackCooldownTime = Random.Range(3.0f, 6.0f);
         anim.Play("DemonGiant_Stomp");
+        isAttacking = true;
+        isWalking = false;
+        attackCooldown = true;
     }
 
 
     public void stomp() {
-
-        float distanceToPlayer = Vector2.Distance(transform.position, GameObject.Find("Player").transform.position) / 4;
         GameObject LeftParticles = Instantiate(stompPrefab, stompSpawnPosition.transform.position, Quaternion.identity);    
         LeftParticles.GetComponent<StompController>().isLeft = true;
 
         GameObject rightParticles = Instantiate(stompPrefab, stompSpawnPosition.transform.position, Quaternion.identity);     
         rightParticles.GetComponent<StompController>().isLeft = false; 
-        screenshake.shake(0.25f, 2f / distanceToPlayer, 5f / distanceToPlayer);
+        
         isAttacking = false;
+    }
+    public void shake() 
+    {
+        float distanceToPlayer = Vector2.Distance(transform.position, GameObject.Find("Player").transform.position) / 10;
+
+        screenshake.shake(0.25f, 1f / distanceToPlayer, .25f / distanceToPlayer);
+
+    }
+
+
+    IEnumerator randomAttackWait()
+    {
+        yield return new WaitForSeconds(Random.Range(0.00f, 3.00f));
+        attack();
     }
 }

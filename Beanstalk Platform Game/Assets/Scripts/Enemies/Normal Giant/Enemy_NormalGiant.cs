@@ -34,6 +34,7 @@ public class Enemy_NormalGiant : MonoBehaviour
 
     [Header("Wall detection")]
     [SerializeField] private GameObject WallDetection;
+    [SerializeField] private GameObject FloorDetection;
     [SerializeField] private GameObject PlayerDetection;
     public LayerMask groundLayer;
     public LayerMask playerLayer;
@@ -96,6 +97,10 @@ public class Enemy_NormalGiant : MonoBehaviour
         }
 
         if(Physics2D.OverlapBox(WallDetection.transform.position, WallDetection.transform.localScale, 0, groundLayer)) {
+            ïsFacingRight = !ïsFacingRight;
+        }
+
+        if(!Physics2D.OverlapBox(FloorDetection.transform.position, WallDetection.transform.localScale, 0, groundLayer)) {
             ïsFacingRight = !ïsFacingRight;
         }
 

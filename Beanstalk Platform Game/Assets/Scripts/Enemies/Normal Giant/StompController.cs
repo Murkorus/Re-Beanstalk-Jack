@@ -57,7 +57,7 @@ public class StompController : MonoBehaviour
             Destroy(this.gameObject, 5f);
         }
 
-        if(Physics2D.OverlapCircle(transform.position, 0.5f, playerLayer) && !hasDamaged)
+        if(Physics2D.OverlapCircle(transform.position, 0.5f, playerLayer) && !hasDamaged && !GameObject.Find("Player").GetComponent<PlayerCombatController>().isDodging)
         {
             hasDamaged = true;
             stompParticles1.Stop();

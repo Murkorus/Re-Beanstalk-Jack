@@ -15,4 +15,9 @@ public class PlatformProjectile : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
+
+
+    public void OnTriggerEnter2D(Collider2D other) {
+        
+    }
 }

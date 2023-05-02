@@ -74,7 +74,7 @@ public class PlayerCombatController : MonoBehaviour
     void Update()
     {
         //attack charge check
-        if(Input.GetButtonDown("Fire1")) {
+        if(Input.GetMouseButtonDown(0)) {
             Attack();
         }
         if(Input.GetKeyDown(KeyCode.LeftControl) && !isDodging && !isPerformingAttack) {
@@ -106,7 +106,8 @@ public class PlayerCombatController : MonoBehaviour
 
                 //Knockback
                 Vector3 moveDirection = transform.position - enemiesToDamage[i].transform.position;
-                enemiesToDamage[i].GetComponent<Rigidbody2D>().AddForce( moveDirection.normalized * Random.Range(-20f, -50f));
+                if(enemiesToDamage[i].GetComponent<Rigidbody2D>())
+                    enemiesToDamage[i].GetComponent<Rigidbody2D>().AddForce( moveDirection.normalized * Random.Range(-20f, -50f));
 
                 //Debug
                 Debug.Log("Hit enemy");
