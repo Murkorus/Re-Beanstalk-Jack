@@ -57,8 +57,6 @@ public class PlayerMovement : MonoBehaviour
 	[SerializeField] private Vector3 _hangingOffset;
 	[SerializeField] private Vector2 _ledgeJump;
 	private GameObject groundCheckGO;
-
-	public float groundDistance;
 	
 
     private void Awake()
@@ -113,10 +111,9 @@ public class PlayerMovement : MonoBehaviour
 
 		//distance to ground
 		RaycastHit2D distanceToGround = Physics2D.Raycast(this.groundCheckGO.transform.position, -Vector2.up);
-		groundDistance = distanceToGround.distance;
-        if (ledgeDetected && !wallDetected && groundDistance > 1f && !isClimbing)
+        if (ledgeDetected && !wallDetected && distanceToGround.distance > 0.75f && !isClimbing)
         {
-            if (Input.GetButtonDown("Jump") && !isGrounded)
+            if (Input.GetButton("Jump"))
             {
                 //Freeze the player
                 isHanging = true;
