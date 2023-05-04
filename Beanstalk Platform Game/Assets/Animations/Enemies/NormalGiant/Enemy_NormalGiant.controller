@@ -236,7 +236,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Enemy_NormalGiant_angryy_walking
+  m_Name: Enemy_NormalGiant_angry_walking
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []

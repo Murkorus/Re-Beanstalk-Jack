@@ -13,6 +13,10 @@ public class FadeScreen : MonoBehaviour
         StartCoroutine(Fade(FadeDirection.In));
     }
 
+    public void FadeInOut() {
+        StartCoroutine(Fade(FadeDirection.InOut));
+    }
+
     public void FadeOut()
     {
         StartCoroutine(Fade(FadeDirection.Out));
@@ -31,7 +35,8 @@ public class FadeScreen : MonoBehaviour
     public enum FadeDirection
     {
         In, //Alpha = 1
-        Out // Alpha = 0
+        Out, // Alpha = 0
+        InOut
     }
     #endregion
 
@@ -64,6 +69,10 @@ public class FadeScreen : MonoBehaviour
                 SetColorImage(ref alpha, fadeDirection);
                 yield return null;
             }
+        }
+        if(fadeDirection == FadeDirection.InOut)
+        {
+            StartCoroutine(Fade(FadeDirection.Out));
         }
         CanvasGO.SetActive(true);
     }

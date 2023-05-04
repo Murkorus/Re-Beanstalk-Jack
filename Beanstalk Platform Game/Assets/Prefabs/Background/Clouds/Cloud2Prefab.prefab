@@ -144,5 +144,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.015
-  colorOverlay: {r: 0.084905684, g: 0.084905684, b: 0.084905684, a: 0.31764707}
+  colorOverlay: {r: 0.084905684, g: 0.084905684, b: 0.084905684, a: 0}
   mainMaterial: {fileID: 2100000, guid: 6a75fd65ffbd0be4b912b5b89e41e45e, type: 2}

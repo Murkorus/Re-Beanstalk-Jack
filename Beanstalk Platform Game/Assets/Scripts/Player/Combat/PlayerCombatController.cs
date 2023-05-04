@@ -14,8 +14,6 @@ public class PlayerCombatController : MonoBehaviour
 
 
     [Header("Slingshot settings")]
-    [SerializeField] private float slingshotDamage;
-    [SerializeField] private float slingshotChargeTime;
     [HideInInspector] public bool isChargingSlingshot;
     private float chargeTime;
     [HideInInspector] public Transform projectilePoint;
@@ -29,7 +27,7 @@ public class PlayerCombatController : MonoBehaviour
 
 
     [Header("Slingshot projectiles")]
-    [SerializeField] private string currentProjectile;
+    public string currentProjectile;
     public float projectileForce;
     public GameObject slingshotPebbleGO;
     public GameObject slingshotPlatformGO;
@@ -48,16 +46,6 @@ public class PlayerCombatController : MonoBehaviour
     [HideInInspector] public bool isDodging;
     
 
-    [Header("Weapon wheel")]
-    [SerializeField] private int weaponWheelselected;
-    [SerializeField] private List<string> projectiles;
-    [SerializeField] private List<GameObject> weaponWheelSlots;
-    [SerializeField] private List<float> weaponWheelSlotsDistance;
-    [SerializeField] private GameObject weaponWheelGO;
-    private float smallestDistance;
-    private bool usingWeaponWheel;
-    private TextMeshProUGUI weaponWheelText;
-
 
      [Header("Other scripts")]
      public PlayerMovement pm;
@@ -67,7 +55,6 @@ public class PlayerCombatController : MonoBehaviour
     void Start()
     {
         InitializeSlingshot();
-        weaponWheelText = GameObject.Find("SelectedInWeaponWheel").GetComponent<TextMeshProUGUI>();
     }
 
     // Update is called once per frame
@@ -83,7 +70,6 @@ public class PlayerCombatController : MonoBehaviour
 
 
         Slingshot();
-        weaponWheel();
     }
 
 
@@ -311,53 +297,6 @@ public class PlayerCombatController : MonoBehaviour
         return pos;
     }
 
-
-#endregion
-
-#region weapon wheel
-
-    public void weaponWheel() {
-        GetClosestSlot();
-        if(Input.GetKey(KeyCode.Q)) {
-            weaponWheelGO.SetActive(true);
-            usingWeaponWheel = true;
-        } else {
-            weaponWheelGO.SetActive(false);
-            usingWeaponWheel = false;   
-        }
-    }
-
-    public void changeProjectile(int slot) {
-        currentProjectile = projectiles[slot];
-    }
-
-
-    public void GetClosestSlot() {
-        if(usingWeaponWheel) {
-            smallestDistance = Mathf.Infinity;
-            for(int i = 0; i < weaponWheelSlots.Count; i++ ) {
-                float distance = Vector2.Distance(Input.mousePosition, weaponWheelSlots[i].GetComponent<RectTransform>().transform.position);
-                weaponWheelSlotsDistance[i] = distance;
-                if(distance < smallestDistance) {
-                    smallestDistance = distance;
-                    weaponWheelselected = i;
-                }
-            }
-
-            if (weaponWheelselected == 0)
-                currentProjectile = "normal";
-            if (weaponWheelselected == 1)
-                currentProjectile = "platform";
-            if (weaponWheelselected == 2)
-                currentProjectile = "fire";
-            if (weaponWheelselected == 3)
-                currentProjectile = "ice";
-            if (weaponWheelselected == 4)
-                currentProjectile = "mind";
-            weaponWheelText.text = currentProjectile;
-        }
-    }
-    
 
 #endregion
 

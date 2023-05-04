@@ -111,7 +111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0db03f08401c5944a9b7c26ec3f64953, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 0.03
   colorOverlay: {r: 0, g: 0, b: 0, a: 0.31764707}
   mainMaterial: {fileID: 2100000, guid: 6a75fd65ffbd0be4b912b5b89e41e45e, type: 2}
 --- !u!1 &4406993728772106441

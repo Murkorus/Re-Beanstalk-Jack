@@ -1200,6 +1200,9 @@ MonoBehaviour:
   _groundLayer:
     serializedVersion: 2
     m_Bits: 576
+  _ledgeLayer:
+    serializedVersion: 2
+    m_Bits: 0
   isGrounded: 0
   WallDetection: {fileID: 6489501512820838137}
   wallDetected: 0
@@ -1211,6 +1214,7 @@ MonoBehaviour:
   _rayOffsetLeft: {x: -0.65, y: 10, z: 0}
   _hangingOffset: {x: 0.635, y: 0.45, z: 0}
   _ledgeJump: {x: -250, y: 200}
+  groundDistance: 0
 --- !u!114 &6489501512461350419
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1353,26 +1357,6 @@ MonoBehaviour:
   dodgeTime: 0.15
   iFrames: 0
   isDodging: 0
-  weaponWheelselected: 0
-  projectiles:
-  - normal
-  - platform
-  - fire
-  - ice
-  - mind control
-  weaponWheelSlots:
-  - {fileID: 6489501513337506504}
-  - {fileID: 6489501512467233459}
-  - {fileID: 6489501513640206661}
-  - {fileID: 6489501512867399757}
-  - {fileID: 6489501513904038012}
-  weaponWheelSlotsDistance:
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  weaponWheelGO: {fileID: 6489501513528386054}
   pm: {fileID: 6489501512461350418}
 --- !u!1 &6489501512467233459
 GameObject:
@@ -1840,7 +1824,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6489501512778577228}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.993, y: -0.23187125, z: -10.032547}
+  m_LocalPosition: {x: 0.99300003, y: -0.23187125, z: -10.032547}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2326,6 +2310,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6489501513528386053}
   - component: {fileID: 6489501513528386052}
+  - component: {fileID: 2981495045091474733}
   m_Layer: 0
   m_Name: WeaponWheel
   m_TagString: Untagged
@@ -2369,6 +2354,23 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2981495045091474733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6489501513528386054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b518196e82b963f4c9bf887aaf1b08b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponWheelselected: 0
+  projectiles: []
+  weaponWheelSlots: []
+  weaponWheelSlotsDistance: []
+  weaponWheelGO: {fileID: 6489501512806142621}
 --- !u!1 &6489501513542202020
 GameObject:
   m_ObjectHideFlags: 0

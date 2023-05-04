@@ -3044,7 +3044,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilemapCastle_140
+      name: Door
       rect:
         serializedVersion: 2
         x: 530
@@ -3842,7 +3842,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TilemapCastle_178
+      name: Door1
       rect:
         serializedVersion: 2
         x: 201
@@ -4677,8 +4677,8 @@ TextureImporter:
       TilemapCastle_208: -257410209
       TilemapCastle_194: -876461402
       TilemapCastle_209: 659803712
-      TilemapCastle_178: -1904581822
       TilemapCastle_128: 460350135
+      Door: -1583166816
       TilemapCastle_84: -1828886417
       TilemapCastle_89: 107407399
       TilemapCastle_12: -836502158
@@ -4725,7 +4725,6 @@ TextureImporter:
       TilemapCastle_28: -885133021
       TilemapCastle_7: -1844323153
       TilemapCastle_73: 820814120
-      TilemapCastle_140: -1583166816
       TilemapCastle_182: 890102040
       TilemapCastle_110: -712400786
       TilemapCastle_197: -1060547106
@@ -4821,6 +4820,7 @@ TextureImporter:
       TilemapCastle_6: 531191784
       TilemapCastle_52: -730430354
       TilemapCastle_96: 796068734
+      Door1: -1904581822
       TilemapCastle_133: 197965028
   spritePackingTag: 
   pSDRemoveMatte: 0
