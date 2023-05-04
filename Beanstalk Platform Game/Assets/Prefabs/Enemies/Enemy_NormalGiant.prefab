@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6401196958939507894}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FloorDetection
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 447175018787560926}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.616, y: -1.674, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -43,7 +43,10 @@ GameObject:
   - component: {fileID: 1931733596676340630}
   - component: {fileID: 1931733596676340624}
   - component: {fileID: 1931733596676340627}
-  m_Layer: 0
+  - component: {fileID: 7468418335665118073}
+  - component: {fileID: 3658689699749218090}
+  - component: {fileID: 1228175516533204102}
+  m_Layer: 8
   m_Name: Enemy_NormalGiant
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -166,6 +169,7 @@ MonoBehaviour:
   attackCooldownTimer: 0
   screenshake: {fileID: 0}
   WallDetection: {fileID: 1931733597920771781}
+  FloorDetection: {fileID: 447175018787560926}
   PlayerDetection: {fileID: 1931733597920771781}
   groundLayer:
     serializedVersion: 2
@@ -173,6 +177,66 @@ MonoBehaviour:
   playerLayer:
     serializedVersion: 2
     m_Bits: 128
+--- !u!114 &7468418335665118073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1931733596676340631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c570911d0028d8c468d09bec3a52816c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 20
+--- !u!61 &3658689699749218090
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1931733596676340631}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.050000012, y: -0.024999976}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.45454547, y: 0.50793654}
+    oldSize: {x: 1.1, y: 3.15}
+    newSize: {x: 1.1, y: 3.15}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.1, y: 3.15}
+  m_EdgeRadius: 0
+--- !u!50 &1228175516533204102
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1931733596676340631}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1931733596943448403
 GameObject:
   m_ObjectHideFlags: 0
@@ -182,7 +246,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1931733596943448402}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PlayerDetection
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -213,7 +277,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1931733597548006886}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SpawnPos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -245,7 +309,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1931733597920771780}
   - component: {fileID: 1931733597920771783}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WallDetection
   m_TagString: Untagged
   m_Icon: {fileID: 0}
