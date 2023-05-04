@@ -65,10 +65,7 @@ public class Enemy_NormalGiant : MonoBehaviour
             isWalking = true;
         }
 
-        if(Input.GetKeyDown(KeyCode.H))
-            attack();
-        
-
+        //Flip play if close to wall
         if(Physics2D.OverlapBox(WallDetection.transform.position, WallDetection.transform.localScale, 0, wallLayer)) {
             ïsFacingRight = !ïsFacingRight;
         }
@@ -76,6 +73,7 @@ public class Enemy_NormalGiant : MonoBehaviour
             ïsFacingRight = !ïsFacingRight;
         }
 
+        //Player detection
         if(Physics2D.OverlapBox(PlayerDetection.transform.position, PlayerDetection.transform.localScale, 0, playerLayer)) {
             playerDetected = true;
             _angryTimer = 0;
@@ -99,7 +97,7 @@ public class Enemy_NormalGiant : MonoBehaviour
         if(isAngry)
             currentState = 2;
 
-        if (currentState == 2 && !attackCooldown)
+        if (currentState == 2 && !attackCooldown && isAngry)
         {
             attackCooldownTimer = 0;
             attackCooldown = true;

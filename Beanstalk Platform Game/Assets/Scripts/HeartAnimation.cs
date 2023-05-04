@@ -12,8 +12,4 @@ public class HeartAnimation : MonoBehaviour
         GetComponent<Animator>().Play("Heart_Damage");
     }
 
-    public void DestroyHeart()
-    {
-        transform.parent.GetComponent<HealthDisplay>().removeHealthToList();
-    }
 }

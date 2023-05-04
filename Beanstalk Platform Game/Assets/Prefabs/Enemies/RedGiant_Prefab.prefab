@@ -99,7 +99,7 @@ Animator:
   m_GameObject: {fileID: 8110658180511622504}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f599f7f141e445f419e3a34c3d732773, type: 2}
+  m_Controller: {fileID: 9100000, guid: e4de21a5fbf4a284e9d16d26fa6e9277, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -123,9 +123,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0
   health: 0
-  staggered: 0
-  staggerTimeLeft: 0
-  staggerTime: 5
   isIdle: 0
   boulder: {fileID: 3313593885024700099, guid: e77a645e2604dc847a84041a603e9970, type: 3}
   target: {fileID: 0}
@@ -158,7 +155,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.49206352}
-    oldSize: {x: 1, y: 3.9375}
+    oldSize: {x: 0.8, y: 3.15}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -222,7 +219,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8110658181233316226}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2, y: 0.876, z: 0}
+  m_LocalPosition: {x: 1.322, y: 0.876, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

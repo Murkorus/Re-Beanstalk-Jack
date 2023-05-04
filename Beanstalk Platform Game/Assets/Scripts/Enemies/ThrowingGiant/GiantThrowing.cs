@@ -10,12 +10,6 @@ public class GiantThrowing : MonoBehaviour
     public float speed;
     public float health;
 
-    //Stagger variables
-    [Header("Staggered")]
-    public bool staggered;
-    public float staggerTimeLeft;
-    public float staggerTime;
-
     public bool isIdle;
 
     public GameObject boulder;
@@ -42,31 +36,13 @@ public class GiantThrowing : MonoBehaviour
     private GameObject GM;
 
 
-
-
-    Vector3 calcBallisticVelocityVector(Vector3 source, Vector3 target, float angle)
-    {
-        Vector3 direction = target - source;
-        float h = direction.y;
-        direction.y = 0;
-        float distance = direction.magnitude;
-        float a = angle * Mathf.Deg2Rad;
-        direction.y = distance * Mathf.Tan(a);
-        distance += h / Mathf.Tan(a);
-
-        // calculate velocity
-        float velocity = Mathf.Sqrt(distance * Physics.gravity.magnitude / Mathf.Sin(2 * a));
-        return velocity * direction.normalized;
-    }
-
-
     void Start()
     {
         target = GameObject.Find("Player");
         GM = GameObject.Find("GM");
     }
 
-    // Update is called once per frame
+
 
     private void OnDrawGizmosSelected()
     {
@@ -83,74 +59,38 @@ public class GiantThrowing : MonoBehaviour
             }
         }
 
-
-        //if not staggered
-        if (staggered == false)
+        //Animations
+        if (!isAttacking) //if not staggered or attakcing
         {
-            if (!isAttacking) //if not staggered or attakcing
-            {
-                isIdle = true;
-                animator.Play("RedgiantIdle");
-            }
-            else // if is attacking
-            {
-                isIdle = false;
-                if (attackTimeLeft < 0.55 && !attackWave)
-                {
-                    Debug.Log("Throw");
-                    GameObject boulderGO = Instantiate(boulder, throwPoint.transform.position, Quaternion.identity);
-                    boulderGO.GetComponent<Rigidbody2D>().AddForce(calcBallisticVelocityVector(transform.position, target.transform.position, 33) * 41);
-                    attackWave = true;
-                }
-                if (attackTimeLeft > 0)
-                {
-                    attackTimeLeft -= Time.deltaTime;
-                    animator.Play("redGiantThrow");
-                }
-                else
-                {
-                    //Debug.Log("No Longer staggered");
-                    isAttacking = false;
-                    attackWave = false;
-                }
-            }
+            isIdle = true;
+            animator.Play("RedgiantIdle");
         }
-        else
+        else // if is attacking
         {
-            if (staggerTimeLeft > 0)
+            isIdle = false;
+            if (attackTimeLeft < 0.55 && !attackWave)
             {
-                staggerTimeLeft -= Time.deltaTime;
-                animator.Play("StaggerRedGiant");
-                isIdle = false;
+                Debug.Log("Throw");
+                GameObject boulderGO = Instantiate(boulder, throwPoint.transform.position, Quaternion.identity);
+                attackWave = true;
+            }
+            if (attackTimeLeft > 0)
+            {
+                attackTimeLeft -= Time.deltaTime;
+                animator.Play("redGiantThrow");
             }
             else
             {
                 //Debug.Log("No Longer staggered");
-                staggered = false;
-                isIdle = true;
+                isAttacking = false;
+                attackWave = false;
             }
         }
-    }
-
-    public void StaggerGiant()
-    {
-        staggered = true;
-        staggerTimeLeft = staggerTime;
     }
 
     public void Attack()
     {
         isAttacking = true;
         attackTimeLeft = attackTime;
-    }
-
-    public void takeDamage(int amount)
-    {
-        health -= amount;
-        if (health <= 0)
-        {
-            Debug.Log("Dead");
-            Destroy(gameObject);
-        }
     }
 }

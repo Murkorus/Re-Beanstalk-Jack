@@ -1202,7 +1202,7 @@ MonoBehaviour:
     m_Bits: 576
   _ledgeLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   isGrounded: 0
   WallDetection: {fileID: 6489501512820838137}
   wallDetected: 0
@@ -1210,8 +1210,8 @@ MonoBehaviour:
   ledgeDetected: 0
   ledgeRadius: 0.5
   isHanging: 0
-  _rayOffsetRight: {x: 0.65, y: 10, z: 0}
-  _rayOffsetLeft: {x: -0.65, y: 10, z: 0}
+  _rayOffsetRight: {x: 0.65, y: 2, z: 0}
+  _rayOffsetLeft: {x: -0.65, y: 2, z: 0}
   _hangingOffset: {x: 0.635, y: 0.45, z: 0}
   _ledgeJump: {x: -250, y: 200}
   groundDistance: 0
@@ -1339,8 +1339,6 @@ MonoBehaviour:
   breakableLayer:
     serializedVersion: 2
     m_Bits: 1024
-  slingshotDamage: 0
-  slingshotChargeTime: 0
   isChargingSlingshot: 0
   projectilePoint: {fileID: 6489501512608844638}
   slingshotPoint: {fileID: 5877308583327490201, guid: ecb915653f6821a48b93a63dc5af97ac, type: 3}
@@ -1824,7 +1822,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6489501512778577228}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.99300003, y: -0.23187125, z: -10.032547}
+  m_LocalPosition: {x: 0.993, y: -0.23187125, z: -10.032547}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2367,9 +2365,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponWheelselected: 0
-  projectiles: []
-  weaponWheelSlots: []
-  weaponWheelSlotsDistance: []
+  projectiles:
+  - normal
+  - platform
+  - fire
+  - ice
+  - mind
+  weaponWheelSlots:
+  - {fileID: 6489501513337506504}
+  - {fileID: 6489501512467233459}
+  - {fileID: 6489501513640206661}
+  - {fileID: 6489501512867399757}
+  - {fileID: 6489501513904038012}
+  weaponWheelSlotsDistance:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
   weaponWheelGO: {fileID: 6489501512806142621}
 --- !u!1 &6489501513542202020
 GameObject:
@@ -2721,10 +2734,10 @@ Camera:
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
+    x: 0.00052083336
+    y: 0.0009259259
+    width: 1.2625
+    height: 0.3888889
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60

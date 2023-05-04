@@ -42,7 +42,7 @@ public class PlayerStats : MonoBehaviour
         #region health
         public void takeDamage() {
             health -= 1;
-            GameObject.Find("Player").GetComponentInChildren<HealthDisplay>().removeHealthToList();
+            GameObject.Find("HealthDisplay").GetComponent<HealthDisplay>().TakeDamage();
             screenshake.shake(0.25f, 1f, .1f);
         }
 

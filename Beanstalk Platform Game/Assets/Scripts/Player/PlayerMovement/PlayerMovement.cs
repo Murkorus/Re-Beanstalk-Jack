@@ -115,8 +115,8 @@ public class PlayerMovement : MonoBehaviour
 		RaycastHit2D distanceToGround = Physics2D.Raycast(this.groundCheckGO.transform.position, -Vector2.up);
 		groundDistance = distanceToGround.distance;
 
-		//Ledge hold
-        if (ledgeDetected && !wallDetected && groundDistance > 2f && !isClimbing)
+        //Ledge hold
+        if (ledgeDetected && !wallDetected && distanceToGround.distance > 0.75f && !isClimbing)
         {
             if (Input.GetButtonDown("Jump"))
             {

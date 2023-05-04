@@ -1,54 +1,75 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using Unity.Mathematics;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class HealthDisplay : MonoBehaviour
 {
-    private int playerHealth;
-    public Vector3 healthStartPosition;
-    public Vector3 healthOffset;
-    public GameObject healthPrefab;
+    public int maxHealth = 5;
+    public int startingHealth = 3;
+    public GameObject heartPrefab;
+    public Vector2 heartOffset = new Vector2(40f, 0f);
 
-    public List<GameObject> heartGOList;
-    
+    private int currentHealth;
+    private List<GameObject> hearts = new List<GameObject>();
 
-    void Start()
+    private void Start()
     {
-        for (int i = 0; i < GameObject.Find("Player").GetComponent<PlayerStats>().health; i++)
+        startingHealth = GameObject.Find("Player").GetComponent<PlayerStats>().health;
+        currentHealth = startingHealth;
+        for (int i = 0; i < currentHealth; i++)
         {
-            addHealthToList();
+            AddHeart();
         }
     }
 
-    public void Update()
+    private void Update()
     {
         if (Input.GetKeyDown(KeyCode.U))
         {
-            playHeartDamageAnimation();
+            TakeDamage();
         }
     }
 
-
-    public void addHealthToList()
+    public void TakeDamage()
     {
-        GameObject heart = Instantiate(healthPrefab, new Vector3(healthStartPosition.x, healthStartPosition.y, healthStartPosition.z) + new Vector3(healthOffset.x * heartGOList.Count, healthOffset.y * heartGOList.Count, healthOffset.z),
-            quaternion.identity);
-        heart.transform.SetParent(transform);
-        heartGOList.Add(heart);
+        if (currentHealth > 0)
+        {
+            currentHealth--;
+            RemoveHeart();
+        }
     }
 
-    public void playHeartDamageAnimation()
+    public void AddHeart()
     {
-        heartGOList[heartGOList.Count - 1].GetComponent<Animator>().Play("Heart_Damage");   
+        GameObject heart = Instantiate(heartPrefab, transform);
+        heart.transform.localPosition = new Vector2(hearts.Count * heartOffset.x, 0f);
+        hearts.Add(heart);
     }
-    
-    public void removeHealthToList()
+
+    private void RemoveHeart()
     {
-        Destroy(heartGOList[heartGOList.Count - 1]);
-        heartGOList.RemoveAt(heartGOList.Count - 1);
+        if (hearts.Count > 0)
+        {
+            GameObject heart = hearts[hearts.Count - 1];
+            hearts.RemoveAt(hearts.Count - 1);
+            Destroy(heart);
+        }
+    }
+
+    private void OnValidate()
+    {
+        // Ensure max health is always at least starting health
+        if (maxHealth < startingHealth)
+        {
+            maxHealth = startingHealth;
+        }
+    }
+
+    private void Reset()
+    {
+        // Set default values
+        maxHealth = 5;
+        startingHealth = 3;
+        heartPrefab = Resources.Load<GameObject>("Heart");
+        heartOffset = new Vector2(40f, 0f);
     }
 }
