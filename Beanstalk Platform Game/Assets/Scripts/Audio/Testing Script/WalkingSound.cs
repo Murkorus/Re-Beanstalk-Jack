@@ -28,22 +28,23 @@ public class WalkingSound : MonoBehaviour
                 if (hit.collider.gameObject.CompareTag("Grass"))
                 {
                     walkingSound.clip = grass;
-                    walkingSound.enabled = true;
                 }
                 else if (hit.collider.gameObject.CompareTag("Stone"))
                 {
                     walkingSound.clip = stone;
-                    walkingSound.enabled = true;
                 }
                 else if (hit.collider.gameObject.CompareTag("Corruption"))
                 {
                     walkingSound.clip = corruption;
-                    walkingSound.enabled = true;
                 }
                 else if (hit.collider.gameObject.CompareTag("Cloud"))
                 {
                     walkingSound.clip = cloud;
-                    walkingSound.enabled = true;
+                }
+                walkingSound.enabled = true;
+                if (!walkingSound.isPlaying)
+                {
+                    walkingSound.Play();
                 }
             }
         }

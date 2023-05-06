@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -13,12 +14,7 @@ public class HealthDisplay : MonoBehaviour
 
     private void Start()
     {
-        startingHealth = GameObject.Find("Player").GetComponent<PlayerStats>().health;
-        currentHealth = startingHealth;
-        for (int i = 0; i < currentHealth; i++)
-        {
-            AddHeart();
-        }
+        StartCoroutine(Loadhealth());
     }
 
     private void Update()
@@ -71,5 +67,16 @@ public class HealthDisplay : MonoBehaviour
         startingHealth = 3;
         heartPrefab = Resources.Load<GameObject>("Heart");
         heartOffset = new Vector2(40f, 0f);
+    }
+
+    public IEnumerator Loadhealth()
+    {
+        yield return new WaitForSeconds(0.1f);
+        startingHealth = GameObject.Find("Player").GetComponent<PlayerStats>().health;
+        currentHealth = startingHealth;
+        for (int i = 0; i < currentHealth; i++)
+        {
+            AddHeart();
+        }
     }
 }

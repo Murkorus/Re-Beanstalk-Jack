@@ -30,7 +30,7 @@ public class SaveSystem : MonoBehaviour
 
     void Awake()
     {
-        
+        DontDestroyOnLoad(this.gameObject);
     }
 
     public void Start()
@@ -137,7 +137,7 @@ public class SaveSystem : MonoBehaviour
     public void newSave(int saveNum)
     {
         save.currentSave_save = saveNum;
-        save.currentLevel_save = 4;
+        save.currentLevel_save = 2;
         save.playerHealth = 6;
         save.pebbles = 25;
         save.platform = 0;
