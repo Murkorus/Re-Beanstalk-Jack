@@ -13,7 +13,9 @@ GameObject:
   - component: {fileID: 8110658180511622514}
   - component: {fileID: 8110658180511622515}
   - component: {fileID: 6282854969388676844}
-  m_Layer: 11
+  - component: {fileID: 1613079953119390058}
+  - component: {fileID: 2720570458740443625}
+  m_Layer: 8
   m_Name: RedGiant_Prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -164,6 +166,40 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 3.9375}
   m_EdgeRadius: 0
+--- !u!50 &1613079953119390058
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8110658180511622504}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!114 &2720570458740443625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8110658180511622504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c570911d0028d8c468d09bec3a52816c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 15
 --- !u!1 &8110658180954104364
 GameObject:
   m_ObjectHideFlags: 0
@@ -173,7 +209,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8110658180954104365}
-  m_Layer: 11
+  m_Layer: 8
   m_Name: PlayerDetection
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -204,7 +240,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8110658181233316227}
-  m_Layer: 11
+  m_Layer: 8
   m_Name: ThrowPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}

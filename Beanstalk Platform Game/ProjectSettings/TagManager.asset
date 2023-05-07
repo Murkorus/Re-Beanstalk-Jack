@@ -8,6 +8,7 @@ TagManager:
   - Stone
   - Corruption
   - Cloud
+  - StinkCloud
   layers:
   - Default
   - TransparentFX
@@ -22,7 +23,7 @@ TagManager:
   - Breakable
   - Pickup
   - Foliage
-  - 
+  - Stink
   - 
   - 
   - 

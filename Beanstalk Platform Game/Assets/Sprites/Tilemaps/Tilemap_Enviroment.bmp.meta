@@ -1280,7 +1280,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 8wfwy9aw_56
+      name: BigDoor
       rect:
         serializedVersion: 2
         x: 445
@@ -3877,7 +3877,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 8wfwy9aw_179
+      name: CastlePillar_Front
       rect:
         serializedVersion: 2
         x: 242
@@ -3898,36 +3898,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 8wfwy9aw_180
-      rect:
-        serializedVersion: 2
-        x: 285
-        y: 124
-        width: 36
-        height: 117
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -14, y: -58.5}
-        - {x: -14, y: -34.5}
-        - {x: 16, y: -34.5}
-        - {x: 16, y: -58.5}
-      - - {x: -16, y: -30.5}
-        - {x: -16, y: -16.5}
-        - {x: 17, y: -16.5}
-        - {x: 17, y: -30.5}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 26b3704713b57364bb0745f3fb3b2470
-      internalID: 1623284059
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 8wfwy9aw_181
+      name: CastlePillar_Arch_Front
       rect:
         serializedVersion: 2
         x: 397
@@ -4242,7 +4213,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 8wfwy9aw_196
+      name: Health Potion
       rect:
         serializedVersion: 2
         x: 24
@@ -4284,7 +4255,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 8wfwy9aw_198
+      name: Food
       rect:
         serializedVersion: 2
         x: 79
@@ -4305,12 +4276,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 8wfwy9aw_199
+      name: LongChain
       rect:
         serializedVersion: 2
         x: 117
         y: 103
-        width: 22
+        width: 3
         height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -4347,7 +4318,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 8wfwy9aw_201
+      name: CastlePillar_Arch_Back
       rect:
         serializedVersion: 2
         x: 397
@@ -4410,7 +4381,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 8wfwy9aw_204
+      name: CastlePillar_Banner_front
       rect:
         serializedVersion: 2
         x: 195
@@ -4431,7 +4402,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 8wfwy9aw_205
+      name: CastlePillar_Banner_Back
       rect:
         serializedVersion: 2
         x: 242
@@ -4473,15 +4444,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 8wfwy9aw_207
+      name: LeftTableLeg
       rect:
         serializedVersion: 2
         x: 35
         y: 76
-        width: 45
+        width: 17
         height: 29
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.47058824, y: 0.4827586}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4494,15 +4465,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 8wfwy9aw_208
+      name: RightTableLeg
       rect:
         serializedVersion: 2
         x: 85
         y: 76
         width: 18
         height: 29
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4827586}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4536,7 +4507,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 8wfwy9aw_210
+      name: BigLantern
       rect:
         serializedVersion: 2
         x: 157
@@ -4619,6 +4590,153 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Food Empty
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 118
+        width: 30
+        height: 3
+      alignment: 9
+      pivot: {x: 0.5, y: 2.3333335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c4572951c7aaf94388a005142f100a6
+      internalID: 1643336442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tabletop
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 103
+        width: 23
+        height: 2
+      alignment: 9
+      pivot: {x: 0.47826087, y: -6.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fed9338a837a2f4f9feb4f3716912f0
+      internalID: -1286548156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SingleDoor
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 255
+        width: 21
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 1, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f54ebd2cf2dfcce4382976b48c710fe1
+      internalID: -723478837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastlePillar_Back
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 124
+        width: 36
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cae5f2699b327424faf7ebfc8bae6559
+      internalID: 1623284059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ShortChain
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 103
+        width: 3
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ec0bfc3788e75a40bfb55b9d2c01b40
+      internalID: 312525601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SingleLantern
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 103
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6357e9761bf26743800dd2dd2483050
+      internalID: -1387387267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastlePillar_Arch
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 141
+        width: 56
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7a3313976bdd604aa79ebe9081838c2
+      internalID: 635006783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -4632,7 +4750,8 @@ TextureImporter:
     nameFileIdTable:
       8wfwy9aw_44: -836823286
       8wfwy9aw_87: -1489913335
-      8wfwy9aw_181: 1277778530
+      CastlePillar_Arch_Back: 1336207883
+      BigLantern: 1813570941
       Grass_Middle_8: 144007031
       8wfwy9aw_125: -1518048777
       8wfwy9aw_26: -1334648615
@@ -4649,6 +4768,7 @@ TextureImporter:
       Cloud_Side_Left: 152830603
       8wfwy9aw_191: -1514131757
       8wfwy9aw_38: -1346073951
+      LongChain: -1908408942
       8wfwy9aw_142: -1652190898
       8wfwy9aw_72: -489806415
       8wfwy9aw_73: -1350477961
@@ -4659,6 +4779,7 @@ TextureImporter:
       8wfwy9aw_52: -1319754631
       Cloud_Pillar_Top: 467521567
       8wfwy9aw_15: 952863005
+      CastlePillar_Banner_front: 1869079308
       8wfwy9aw_174: 470119567
       Grass_Middle_11: -1136433473
       8wfwy9aw_42: 1092145525
@@ -4675,7 +4796,6 @@ TextureImporter:
       SmallFloatingCloud1: -1884693301
       8wfwy9aw_68: -2088042834
       Grass_Middle_12: -922321293
-      8wfwy9aw_180: 1623284059
       8wfwy9aw_103: 568419955
       Grass_Side_Left2: -1737760385
       8wfwy9aw_85: 518037090
@@ -4690,7 +4810,6 @@ TextureImporter:
       8wfwy9aw_100: -857639563
       SmallFloatingCloud3: 575232258
       Grass_BottomCorner_Left: 539764794
-      8wfwy9aw_198: 99997711
       8wfwy9aw_111: 429511923
       8wfwy9aw_47: -83262631
       8wfwy9aw_105: 732623562
@@ -4702,7 +4821,6 @@ TextureImporter:
       8wfwy9aw_40: -1744482141
       8wfwy9aw_22: -1502590070
       8wfwy9aw_120: 473223614
-      8wfwy9aw_199: -1908408942
       8wfwy9aw_3: -1962180542
       8wfwy9aw_82: 1472097188
       8wfwy9aw_189: -1016717562
@@ -4713,38 +4831,40 @@ TextureImporter:
       8wfwy9aw_162: 220120969
       8wfwy9aw_170: 1345933377
       8wfwy9aw_114: -187693022
-      8wfwy9aw_56: -1694911645
       Grass_Middle_3: -1176948317
       FloatingCloud5: 1132743701
       8wfwy9aw_115: 748787652
       Grass_Slope_Up: 390808415
+      ShortChain: 312525601
       8wfwy9aw_172: -1638865088
       8wfwy9aw_178: 2040842246
+      CastlePillar_Front: 390411552
       8wfwy9aw_64: -2121014490
       8wfwy9aw_101: -1121004466
       8wfwy9aw_60: -719834418
-      8wfwy9aw_196: 1833601054
       8wfwy9aw_97: 794723942
       8wfwy9aw_156: 461380314
       Grass_Middle_5: 1918713506
-      8wfwy9aw_207: 1484094552
       Stone_BottomCorner_Righ: 2177189
       8wfwy9aw_84: 1351993750
       8wfwy9aw_213: -1040906625
       8wfwy9aw_95: -1524709385
       8wfwy9aw_155: 1096359973
       8wfwy9aw_16: -364280997
+      SingleLantern: -1387387267
       8wfwy9aw_104: -67562203
+      LeftTableLeg: 1484094552
       8wfwy9aw_39: -1428616638
       CloudGrass_Slope_Up: -456454659
       8wfwy9aw_10: 1455031816
+      Food: 99997711
       8wfwy9aw_78: -633837629
-      8wfwy9aw_80: 1338264510
       8wfwy9aw_20: 1826903621
       8wfwy9aw_70: 948135010
-      CloudGrass_Floating3: -1276682160
+      8wfwy9aw_80: 1338264510
       8wfwy9aw_23: -459353418
       8wfwy9aw_188: 371458041
+      CloudGrass_Floating3: -1276682160
       8wfwy9aw_79: 521529673
       8wfwy9aw_25: 1601134816
       8wfwy9aw_133: -346407061
@@ -4752,18 +4872,16 @@ TextureImporter:
       8wfwy9aw_86: 1665783396
       8wfwy9aw_18: -1198934241
       CloudGrass_End_Left: -189193935
-      8wfwy9aw_205: -1181574154
       CloudGrass_Floating4: -923094160
       8wfwy9aw_55: -202258102
       8wfwy9aw_192: 1274633336
+      CastlePillar_Back: 1623284059
       8wfwy9aw_202: 1690157901
       8wfwy9aw_53: 214479995
       8wfwy9aw_209: 1120717424
-      8wfwy9aw_210: 1813570941
-      8wfwy9aw_169: -554735426
-      8wfwy9aw_204: 1869079308
-      8wfwy9aw_30: 840560555
       CloudGrass_Slope_Down: -372179594
+      8wfwy9aw_169: -554735426
+      8wfwy9aw_30: 840560555
       8wfwy9aw_31: -1365471236
       8wfwy9aw_14: 1532298545
       8wfwy9aw_9: 436376725
@@ -4778,7 +4896,6 @@ TextureImporter:
       8wfwy9aw_182: 2015514815
       Grass_Middle_7: -43537615
       8wfwy9aw_197: 225585457
-      8wfwy9aw_201: 1336207883
       8wfwy9aw_21: 1926631237
       8wfwy9aw_173: 824294867
       CloudGrass_End_Right: 1938260017
@@ -4792,9 +4909,11 @@ TextureImporter:
       8wfwy9aw_190: -1772482429
       Grass_Normal: 166003821
       Grass_Middle_10: -1979428395
-      8wfwy9aw_208: -2078694749
+      BigDoor: -1694911645
       8wfwy9aw_46: 797029074
       8wfwy9aw_168: 778447467
+      Food Empty: 1643336442
+      CastlePillar_Arch: 635006783
       8wfwy9aw_141: -1406617090
       8wfwy9aw_19: 1138863666
       8wfwy9aw_57: -1984608956
@@ -4804,11 +4923,12 @@ TextureImporter:
       FloatingCloud3: -218174345
       8wfwy9aw_112: -297949031
       Grass_Side_Right2: -328042607
+      CastlePillar_Arch_Front: 1277778530
       8wfwy9aw_83: -228115293
-      8wfwy9aw_179: 390411552
       8wfwy9aw_99: 1439030455
       SmallFloatingCloud2: -894642535
       8wfwy9aw_48: 1409049381
+      Tabletop: -1286548156
       8wfwy9aw_211: 64370039
       Grass_Corner_Right: 479515325
       8wfwy9aw_186: 257154968
@@ -4816,6 +4936,8 @@ TextureImporter:
       8wfwy9aw_193: -751244611
       CloudGrass_Floating2: 1309738531
       Grass_Slope_Down: -1945429704
+      Health Potion: 1833601054
+      RightTableLeg: -2078694749
       Grass_Middle_4: -818659248
       8wfwy9aw_177: 665418296
       Cloud_Side_Right: -1561007092
@@ -4825,12 +4947,14 @@ TextureImporter:
       8wfwy9aw_152: -1549941701
       8wfwy9aw_159: 658551994
       8wfwy9aw_81: 1796417746
+      SingleDoor: -723478837
       8wfwy9aw_171: -898822990
       FloatingCloud1: 2126057243
       8wfwy9aw_5: -1354611183
       8wfwy9aw_153: -643339890
       8wfwy9aw_212: -1980481775
       FloatingCloud4: -1555030005
+      CastlePillar_Banner_Back: -1181574154
       8wfwy9aw_203: -1774852301
       8wfwy9aw_163: 1665132769
       8wfwy9aw_41: 913360179

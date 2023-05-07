@@ -23,29 +23,35 @@ public class Pickup : MonoBehaviour
 
 
     public void PickupObject(int amount, string type) {
-        if(type.ToLower() == "pebble" && !hasGiven) {
+        if(type.ToLower() == "pebble" && !hasGiven && GameObject.Find("Player").GetComponent<PlayerStats>().pebbles < 25) {
             hasGiven = true;
             GameObject.Find("Player").GetComponent<PlayerStats>().addPebbles(amount);
             Destroy(transform.parent.gameObject);
         }
-        if(type.ToLower() == "platform" && !hasGiven) {
+        if(type.ToLower() == "platform" && !hasGiven && GameObject.Find("Player").GetComponent<PlayerStats>().platformBeans < 10) {
             hasGiven = true;
             GameObject.Find("Player").GetComponent<PlayerStats>().addPlatform(amount);
             Destroy(transform.parent.gameObject);
         }
-        if(type.ToLower() == "fire" && !hasGiven) {
+        if(type.ToLower() == "fire" && !hasGiven && GameObject.Find("Player").GetComponent<PlayerStats>().fireBean < 10) {
             hasGiven = true;
             GameObject.Find("Player").GetComponent<PlayerStats>().addFire(amount);
             Destroy(transform.parent.gameObject);
         }
-        if(type.ToLower() == "ice" && !hasGiven) {
+        if(type.ToLower() == "ice" && !hasGiven && GameObject.Find("Player").GetComponent<PlayerStats>().iceBean < 10) {
             hasGiven = true;
             GameObject.Find("Player").GetComponent<PlayerStats>().addIce(amount);
             Destroy(transform.parent.gameObject);
         }
-        if(type.ToLower() == "mind" && !hasGiven) {
+        if(type.ToLower() == "mind" && !hasGiven && GameObject.Find("Player").GetComponent<PlayerStats>().mindBean < 25) {
             hasGiven = true;
             GameObject.Find("Player").GetComponent<PlayerStats>().addMind(amount);
+            Destroy(transform.parent.gameObject);
+        }
+        if (type.ToLower() == "health" && !hasGiven && GameObject.Find("Player").GetComponent<PlayerStats>().health < 8)
+        {
+            hasGiven = true;
+            GameObject.Find("Player").GetComponent<PlayerStats>().addHealth();
             Destroy(transform.parent.gameObject);
         }
     }

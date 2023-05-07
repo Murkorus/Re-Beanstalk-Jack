@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -64,12 +65,14 @@ public class PlayerMovement : MonoBehaviour
     private void Awake()
 	{
 		RB = GetComponent<Rigidbody2D>();
+		if(GameObject.Find("SaveSystem"))
+			GameObject.Find("SaveSystem").GetComponent<SaveSystem>().currentLevel = SceneManager.GetActiveScene().buildIndex;
 	}
 
 	private void Start()
 	{
 		IsFacingRight = true;
-		groundCheckGO = GameObject.Find("GroundDistance");
+		groundCheckGO = GameObject.Find("GroundCheck");
 	}
 
 	private void Update()

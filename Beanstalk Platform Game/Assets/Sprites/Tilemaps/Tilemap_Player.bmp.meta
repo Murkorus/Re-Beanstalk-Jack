@@ -251,7 +251,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 5hfuqp7o_7
+      name: Slingshot_Idle1
       rect:
         serializedVersion: 2
         x: 215
@@ -272,7 +272,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 5hfuqp7o_8
+      name: Slingshot_Idle2
       rect:
         serializedVersion: 2
         x: 236
@@ -692,7 +692,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 5hfuqp7o_28
+      name: J
       rect:
         serializedVersion: 2
         x: 282
@@ -713,7 +713,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 5hfuqp7o_29
+      name: Jump_NoGoose_Slingshot
       rect:
         serializedVersion: 2
         x: 306
@@ -797,7 +797,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 5hfuqp7o_33
+      name: Player_looking_Up1
       rect:
         serializedVersion: 2
         x: 43
@@ -818,7 +818,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 5hfuqp7o_34
+      name: Player_looking_Up2
       rect:
         serializedVersion: 2
         x: 61
@@ -1994,7 +1994,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 5hfuqp7o_90
+      name: Slingshot_Idle1_Goose
       rect:
         serializedVersion: 2
         x: 8
@@ -2015,7 +2015,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 5hfuqp7o_91
+      name: Slingshot_Walk1_Goose
       rect:
         serializedVersion: 2
         x: 39
@@ -2036,7 +2036,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 5hfuqp7o_92
+      name: Slingshot_Walk2_Goose
       rect:
         serializedVersion: 2
         x: 67
@@ -2057,7 +2057,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 5hfuqp7o_93
+      name: Slingshot_Walk3_Goose
       rect:
         serializedVersion: 2
         x: 96
@@ -2183,7 +2183,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 5hfuqp7o_99
+      name: Jump_Goose_Slingshotl_2
       rect:
         serializedVersion: 2
         x: 323
@@ -2225,7 +2225,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 5hfuqp7o_101
+      name: Slingshot_Walk4_Goose
       rect:
         serializedVersion: 2
         x: 2
@@ -2246,7 +2246,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 5hfuqp7o_102
+      name: Slingshot_Walk5_Goose
       rect:
         serializedVersion: 2
         x: 29
@@ -2267,7 +2267,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 5hfuqp7o_103
+      name: Slingshot_Walk6_Goose
       rect:
         serializedVersion: 2
         x: 55
@@ -2296,7 +2296,7 @@ TextureImporter:
         width: 3
         height: 3
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2317,7 +2317,7 @@ TextureImporter:
         width: 3
         height: 3
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2338,7 +2338,7 @@ TextureImporter:
         width: 3
         height: 3
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2359,7 +2359,7 @@ TextureImporter:
         width: 3
         height: 3
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2385,11 +2385,11 @@ TextureImporter:
       5hfuqp7o_77: -472356858
       5hfuqp7o_81: -703037881
       5hfuqp7o_83: -471735982
-      Pebble2: 430261699
-      5hfuqp7o_93: 1743639033
+      Move_slingshot5: 594647607
       5hfuqp7o_2: -1047714005
       5hfuqp7o_65: -412172305
       Move_slingshot4: 1361154329
+      Jump_Goose_Slingshotl_2: 530205745
       5hfuqp7o_52: 1956545239
       5hfuqp7o_45: -1172231772
       5hfuqp7o_37: 2035888294
@@ -2398,11 +2398,13 @@ TextureImporter:
       Walk_Goose_Normal_2: 677767941
       5hfuqp7o_87: -529661542
       Jump_Goose_Normal_2: 855334598
+      Slingshot_Idle2: -1352445959
       5hfuqp7o_82: 157904187
       5hfuqp7o_3: 1462338051
       5hfuqp7o_30: -385262265
-      5hfuqp7o_92: 1755782309
       5hfuqp7o_66: 1647540345
+      Slingshot_Walk6_Goose: 559972009
+      Slingshot_Walk2_Goose: 1755782309
       Walk_Goose_Normal_5: 2007976563
       Move_slingshot6: 1493762469
       5hfuqp7o_72: -961581667
@@ -2411,23 +2413,27 @@ TextureImporter:
       5hfuqp7o_94: 433308296
       Move_slingshot2: -930058899
       Walk_Goose_Normal_7: -1939022676
+      Slingshot_Walk3_Goose: 1743639033
+      Slingshot_Walk1_Goose: 662569962
       5hfuqp7o_55: 1055232155
       5hfuqp7o_39: -1887288371
       5hfuqp7o_89: -539154432
       Move_slingshot3: -244481816
-      5hfuqp7o_33: -2114250121
+      Slingshot_Idle1: -2007297217
+      Player_looking_Up1: -2114250121
       Pebble4: 2069086731
       5hfuqp7o_67: -2059759614
       Jump_Norma2: -2127858225
       5hfuqp7o_41: 332059182
-      5hfuqp7o_99: 530205745
       5hfuqp7o_73: 1422339383
       5hfuqp7o_10: -1761572598
       5hfuqp7o_76: -1247266800
+      J: -421132980
       FallingTest: -2127676672
       Move_normal6: 162324044
       5hfuqp7o_58: -2006596600
       5hfuqp7o_12: -1042346730
+      Player_looking_Up2: 149411351
       Walk_Goose_Normal_6: 1544833402
       5hfuqp7o_6: -402508237
       5hfuqp7o_54: 484193459
@@ -2435,27 +2441,25 @@ TextureImporter:
       Idle_FacingForwad_2: 1130342991
       5hfuqp7o_35: -2049381711
       5hfuqp7o_84: -644714182
+      Slingshot_Idle1_Goose: -1885503596
       Pebble1: 1884774952
-      5hfuqp7o_40: -1883800548
       5hfuqp7o_53: -1924120093
+      5hfuqp7o_40: -1883800548
       Move_slingshot1: 2065959702
       5hfuqp7o_88: 1545816711
-      5hfuqp7o_7: -2007297217
       5hfuqp7o_63: -1782024350
       5hfuqp7o_42: -1046646137
       Idle_Goose_FacingSide_1: 259006583
       Idle_FacingForwad_1: 2105777000
       Jump_Goose_Normal_1: 460925857
       Move_normal4: -1477893729
+      Slingshot_Walk5_Goose: -2115344523
+      Jump_NoGoose_Slingshot: 1348313217
       5hfuqp7o_75: 2008618434
-      5hfuqp7o_102: -2115344523
-      5hfuqp7o_29: 1348313217
       5hfuqp7o_85: 1606452837
       5hfuqp7o_95: -988358488
-      5hfuqp7o_28: -421132980
-      Move_normal7: -1948512546
       5hfuqp7o_100: 154849814
-      5hfuqp7o_8: -1352445959
+      Move_normal7: -1948512546
       5hfuqp7o_80: -1729919623
       Pebble3: -2083074819
       5hfuqp7o_98: 1064285514
@@ -2466,30 +2470,26 @@ TextureImporter:
       Idle_FacingSide_2: 866892083
       5hfuqp7o_56: 1453621581
       5hfuqp7o_5: 1678599062
-      5hfuqp7o_90: -1885503596
+      Idle_Goose_FacingSide_2: 339840572
       5hfuqp7o_36: -809013635
       Idle_FacingSide_1: -1863471732
       5hfuqp7o_96: -526575098
       5hfuqp7o_71: -236552240
       Walk_Goose_Normal_1: 1349256553
       5hfuqp7o_43: -802340396
-      5hfuqp7o_101: -1665816101
       5hfuqp7o_64: 1703603897
       5hfuqp7o_78: -1663498519
       Move_slingshot7: -1415192270
       5hfuqp7o_51: -1393961418
       Move_normal1: -2073404643
       Move_normal5: 2034480334
-      Idle_Goose_FacingSide_2: 339840572
-      5hfuqp7o_91: 662569962
-      5hfuqp7o_103: 559972009
+      Slingshot_Walk4_Goose: -1665816101
       Move_normal3: 1318773244
       5hfuqp7o_50: 472237310
+      Pebble2: 430261699
       Walk_Goose_Normal_3: 2019106111
-      5hfuqp7o_44: -1906883217
       Walk_Goose_Normal4: -1999170268
-      Move_slingshot5: 594647607
-      5hfuqp7o_34: 149411351
+      5hfuqp7o_44: -1906883217
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

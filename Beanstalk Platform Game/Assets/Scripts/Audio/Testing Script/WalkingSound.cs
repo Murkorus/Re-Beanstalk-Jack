@@ -22,7 +22,7 @@ public class WalkingSound : MonoBehaviour
     {
         if (playerAnimationController.isGrounded == true && playerAnimationController.isMoving == true)  
         {
-            RaycastHit2D hit = Physics2D.Raycast(controller.transform.position, Vector2.down,Mathf.Infinity,layerMask);
+            RaycastHit2D hit = Physics2D.Raycast(controller.transform.position, Vector2.down, Mathf.Infinity,layerMask);
             if (hit.collider != null)
             {
                 if (hit.collider.gameObject.CompareTag("Grass"))
@@ -40,6 +40,9 @@ public class WalkingSound : MonoBehaviour
                 else if (hit.collider.gameObject.CompareTag("Cloud"))
                 {
                     walkingSound.clip = cloud;
+                } else
+                {
+                    walkingSound.clip = null;
                 }
                 walkingSound.enabled = true;
                 if (!walkingSound.isPlaying)

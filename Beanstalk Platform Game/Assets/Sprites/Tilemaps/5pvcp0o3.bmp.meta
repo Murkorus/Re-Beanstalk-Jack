@@ -1,0 +1,1024 @@
+fileFormatVersion: 2
+guid: 5ac3aad3f5d9bba4eb31b8f8b5c43c52
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 20
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: FootIdle1
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 716
+        width: 126
+        height: 229
+      alignment: 9
+      pivot: {x: 0.920635, y: 0.030567687}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 404e7d492349f784b97da88c7e14d1b1
+      internalID: 93180854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FootIdle2
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 713
+        width: 124
+        height: 122
+      alignment: 9
+      pivot: {x: 0.9193548, y: 0.049180325}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd27be902e3bc5149930ee474b6b2afb
+      internalID: -450126726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foot3
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 659
+        width: 117
+        height: 271
+      alignment: 9
+      pivot: {x: 0.91453, y: 0.025830258}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27eb849992081d042988fdc2ab7ebd31
+      internalID: -1133722965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foot4
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 657
+        width: 126
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f0ab158816f4f1468080eeb9b85279d
+      internalID: -608908914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foot5
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 660
+        width: 117
+        height: 271
+      alignment: 9
+      pivot: {x: 0.91453, y: 0.022140222}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a77c182104d0ead469f4153e42c26318
+      internalID: -1855248248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5pvcp0o3_5
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 896
+        width: 44
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c21822e5a89378468236e9e4307ff21
+      internalID: -1147294395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5pvcp0o3_6
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 907
+        width: 37
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c424ba7f3d0b27140b87c0f1efe427c6
+      internalID: -499381207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StinkCloud3
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 865
+        width: 50
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d067a9c20b521a46ba3932846413c71
+      internalID: -1983466058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StinkCloud4
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 865
+        width: 47
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d0cfbec3228a1c4daa1ae7d6d0719f0
+      internalID: 336035607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StinkCloud5
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 844
+        width: 46
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6afad74014171f47b361ae1baf3f9ac
+      internalID: 1936435570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StinkCloud6
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 843
+        width: 45
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13677897c8d98334c9a8cbe96eee8f23
+      internalID: 1410789451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foot_Charge1
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 339
+        width: 127
+        height: 285
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35db541373ba9d740baa29f5c94317c5
+      internalID: 1951123692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foot_Charge2
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 326
+        width: 125
+        height: 296
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ba716a34bf383b4b89c0e43adec2a1b
+      internalID: 486331561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Foot_Charge3
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 342
+        width: 124
+        height: 298
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 559eabde347b74c4795de0a3a76d5862
+      internalID: -1679110621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5pvcp0o3_14
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 613
+        width: 120
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ada714831cb80049a7dfd1e55bb11c4
+      internalID: -1977202862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5pvcp0o3_15
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 595
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4a2964263b89ba4987a4052fd6ac48c
+      internalID: 1088304982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5pvcp0o3_16
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 593
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1caf490c5acf02f47bf9bc8baf9c32c1
+      internalID: 960436745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5pvcp0o3_17
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 579
+        width: 124
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 427a3db363e595d48a3111c85ff383ca
+      internalID: -1654209185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5pvcp0o3_18
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 576
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb73d44cce560bf48904793e87cf8c29
+      internalID: 1988998634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5pvcp0o3_19
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 586
+        width: 88
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cb15b8dd2ed20b4ea5db5ef33962f30
+      internalID: 610325603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5pvcp0o3_20
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 533
+        width: 133
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70d7fa0d296e7cd44afd93f17231a0de
+      internalID: 1042578170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5pvcp0o3_21
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 535
+        width: 16
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed0fcfc0414c5a548aa55e4fc0cc33e0
+      internalID: -6907242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5pvcp0o3_22
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 519
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a737c87f8dd67274e82d75c4aa734371
+      internalID: -650815530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5pvcp0o3_23
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 533
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42e40b2ec18bb4041a215162d87fce00
+      internalID: -693939464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5pvcp0o3_24
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 528
+        width: 20
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 444d98b43619cac46837781d3decc669
+      internalID: 1832632090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5pvcp0o3_25
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 530
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d42d51990a64a1e44b38e6cfccc7ec78
+      internalID: 1596211777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5pvcp0o3_26
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 534
+        width: 10
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6dd3a95020487f4e82e5bbf7c121b45
+      internalID: 730677251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5pvcp0o3_27
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 528
+        width: 23
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4a62d4e2646c9742bb0be360c8ea844
+      internalID: -189670785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5pvcp0o3_28
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 525
+        width: 27
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 198ec36fd4cec8a4daee39b9ad892ba1
+      internalID: -1934542461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StinkerIdle
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 287
+        width: 44
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9845fd969331a84ab443efa24f8aa16
+      internalID: 1516461569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StinkerIdle2
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 282
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36adb88742392c14a8d61a95101259f7
+      internalID: 994540904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StinkerAttack6
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 289
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d94024d342f8a14cb226b1e14a6b551
+      internalID: -1684877702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StinkerAttack7
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 288
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d34886bae1e298646a72634b6a2382f4
+      internalID: -1806694145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StinkerAttack1
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 251
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef0ab109181ec1b42a77674fcb6c54d7
+      internalID: -596553607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StinkerAttack2
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 242
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b47ec152a4bca8744947e92103f25428
+      internalID: -502232607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StinkerAttack8
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 254
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14690604e37552d4a9a0d5785b47b76f
+      internalID: -185652516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StinkCloud1
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 259
+        width: 22
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dc47d2c80a0d4d4681e3ee79b07fba3
+      internalID: -1018070137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StinkerAttack4
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 215
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebbd7a52056bcd7419f56522ac614727
+      internalID: 1641092969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StinkCloud2
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 234
+        width: 23
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5b10691d636ff0458711082ffe50e61
+      internalID: -767464355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StinkerAttack5
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 204
+        width: 45
+        height: 30
+      alignment: 9
+      pivot: {x: 0.51111114, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d942136e364320140a10a3d891e3537b
+      internalID: -863673517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LegExtension
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 839
+        width: 54
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0978787d70857314bad1f54d96ab443e
+      internalID: 2023904082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      StinkerAttack1: -596553607
+      5pvcp0o3_20: 1042578170
+      Foot_Charge2: 486331561
+      StinkerAttack8: -185652516
+      5pvcp0o3_5: -1147294395
+      StinkCloud2: -767464355
+      StinkCloud5: 1936435570
+      StinkCloud4: 336035607
+      StinkCloud6: 1410789451
+      5pvcp0o3_14: -1977202862
+      StinkCloud1: -1018070137
+      5pvcp0o3_15: 1088304982
+      Foot5: -1855248248
+      LegExtension: 2023904082
+      5pvcp0o3_19: 610325603
+      StinkerIdle: 1516461569
+      Foot3: -1133722965
+      5pvcp0o3_22: -650815530
+      FootIdle2: -450126726
+      5pvcp0o3_25: 1596211777
+      StinkerAttack6: -1684877702
+      5pvcp0o3_16: 960436745
+      5pvcp0o3_23: -693939464
+      StinkerAttack4: 1641092969
+      StinkerIdle2: 994540904
+      StinkerAttack5: -863673517
+      5pvcp0o3_6: -499381207
+      Foot4: -608908914
+      5pvcp0o3_24: 1832632090
+      Foot_Charge1: 1951123692
+      5pvcp0o3_21: -6907242
+      StinkerAttack7: -1806694145
+      5pvcp0o3_27: -189670785
+      5pvcp0o3_26: 730677251
+      5pvcp0o3_28: -1934542461
+      Foot_Charge3: -1679110621
+      5pvcp0o3_17: -1654209185
+      5pvcp0o3_18: 1988998634
+      FootIdle1: 93180854
+      StinkerAttack2: -502232607
+      StinkCloud3: -1983466058
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

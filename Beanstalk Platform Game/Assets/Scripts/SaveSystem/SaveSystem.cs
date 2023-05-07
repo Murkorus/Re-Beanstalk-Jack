@@ -64,7 +64,7 @@ public class SaveSystem : MonoBehaviour
     public void SaveAll(int saveNum)
     {
         save.currentSave_save = currentSave;
-        save.currentLevel_save = currentLevel;
+        save.currentLevel_save = SceneManager.GetActiveScene().buildIndex;
         save.playerPos_save = GameObject.Find("Player").transform.position;
         save.playerHealth = GameObject.Find("Player").GetComponent<PlayerStats>().health;
         save.pebbles = GameObject.Find("Player").GetComponent<PlayerStats>().pebbles;
@@ -144,6 +144,7 @@ public class SaveSystem : MonoBehaviour
         save.fire = 0;
         save.ice = 0;
         save.mind = 0;
+        save.playerPos_save = new Vector3(0, 0, 0);
         string json = JsonUtility.ToJson(save);
         Debug.Log(json);
         string path = Application.persistentDataPath + "/Save" + saveNum + ".json";
