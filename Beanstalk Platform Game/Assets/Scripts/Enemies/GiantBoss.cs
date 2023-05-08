@@ -164,7 +164,7 @@ public class GiantBoss : MonoBehaviour
         yield return new WaitForSeconds(.15f);
         isPlayingIntro = true;
 
-        yield return new WaitForSeconds(20);
+        yield return new WaitForSeconds(3);
         isPlayingIntro = false;
         GameObject.Find("Player").GetComponent<PlayerMovement>().enabled = true;
         GameObject.Find("Player").GetComponent<PlayerMovement>().Freeze(false);
