@@ -255,7 +255,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 825
-        y: 865
+        y: 814
         width: 50
         height: 24
       alignment: 0
@@ -276,7 +276,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 881
-        y: 865
+        y: 814
         width: 47
         height: 21
       alignment: 0
@@ -297,7 +297,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 798
-        y: 844
+        y: 793
         width: 46
         height: 20
       alignment: 0
@@ -318,7 +318,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 850
-        y: 843
+        y: 792
         width: 45
         height: 20
       alignment: 0
@@ -398,7 +398,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 5pvcp0o3_14
+      name: BossStompEffect1
       rect:
         serializedVersion: 2
         x: 648
@@ -419,13 +419,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 5pvcp0o3_15
+      name: BossStompEffect4
       rect:
         serializedVersion: 2
         x: 796
-        y: 595
-        width: 20
-        height: 21
+        y: 576
+        width: 142
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -440,28 +440,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 5pvcp0o3_16
-      rect:
-        serializedVersion: 2
-        x: 914
-        y: 593
-        width: 24
-        height: 27
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1caf490c5acf02f47bf9bc8baf9c32c1
-      internalID: 960436745
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 5pvcp0o3_17
+      name: BossStompEffect2
       rect:
         serializedVersion: 2
         x: 656
@@ -482,49 +461,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 5pvcp0o3_18
-      rect:
-        serializedVersion: 2
-        x: 802
-        y: 576
-        width: 24
-        height: 19
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: eb73d44cce560bf48904793e87cf8c29
-      internalID: 1988998634
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 5pvcp0o3_19
-      rect:
-        serializedVersion: 2
-        x: 827
-        y: 586
-        width: 88
-        height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7cb15b8dd2ed20b4ea5db5ef33962f30
-      internalID: 610325603
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 5pvcp0o3_20
+      name: BossStompEffect3
       rect:
         serializedVersion: 2
         x: 646
@@ -545,13 +482,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 5pvcp0o3_21
+      name: BossStompEffect5
       rect:
         serializedVersion: 2
         x: 785
-        y: 535
-        width: 16
-        height: 27
+        y: 519
+        width: 165
+        height: 43
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -561,153 +498,6 @@ TextureImporter:
       bones: []
       spriteID: ed0fcfc0414c5a548aa55e4fc0cc33e0
       internalID: -6907242
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 5pvcp0o3_22
-      rect:
-        serializedVersion: 2
-        x: 790
-        y: 519
-        width: 20
-        height: 22
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a737c87f8dd67274e82d75c4aa734371
-      internalID: -650815530
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 5pvcp0o3_23
-      rect:
-        serializedVersion: 2
-        x: 794
-        y: 533
-        width: 19
-        height: 23
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 42e40b2ec18bb4041a215162d87fce00
-      internalID: -693939464
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 5pvcp0o3_24
-      rect:
-        serializedVersion: 2
-        x: 889
-        y: 528
-        width: 20
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 444d98b43619cac46837781d3decc669
-      internalID: 1832632090
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 5pvcp0o3_25
-      rect:
-        serializedVersion: 2
-        x: 932
-        y: 530
-        width: 18
-        height: 20
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d42d51990a64a1e44b38e6cfccc7ec78
-      internalID: 1596211777
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 5pvcp0o3_26
-      rect:
-        serializedVersion: 2
-        x: 934
-        y: 534
-        width: 10
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a6dd3a95020487f4e82e5bbf7c121b45
-      internalID: 730677251
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 5pvcp0o3_27
-      rect:
-        serializedVersion: 2
-        x: 827
-        y: 528
-        width: 23
-        height: 7
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b4a62d4e2646c9742bb0be360c8ea844
-      internalID: -189670785
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 5pvcp0o3_28
-      rect:
-        serializedVersion: 2
-        x: 851
-        y: 525
-        width: 27
-        height: 4
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 198ec36fd4cec8a4daee39b9ad892ba1
-      internalID: -1934542461
       vertices: []
       indices: 
       edges: []
@@ -964,6 +754,237 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Small_BossBubble
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 846
+        width: 44
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 919a23e7931961a42905e0a2ab083bc9
+      internalID: -1584649860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big_BossBubble
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 846
+        width: 79
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a23059239d0bcdd48b873cd3d873e20b
+      internalID: -1643764266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5pvcp0o3_2
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 397
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12ef496fac87d0f4ea15d9f0eeca4668
+      internalID: -2081083905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5pvcp0o3_3
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 395
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 117f4e9cac94eab48abb2f88cc073a3a
+      internalID: 936244459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5pvcp0o3_4
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 366
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3591b442050c47e4bb8125df3c25ee4d
+      internalID: 197765955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5pvcp0o3_7
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 365
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4dc1c60443b50945ae15580dd8d67d5
+      internalID: 1523761714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5pvcp0o3_8
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 364
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48f587dadd3740b4c910f3dd911c73b5
+      internalID: -1673247444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5pvcp0o3_9
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 364
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 220cc16691ca5bb4a9eb6510fe4a46b6
+      internalID: -1756858666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5pvcp0o3_10
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 266
+        width: 28
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7e5ca9ff9a06154fba3bb67072c54bf
+      internalID: 1953934179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5pvcp0o3_11
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 297
+        width: 53
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15cd1e9d534382740a4ef6c44fb82123
+      internalID: 943720700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5pvcp0o3_12
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 303
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ec870619abe88c4d89739a956610e9b
+      internalID: -2085007593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -975,47 +996,58 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      StinkerAttack1: -596553607
-      5pvcp0o3_20: 1042578170
-      Foot_Charge2: 486331561
-      StinkerAttack8: -185652516
+      BossStompEffect1: -1977202862
       5pvcp0o3_5: -1147294395
       StinkCloud2: -767464355
-      StinkCloud5: 1936435570
-      StinkCloud4: 336035607
-      StinkCloud6: 1410789451
-      5pvcp0o3_14: -1977202862
+      5pvcp0o3_9: -1756858666
+      Big_BossBubble: -1643764266
       StinkCloud1: -1018070137
-      5pvcp0o3_15: 1088304982
-      Foot5: -1855248248
       LegExtension: 2023904082
-      5pvcp0o3_19: 610325603
       StinkerIdle: 1516461569
-      Foot3: -1133722965
-      5pvcp0o3_22: -650815530
+      BossStompEffect2: -1654209185
       FootIdle2: -450126726
       5pvcp0o3_25: 1596211777
       StinkerAttack6: -1684877702
-      5pvcp0o3_16: 960436745
-      5pvcp0o3_23: -693939464
+      5pvcp0o3_12: -2085007593
       StinkerAttack4: 1641092969
-      StinkerIdle2: 994540904
       StinkerAttack5: -863673517
+      5pvcp0o3_4: 197765955
       5pvcp0o3_6: -499381207
-      Foot4: -608908914
-      5pvcp0o3_24: 1832632090
-      Foot_Charge1: 1951123692
-      5pvcp0o3_21: -6907242
+      5pvcp0o3_11: 943720700
       StinkerAttack7: -1806694145
       5pvcp0o3_27: -189670785
       5pvcp0o3_26: 730677251
-      5pvcp0o3_28: -1934542461
       Foot_Charge3: -1679110621
-      5pvcp0o3_17: -1654209185
       5pvcp0o3_18: 1988998634
-      FootIdle1: 93180854
-      StinkerAttack2: -502232607
       StinkCloud3: -1983466058
+      Foot_Charge2: 486331561
+      StinkerAttack8: -185652516
+      StinkCloud4: 336035607
+      StinkCloud5: 1936435570
+      BossStompEffect4: 1088304982
+      StinkCloud6: 1410789451
+      BossStompEffect3: 1042578170
+      BossStompEffect5: -6907242
+      Foot5: -1855248248
+      5pvcp0o3_7: 1523761714
+      5pvcp0o3_10: 1953934179
+      5pvcp0o3_19: 610325603
+      Foot3: -1133722965
+      5pvcp0o3_22: -650815530
+      5pvcp0o3_16: 960436745
+      5pvcp0o3_23: -693939464
+      StinkerIdle2: 994540904
+      5pvcp0o3_8: -1673247444
+      5pvcp0o3_3: 936244459
+      5pvcp0o3_2: -2081083905
+      Foot4: -608908914
+      5pvcp0o3_24: 1832632090
+      Foot_Charge1: 1951123692
+      Small_BossBubble: -1584649860
+      5pvcp0o3_28: -1934542461
+      FootIdle1: 93180854
+      StinkerAttack1: -596553607
+      StinkerAttack2: -502232607
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
