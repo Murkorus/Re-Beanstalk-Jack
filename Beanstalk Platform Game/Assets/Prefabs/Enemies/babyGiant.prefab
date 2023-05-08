@@ -187,6 +187,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 4988264481498197269}
   RB: {fileID: 4988264481498197257}
+  lookOverride: 0
   currentState: 0
   isAngry: 0
   isPerformingAttack: 0
@@ -272,5 +273,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c570911d0028d8c468d09bec3a52816c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audio: {fileID: 0}
-  audioPrefab: {fileID: 0}
+  health: 15
