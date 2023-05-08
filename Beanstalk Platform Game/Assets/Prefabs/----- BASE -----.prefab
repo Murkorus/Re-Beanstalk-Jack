@@ -316,9 +316,9 @@ MonoBehaviour:
   controller: {fileID: 8797593873092143475}
   walkingSound: {fileID: 7016343135345718193}
   grass: {fileID: 8300000, guid: c337e5a69c1651c4982096a7c2028c6a, type: 3}
-  stone: {fileID: 8300000, guid: 7c259aed165f0744a9f1d55c05a6e4ba, type: 3}
+  stone: {fileID: 8300000, guid: 6129a9597dd4e9247968532a1b44939f, type: 3}
   corruption: {fileID: 8300000, guid: 51f9192a13842c14fa6a5edea17639c5, type: 3}
-  cloud: {fileID: 0}
+  cloud: {fileID: 8300000, guid: e8a11198fa67c3441b44dc3c7007814f, type: 3}
 --- !u!1 &1752090548786552447
 GameObject:
   m_ObjectHideFlags: 0
@@ -1714,7 +1714,7 @@ MonoBehaviour:
   AccelAmount: 5
   Decceleration: 5
   DeccelAmount: 8
-  jumpForce: 6
+  jumpForce: 6.9
   accelInAir: 1
   deccelInAir: 0.2
   doConserveMomentum: 1
@@ -1753,6 +1753,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerMovement: {fileID: 8797593873092143432}
+  playerCombat: {fileID: 0}
   playerAnimator: {fileID: 8797593873092143435}
   isGrounded: 0
   isMoving: 0
@@ -2672,7 +2673,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8797593873857995244}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -18.126667, y: 0.4011624, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2699,10 +2700,10 @@ Camera:
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.00052083336
-    y: 0.0009259259
-    width: 1.2625
-    height: 0.3888889
+    x: 0
+    y: 0
+    width: 1
+    height: 1
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
