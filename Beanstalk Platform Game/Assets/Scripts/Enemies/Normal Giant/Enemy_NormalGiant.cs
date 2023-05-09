@@ -62,6 +62,7 @@ public class Enemy_NormalGiant : MonoBehaviour
         }
         if(currentState == 2 && !isAttacking && isAngry) {
             anim.Play("Enemy_NormalGiant_angry_walking");
+            GetComponent<Enemy>().healthDisplay.SetActive(true);
             isWalking = true;
         }
 
