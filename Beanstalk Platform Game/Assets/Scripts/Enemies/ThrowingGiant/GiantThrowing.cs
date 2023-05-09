@@ -23,6 +23,9 @@ public class GiantThrowing : MonoBehaviour
 
     [Header("Attack wave")]
     public bool attackWave;
+    public bool attackWaveSound;
+    //public GameObject AttackWave;
+    //public GameObject WavePosition;
     public Animator animator;
 
     [Header("Player Detection")]
@@ -30,11 +33,13 @@ public class GiantThrowing : MonoBehaviour
     public float playerDetectionRadius;
     public LayerMask playerlayer;
 
+    private GameObject GM;
 
 
     void Start()
     {
         target = GameObject.Find("Player");
+        GM = GameObject.Find("GM");
     }
 
 
@@ -46,14 +51,6 @@ public class GiantThrowing : MonoBehaviour
     }
     void Update()
     {
-
-        if(transform.position.x - target.transform.position.x > 0) {
-            transform.localScale = new Vector3(-1, 1, 1);
-
-        } else {
-            transform.localScale = new Vector3(1, 1, 1);
-        }
-
         if (isIdle)
         {
             if (Physics2D.OverlapCircle(playerDetection.transform.position, playerDetectionRadius, playerlayer, Mathf.Infinity, Mathf.Infinity))
