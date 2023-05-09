@@ -144,7 +144,7 @@ public class SaveSystem : MonoBehaviour
         save.fire = 0;
         save.ice = 0;
         save.mind = 0;
-        save.playerPos_save = new Vector3(-16.07f, -2.61f, 0);
+        save.playerPos_save = new Vector3(0, 0, 0);
         string json = JsonUtility.ToJson(save);
         Debug.Log(json);
         string path = Application.persistentDataPath + "/Save" + saveNum + ".json";

@@ -1,15 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
-using Unity.VisualScripting;
-using UnityEditor;
 using UnityEngine;
-using Random = UnityEngine.Random;
 
 public class PlayerCombatController : MonoBehaviour
 {
     [Header("Dagger settings")]
-    [SerializeField] private int AttackDamage = 20;
+    [SerializeField] private float AttackDamage = 20f;
     public bool isPerformingAttack;
     public GameObject AttackPoint;
     public LayerMask enemyLayer;
@@ -22,7 +19,7 @@ public class PlayerCombatController : MonoBehaviour
     [HideInInspector] public Transform projectilePoint;
 
     //Trajectory
-    public GameObject slingshotPoint;
+    [HideInInspector] public GameObject slingshotPoint;
     GameObject[] points;
     [HideInInspector] public int numberOfPoints;
     [HideInInspector] public float spaceBetweenPoints;
@@ -37,9 +34,6 @@ public class PlayerCombatController : MonoBehaviour
     public GameObject slingshotFireGO;
     public GameObject slingshotIceGO;
     public GameObject slingshotMindGO;
-
-    public GameObject slingshotChargeSoundGO;
-    private bool playedSlingshotChargeSound;
 
     [Space(10)]
 
@@ -164,81 +158,70 @@ public class PlayerCombatController : MonoBehaviour
         }
     }
 
-    public void Slingshot() 
-    {
+    public void Slingshot() {
+
+
         if (!isPerformingAttack)
-        {
-            if (Input.GetMouseButton(1))
-            {
-                Vector2 slingshotPos = transform.position;
-                Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-                direction = mousePos - slingshotPos;
-                slingshotPoint.transform.right = direction;
+                {
+                    if (Input.GetMouseButton(1))
+                    {
+                        Vector2 slingshotPos = transform.position;
+                        Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                        direction = mousePos - slingshotPos;
+                        slingshotPoint.transform.right = direction;
                         
-                isChargingSlingshot = true;
-                //AM.GetComponent<AnimationManager>().isCharging = true;
-                if (currentProjectile == "normal")
-                {
-                    if(GameObject.Find("Player").GetComponent<PlayerStats>().pebbles > 0) 
+                        isChargingSlingshot = true;
+                        //AM.GetComponent<AnimationManager>().isCharging = true;
+                        if (currentProjectile == "normal")
+                        {
+                            if(GameObject.Find("Player").GetComponent<PlayerStats>().pebbles > 0) {
+                                chargeTime += Time.deltaTime * 3;
+                                projectileForce = chargeTime * 7.5f + 2;
+                                projectileForce = Mathf.Clamp(projectileForce, 2, 10);
+                            }
+                        }
+                        if(currentProjectile == "platform")
+                        {
+                            if(GameObject.Find("Player").GetComponent<PlayerStats>().platformBeans > 0) {
+                                chargeTime += Time.deltaTime;   
+                                projectileForce = chargeTime * 1.5f + 2;
+                                projectileForce = Mathf.Clamp(projectileForce, 2, 4);
+                            }
+                        }
+                        if (currentProjectile == "fire")
+                        {
+                            if(GameObject.Find("Player").GetComponent<PlayerStats>().fireBean > 0) {
+                                chargeTime += Time.deltaTime * 3;
+                                projectileForce = chargeTime * 7.5f + 2;
+                                projectileForce = Mathf.Clamp(projectileForce, 2, 10);
+                            }
+                        }
+                        if (currentProjectile == "ice")
+                        {
+                            if(GameObject.Find("Player").GetComponent<PlayerStats>().iceBean > 0) {
+                                chargeTime += Time.deltaTime * 3;
+                                projectileForce = chargeTime * 7.5f + 2;
+                                projectileForce = Mathf.Clamp(projectileForce, 2, 10);
+                            }
+                        }
+                        if (currentProjectile == "mind")
+                        {
+                            if(GameObject.Find("Player").GetComponent<PlayerStats>().mindBean > 0) {
+                                chargeTime += Time.deltaTime * 3;
+                                projectileForce = chargeTime * 7.5f + 2;
+                                projectileForce = Mathf.Clamp(projectileForce, 2, 10);
+                            }
+                        }
+                    }
+                    if (Input.GetMouseButtonUp(1))
                     {
-                        chargeTime += Time.deltaTime * 3;
-                        projectileForce = chargeTime * 7.5f + 2;
-                        projectileForce = Mathf.Clamp(projectileForce, 2, 10);
+                        isChargingSlingshot = false;
+                        shootSlingshot();
+                        chargeTime = 0.0f;
+                        projectileForce = chargeTime;
                     }
                 }
-                if(currentProjectile == "platform")
-                {
-                    if(GameObject.Find("Player").GetComponent<PlayerStats>().platformBeans > 0) {
-                        chargeTime += Time.deltaTime;   
-                        projectileForce = chargeTime * 1.5f + 2;
-                        projectileForce = Mathf.Clamp(projectileForce, 2, 4);
-                    }
-                }
-                if (currentProjectile == "fire")
-                {
-                    if(GameObject.Find("Player").GetComponent<PlayerStats>().fireBean > 0) 
-                    {
-                        chargeTime += Time.deltaTime * 3;
-                        projectileForce = chargeTime * 7.5f + 2;
-                        projectileForce = Mathf.Clamp(projectileForce, 2, 10);
-                    }
-                }
-                if (currentProjectile == "ice")
-                {
-                    if(GameObject.Find("Player").GetComponent<PlayerStats>().iceBean > 0) 
-                    {
-                        chargeTime += Time.deltaTime * 3;
-                        projectileForce = chargeTime * 7.5f + 2;
-                        projectileForce = Mathf.Clamp(projectileForce, 2, 10);
-                    }
-                }
-                if (currentProjectile == "mind")
-                {
-                    if(GameObject.Find("Player").GetComponent<PlayerStats>().mindBean > 0) 
-                    {
-                        chargeTime += Time.deltaTime * 3;
-                        projectileForce = chargeTime * 7.5f + 2;
-                        projectileForce = Mathf.Clamp(projectileForce, 2, 10);
-                    }
-                }
-                if(!playedSlingshotChargeSound) {
-                    playedSlingshotChargeSound = true;
-                    GameObject ChargeSound = Instantiate(slingshotChargeSoundGO);
-                    ChargeSound.GetComponent<AudioSource>().pitch = Random.Range(0.90f, 1.10f);
-                    Destroy(ChargeSound, 4f);
-                    
-                }
-                        
-            }
-            if (Input.GetMouseButtonUp(1))
-            {
-                playedSlingshotChargeSound = false;
-                isChargingSlingshot = false;
-                shootSlingshot();
-                chargeTime = 0.0f;
-                projectileForce = chargeTime;
-            }
-        }
+
 
         //Trajectory
         for (int i = 0; i < numberOfPoints; i++)
@@ -259,7 +242,6 @@ public class PlayerCombatController : MonoBehaviour
                 chargeTime = 0;
             }
         }
-
     }
 
 
