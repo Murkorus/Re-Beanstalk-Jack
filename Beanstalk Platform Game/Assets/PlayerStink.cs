@@ -61,7 +61,7 @@ public class PlayerStink : MonoBehaviour
         }
 
 
-        if (stinkLevel > 5)
+        if (stinkLevel > 3)
         {
             stinkLevel = 0;
             GetComponent<PlayerStats>().takeDamage();

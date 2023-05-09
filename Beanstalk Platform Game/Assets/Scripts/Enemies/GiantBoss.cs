@@ -97,7 +97,7 @@ public class GiantBoss : MonoBehaviour
     }
     public void spawnAllies()
     {
-        if (Random.Range(0, 2) == 1)
+        if (Random.Range(0, 2) == 1 )
         {
             GameObject Enemy = Instantiate(NormalGiant, new Vector3(Random.Range(GameObject.Find("BossAreaPoint1").transform.position.x, GameObject.Find("BossAreaPoint2").transform.position.x), 50, 0), Quaternion.identity);
             Enemy.transform.parent = GameObject.Find("Enemies").transform;
@@ -123,7 +123,6 @@ public class GiantBoss : MonoBehaviour
             BossStomp();
         } else
         {
-            spawnAllies();
             spawnAllies();
         }
         yield return new WaitForSeconds(Random.Range(2f, 3f));
@@ -165,7 +164,7 @@ public class GiantBoss : MonoBehaviour
         yield return new WaitForSeconds(.15f);
         isPlayingIntro = true;
 
-        yield return new WaitForSeconds(20);
+        yield return new WaitForSeconds(3);
         isPlayingIntro = false;
         GameObject.Find("Player").GetComponent<PlayerMovement>().enabled = true;
         GameObject.Find("Player").GetComponent<PlayerMovement>().Freeze(false);
