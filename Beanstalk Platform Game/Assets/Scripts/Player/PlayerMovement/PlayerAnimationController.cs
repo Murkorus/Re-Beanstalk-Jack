@@ -23,6 +23,9 @@ public class PlayerAnimationController : MonoBehaviour
 
     public bool isFacingRight;
 
+    public bool isHanging;
+    public bool isCLimbing;
+
     public void Start() {
         playerMovement = GetComponent<PlayerMovement>();
         playerCombat = GetComponent<PlayerCombatController>();
@@ -33,6 +36,8 @@ public class PlayerAnimationController : MonoBehaviour
         isGrounded = playerMovement.isGrounded;
         usingSlingshot = playerCombat.isChargingSlingshot;
         isFacingRight = playerMovement.IsFacingRight;
+        isCLimbing = playerMovement.isClimbing;
+        isHanging = playerMovement.isHanging;
 
 
         if(playerMovement.moveInput.x == 0) {
@@ -106,5 +111,11 @@ public class PlayerAnimationController : MonoBehaviour
             }
         }
         
+        if(isHanging && !isCLimbing) {
+            playerAnimator.Play("LedgeGrab");
+        }
+        if(isCLimbing) {
+            playerAnimator.Play("LedgeClimb");
+        }
     }
 }

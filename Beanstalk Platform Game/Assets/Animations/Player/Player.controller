@@ -1,5 +1,31 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1102 &-8418251256027312256
+AnimatorState:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: LedgeClimb
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions: []
+  m_StateMachineBehaviours: []
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 7400000, guid: 36105696c66d2ac419f018bd733be34c, type: 2}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
 --- !u!1102 &-7531163063380985319
 AnimatorState:
   serializedVersion: 6
@@ -244,6 +270,32 @@ AnimatorTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 1
+--- !u!1102 &-1506238693876717839
+AnimatorState:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: LedgeGrab
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions: []
+  m_StateMachineBehaviours: []
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 7400000, guid: 88836ef061f43bf4d99621cb2d4c04e0, type: 2}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
 --- !u!1107 &-1041329374567875663
 AnimatorStateMachine:
   serializedVersion: 6
@@ -282,7 +334,7 @@ AnimatorStateMachine:
     m_Position: {x: 280, y: 340, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 3843883627554589974}
-    m_Position: {x: 385, y: 435, z: 0}
+    m_Position: {x: 390, y: 440, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 67820701409029054}
     m_Position: {x: 420, y: 500, z: 0}
@@ -301,6 +353,12 @@ AnimatorStateMachine:
   - serializedVersion: 1
     m_State: {fileID: -5858950781177176502}
     m_Position: {x: 595, y: 825, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: -1506238693876717839}
+    m_Position: {x: 376.82126, y: 881.58984, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: -8418251256027312256}
+    m_Position: {x: 411.82126, y: 946.58984, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions:

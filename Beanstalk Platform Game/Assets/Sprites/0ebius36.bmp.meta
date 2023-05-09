@@ -503,7 +503,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0ebius36_19
+      name: LedgeHang1
       rect:
         serializedVersion: 2
         x: 199
@@ -524,7 +524,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0ebius36_20
+      name: LedgeGrab1
       rect:
         serializedVersion: 2
         x: 221
@@ -545,7 +545,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0ebius36_21
+      name: LedgeGrab2
       rect:
         serializedVersion: 2
         x: 242
@@ -566,7 +566,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0ebius36_22
+      name: LedgeGrab3
       rect:
         serializedVersion: 2
         x: 265
@@ -587,7 +587,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0ebius36_23
+      name: LedgeGrab4
       rect:
         serializedVersion: 2
         x: 289
@@ -608,7 +608,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 0ebius36_24
+      name: LedgeGrab5
       rect:
         serializedVersion: 2
         x: 312
@@ -829,39 +829,39 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       0ebius36_31: 730561087
+      LedgeHang1: -1441359735
       Dash4: 274107909
       0ebius36_26: 220757672
+      LedgeGrab5: 1005082413
       Dash7: 1177989722
+      LedgeGrab3: -1926401543
       0ebius36_29: -572391040
       Dash5: -2108650456
       Dash6_Goose: -1495733431
-      0ebius36_24: 1005082413
       Dash2: 667878143
       0ebius36_32: -1460620063
       Dash5_Goose: 836427046
-      0ebius36_23: -1816103521
+      Dash6: 263223961
       Dash3_Goose: 1504512947
       0ebius36_27: -1682546618
       Dash1: 597236247
       Dash7_Goose: 1669547991
-      0ebius36_20: -1282458492
-      Dash6: 263223961
+      LedgeGrab4: -1816103521
       Dash2_Goose: -1828140431
       0ebius36_17: 1582974929
-      0ebius36_22: -1926401543
       0ebius36_25: 230247421
       0ebius36_28: -1947590931
       0ebius36_16: -2102410306
       Dash3: 519931363
       0ebius36_33: -51731914
       0ebius36_18: 2088557813
+      LedgeGrab1: -1282458492
       Dash1_Goose: -290632852
       0ebius36_15: -1727470112
       0ebius36_30: 1786103487
-      0ebius36_19: -1441359735
       Dash4_Goose: 2128793744
+      LedgeGrab2: 374598167
       0ebius36_14: 1230578526
-      0ebius36_21: 374598167
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

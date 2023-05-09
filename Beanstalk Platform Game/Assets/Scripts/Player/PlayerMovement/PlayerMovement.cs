@@ -52,7 +52,7 @@ public class PlayerMovement : MonoBehaviour
 	public float ledgeRadius;
 	private bool freezePlayer;
 	public bool isHanging;
-	private bool isClimbing;
+	public bool isClimbing;
 	private bool hasPositioned;
 
 	[Header("Ledge offset")]
@@ -278,7 +278,7 @@ public class PlayerMovement : MonoBehaviour
         	transform.position = rayHit.point - new Vector2(-_hangingOffset.x, _hangingOffset.y);
 
 
-        yield return new WaitForSeconds(0.75f);
+        yield return new WaitForSeconds(0.15f);
         
         GameObject.Find("CameraLook").transform.localPosition = new Vector3(0, 0, 0);
         transform.position = rayHit.point + new Vector2(0, 0.5f);

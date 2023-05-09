@@ -44,7 +44,7 @@ public class StompController : MonoBehaviour
 
 
         //Collision detection
-        if(Physics2D.OverlapCircle(wallDetection.transform.position, 0.4f, detectionLayer))
+        if(Physics2D.OverlapCircle(wallDetection.transform.position, 0.2f, detectionLayer))
         {
             Debug.Log("Hit wall");
             stompParticles1.Stop();
