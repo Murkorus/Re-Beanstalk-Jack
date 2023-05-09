@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class WeaponWheel : MonoBehaviour
 {
@@ -15,11 +16,14 @@ public class WeaponWheel : MonoBehaviour
     private bool usingWeaponWheel;
     private TextMeshProUGUI weaponWheelText;
     private PlayerCombatController playerCombatController;
+    private PlayerStats playerStats;
+
 
     void Start()
     {
         weaponWheelText = GameObject.Find("SelectedInWeaponWheel").GetComponent<TextMeshProUGUI>();
         playerCombatController = GameObject.Find("Player").GetComponent<PlayerCombatController>();
+        playerStats = GameObject.Find("Player").GetComponent<PlayerStats>();
     }
 
     // Update is called once per frame
@@ -32,6 +36,35 @@ public class WeaponWheel : MonoBehaviour
 
 
     public void weaponWheel() {
+
+        //Pebble
+        if(playerStats.pebbles > 0)
+        {
+            weaponWheelSlots[0].GetComponent<Image>().color = new Color(255 / 255.0f, 255 / 255.0f, 255 / 255.0f, 255 / 255.0f); ;
+        }
+        else
+        {
+            weaponWheelSlots[0].GetComponent<Image>().color = new Color(75 / 255.0f, 75 / 255.0f, 75 / 255.0f, 255 / 255.0f); ;
+        }
+        //Platform bean
+        if (playerStats.platformBeans > 0)
+        {
+            weaponWheelSlots[1].GetComponent<Image>().color = new Color(111 / 255.0f, 231 / 255.0f, 62 / 255.0f, 255 / 255.0f);
+        }
+        else
+        {
+            weaponWheelSlots[1].GetComponent<Image>().color = new Color(63 / 255.0f, 101 / 255.0f, 46 / 255.0f, 255 / 255.0f);
+        }
+
+        //Fire
+        if (playerStats.fireBean > 0)
+        {
+            weaponWheelSlots[2].GetComponent<Image>().color = new Color(255 / 255.0f, 80 / 255.0f, 32 / 255.0f, 255 / 255.0f); ;
+        }
+        else
+        {
+            weaponWheelSlots[2].GetComponent<Image>().color = new Color(106 / 255.0f, 51 / 255.0f, 36 / 255.0f, 255 / 255.0f); ;
+        }
         GetClosestSlot();
         if(Input.GetKey(KeyCode.Q)) {
             weaponWheelGO.SetActive(true);

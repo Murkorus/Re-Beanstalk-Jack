@@ -1,19 +1,24 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Random = UnityEngine.Random;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+
 
 public class PlayerMovement : MonoBehaviour
 {
 
 
 	[Header("Run")]
-	public float MaxSpeed; //Target speed we want the player to reach.
-	public float Acceleration; //Time (approx.) time we want it to take for the player to accelerate from 0 to the runMaxSpeed.
-	public float AccelAmount; //The actual force (multiplied with speedDiff) applied to the player.
-	public float Decceleration; //Time (approx.) we want it to take for the player to accelerate from runMaxSpeed to 0.
-	public float DeccelAmount; //Actual force (multiplied with speedDiff) applied to the player .
+	public float MaxSpeed;
+	public float Acceleration;
+	public float AccelAmount;
+
+	public float Decceleration;
+	public float DeccelAmount;
+
 	public float jumpForce;
 	[Space(10)]
 	[Range(0.01f, 1)] public float accelInAir; //Multipliers applied to acceleration rate when airborne.
@@ -35,6 +40,7 @@ public class PlayerMovement : MonoBehaviour
 	[Header("Jump")]
 	private bool _isJumping;
 	private float _jumpTime;
+	public GameObject jumpSound;
 	
 	public bool isGrounded;
 	
@@ -99,7 +105,10 @@ public class PlayerMovement : MonoBehaviour
 		//Jump
 		if(Input.GetButtonDown("Jump") && isGrounded) {
 			RB.velocity = new Vector2(RB.velocity.x, RB.velocity.y + jumpForce);
-		}
+			GameObject JumpSoundGO = Instantiate(jumpSound);
+			jumpSound.GetComponent<AudioSource>().pitch = Random.Range(0.95f, 1.05f);
+			Destroy(JumpSoundGO, 5f);
+        }
 
 		//Ledge detection
 		if(Physics2D.OverlapBox(WallDetection.transform.position, WallDetection.transform.localScale, 0, _ledgeLayer)) {
