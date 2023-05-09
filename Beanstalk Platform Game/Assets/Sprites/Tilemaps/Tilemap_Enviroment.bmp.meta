@@ -3076,7 +3076,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -8, y: -8}
+        - {x: 8, y: 8}
+        - {x: 8, y: -8}
       tessellationDetail: 0
       bones: []
       spriteID: be7a23dfc3b5ccf42b7351acf3fb47c3
@@ -3097,7 +3100,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -8, y: -8}
+        - {x: -8, y: 8}
+        - {x: 8, y: -8}
       tessellationDetail: 0
       bones: []
       spriteID: 750778d8ebeeff943aaef7a748c1e634
@@ -3143,7 +3149,10 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -8, y: -8}
+        - {x: -8, y: 8}
+        - {x: 8, y: -8}
       tessellationDetail: 0
       bones: []
       spriteID: a9b3991a8938e134488ab96b8f1f5307
@@ -3919,7 +3928,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 8wfwy9aw_182
+      name: Banner
       rect:
         serializedVersion: 2
         x: 46
@@ -4771,8 +4780,8 @@ TextureImporter:
       LongChain: -1908408942
       8wfwy9aw_142: -1652190898
       8wfwy9aw_72: -489806415
-      8wfwy9aw_73: -1350477961
       8wfwy9aw_24: -1371425239
+      8wfwy9aw_73: -1350477961
       8wfwy9aw_131: -1883169364
       8wfwy9aw_66: -12026027
       Grass_Corner_Left: -2006240473
@@ -4796,6 +4805,7 @@ TextureImporter:
       SmallFloatingCloud1: -1884693301
       8wfwy9aw_68: -2088042834
       Grass_Middle_12: -922321293
+      Banner: 2015514815
       8wfwy9aw_103: 568419955
       Grass_Side_Left2: -1737760385
       8wfwy9aw_85: 518037090
@@ -4893,7 +4903,6 @@ TextureImporter:
       8wfwy9aw_140: -804936995
       FloatingCloud6: 92673845
       8wfwy9aw_63: 632596884
-      8wfwy9aw_182: 2015514815
       Grass_Middle_7: -43537615
       8wfwy9aw_197: 225585457
       8wfwy9aw_21: 1926631237

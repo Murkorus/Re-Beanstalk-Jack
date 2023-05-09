@@ -44,25 +44,27 @@ public class StompController : MonoBehaviour
 
 
         //Collision detection
-        if(Physics2D.OverlapCircle(wallDetection.transform.position, 0.2f, detectionLayer))
+        if(Physics2D.OverlapCircle(wallDetection.transform.position, 0.4f, detectionLayer))
         {
             Debug.Log("Hit wall");
             stompParticles1.Stop();
             stompParticles2.Stop();
+            hasDamaged = true;
             Destroy(this.gameObject, 5f);
         }
 
         if (!Physics2D.OverlapCircle(FloorDetection.transform.position, 0.2f, detectionLayer))
         {
-            Debug.Log("Hit wall");
+            //Debug.Log("Hit wall");
             stompParticles1.Stop();
             stompParticles2.Stop();
+            hasDamaged = true;
             Destroy(this.gameObject, 5f);
         }
 
 
 
-        if (Physics2D.OverlapCircle(transform.position, 2f, playerLayer) && !hasDamaged && !GameObject.Find("Player").GetComponent<PlayerCombatController>().isDodging)
+        if (Physics2D.OverlapCircle(transform.position, 1f, playerLayer) && !hasDamaged && !GameObject.Find("Player").GetComponent<PlayerCombatController>().isDodging)
         {
             hasDamaged = true;
             stompParticles1.Stop();
