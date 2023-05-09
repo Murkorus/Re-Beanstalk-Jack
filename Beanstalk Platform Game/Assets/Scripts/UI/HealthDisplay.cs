@@ -29,7 +29,6 @@ public class HealthDisplay : MonoBehaviour
     {
         if (currentHealth > 0)
         {
-            currentHealth--;
             RemoveHeart();
         }
     }

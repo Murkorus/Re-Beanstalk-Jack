@@ -48,11 +48,12 @@ public class PlayerStats : MonoBehaviour
     {
         health += 1;
         Debug.Log("Added health");
-        GameObject.Find("HealthDisplay").GetComponent<HealthDisplay>().AddHeart();
+        FindObjectOfType<HealthDisplay>().AddHeart();
     }
     public void takeDamage() {
         health -= 1;
-        GameObject.Find("HealthDisplay").GetComponent<HealthDisplay>().TakeDamage();
+        FindObjectOfType<HealthDisplay>().TakeDamage();
+
         screenshake.shake(0.25f, 1f, .1f);
     }
 

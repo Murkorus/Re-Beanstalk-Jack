@@ -52,7 +52,7 @@ public class Enemy : MonoBehaviour
     }
 
     public void Update() {
-        if(health <= 0) {
+        if(health == 0) {
             Death();
         }
     }
