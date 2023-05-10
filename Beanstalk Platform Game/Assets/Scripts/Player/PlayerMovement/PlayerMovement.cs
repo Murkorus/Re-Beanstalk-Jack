@@ -161,7 +161,8 @@ public class PlayerMovement : MonoBehaviour
 		}
 
 		//When releasing Hang
-        if(Input.GetButtonUp("Jump") && isHanging && !isClimbing ) {
+		if(!isHanging && !isClimbing && !GetComponent<PlayerStink>() && freezePlayer) 
+		{
             isHanging = false;
             Freeze(false);
 			hasPositioned = false;
@@ -169,8 +170,8 @@ public class PlayerMovement : MonoBehaviour
 
 		//Wall jump to the Left
         if(IsFacingRight && Input.GetKeyDown(KeyCode.A) && isHanging && !isClimbing && !Input.GetKey(KeyCode.D)) {
-            Debug.Log("Edge jump to the Right");
             isHanging = false;
+
             isClimbing = false;
             Freeze(false);
 			RB.AddForce(new Vector2(_ledgeJump.x, _ledgeJump.y), ForceMode2D.Force);
@@ -179,7 +180,6 @@ public class PlayerMovement : MonoBehaviour
 
 		//Wall jump to the right
         if(!IsFacingRight && Input.GetKeyDown(KeyCode.D) && isHanging && !isClimbing && !Input.GetKey(KeyCode.A)) {
-            Debug.Log("Edge jump to the Left");
             isHanging = false;
 
             isClimbing = false;
@@ -189,9 +189,8 @@ public class PlayerMovement : MonoBehaviour
         }
 
 
-        if(Input.GetKeyDown(KeyCode.W) && isHanging) {
-            Debug.Log("edge climb");
-
+        if(Input.GetKeyDown(KeyCode.W) && isHanging) 
+		{
             StartCoroutine(ledgeClimb());
         }
 	}

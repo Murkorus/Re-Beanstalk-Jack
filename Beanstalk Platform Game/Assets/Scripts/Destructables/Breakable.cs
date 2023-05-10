@@ -18,13 +18,11 @@ public class Breakable : MonoBehaviour
         GameObject.Find("CM vcam1").GetComponent<screenShake>().shake(0.125f, .5f, .5f);
 
         //Amount of drops
-        for (int i = 0; i < Random.Range(2 ,3 * level); i++) {
+        for (int i = 0; i < Random.Range(4 ,4 * level); i++) {
             //Drop item based on level
             Vector3 offset = new Vector3(Random.Range(-0.0f, 0.50f), 0, 0);
-            for(int u = 0; u < level; u++) {
-                GameObject PickupGO = Instantiate(drops[Random.Range(0, level - 1)], transform.position + offset, Quaternion.identity);  
-                PickupGO.transform.parent = GameObject.Find("----- Pickup -----").GetComponent<Transform>();  
-            }
+            GameObject PickupGO = Instantiate(drops[Random.Range(0, level)], transform.position + offset, Quaternion.identity);  
+            PickupGO.transform.parent = GameObject.Find("----- Pickup -----").GetComponent<Transform>();  
             offset = new Vector3(Random.Range(-0.5f, 0.5f), 0, 0);
         }
             
