@@ -7,6 +7,7 @@ public class NextLevel : MonoBehaviour
 {
 
     public bool canInteract;
+    public int sceneIndex;
 
     public void Start()
     {
@@ -46,6 +47,6 @@ public class NextLevel : MonoBehaviour
     public void interact()
     {
         Debug.Log("Saved the game");
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(sceneIndex);
     }
 }
