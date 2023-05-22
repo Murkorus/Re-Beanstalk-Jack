@@ -10,12 +10,21 @@ public class Breakable : MonoBehaviour
     public int level;
 
     private GameObject breakSound;
+    private Rigidbody2D rb;
 
+    public bool breakOnGroundHit;
+
+
+    public void Awake()
+    {
+        rb = GetComponent<Rigidbody2D>();
+    }
 
     private void breakObject() {
         Instantiate(breakPrefab, transform.position, Quaternion.identity);
         Destroy(this.gameObject);
-        GameObject.Find("CM vcam1").GetComponent<screenShake>().shake(0.125f, .5f, .5f);
+        float distanceToPlayer = Vector2.Distance(transform.position, GameObject.Find("Player").transform.position) / 10;
+        GameObject.Find("CM vcam1").GetComponent<screenShake>().shake(0.125f, .15f / distanceToPlayer, .15f / distanceToPlayer);
 
         //Amount of drops
         for (int i = 0; i < Random.Range(4 ,4 * level); i++) {
@@ -27,6 +36,16 @@ public class Breakable : MonoBehaviour
         }
             
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(breakOnGroundHit)
+        {
+            if(collision.tag == "Stone")
+                breakObject();
+        }
+    }
+
 
     private void Update() {
         if(health <= 0) {

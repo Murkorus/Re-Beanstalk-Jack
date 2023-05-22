@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GiantBoss : MonoBehaviour
 {
@@ -19,6 +20,7 @@ public class GiantBoss : MonoBehaviour
 
     public GameObject NormalGiant;
     public GameObject ThrowingGiant;
+    public GameObject bossCrate;
 
     private bool isAttacking;
 
@@ -31,6 +33,9 @@ public class GiantBoss : MonoBehaviour
     public AudioClip IntroClip;
     public AudioClip SmellyFeetClip;
 
+    public Slider healthSlider;
+    GameObject healthSliderCanvas;
+
     GameObject Foot;
 
 
@@ -39,6 +44,9 @@ public class GiantBoss : MonoBehaviour
         vc = GameObject.Find("CM vcam1").GetComponent<CinemachineVirtualCamera>();
         GameObject.Find("CM vcam1").GetComponent<CinemachineConfiner>().enabled = false;
         Foot = GameObject.Find("Foot");
+        healthSliderCanvas = GameObject.Find("HealthSliderCanvas");
+        healthSliderCanvas.SetActive(false);
+
         hasPlayedIntro = false;
         isPlayingAnimation = false;
     }
@@ -46,7 +54,8 @@ public class GiantBoss : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.H))
+        healthSlider.value = GetComponent<Enemy>().health;
+        if (Input.GetKeyDown(KeyCode.H))
         {
             BossStink();
         }
@@ -110,20 +119,32 @@ public class GiantBoss : MonoBehaviour
         }
     }
 
+    public void spawnCrates()
+    {
+        for (int i = 0; i < Random.Range(2, 4); i++)
+        {
+            GameObject Crate = Instantiate(bossCrate, new Vector3(Random.Range(GameObject.Find("BossAreaPoint1").transform.position.x, GameObject.Find("BossAreaPoint2").transform.position.x), 50, 0), Quaternion.identity);
+            Crate.transform.parent = GameObject.Find("Enemies").transform;
+        }
+    }
+
     IEnumerator randomAttack()
     {
         isAttacking = true;
         yield return new WaitForSeconds(Random.Range(2f, 3f));
-        int randomNumber = Random.Range(0, 3);
+        int randomNumber = Random.Range(0, 4);
         if (randomNumber == 1)
         {
             BossStink();
         } else if(randomNumber == 2)
         {
             BossStomp();
-        } else
+        } else if(randomNumber == 3)
         {
             spawnAllies();
+        } else
+        {
+            spawnCrates();
         }
         yield return new WaitForSeconds(Random.Range(2f, 3f));
         isAttacking = false;
@@ -161,6 +182,8 @@ public class GiantBoss : MonoBehaviour
     }
     IEnumerator bossIntro()
     {
+        healthSliderCanvas.SetActive(true);
+
         yield return new WaitForSeconds(.15f);
         isPlayingIntro = true;
 

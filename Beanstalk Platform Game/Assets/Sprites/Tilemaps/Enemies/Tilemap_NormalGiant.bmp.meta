@@ -524,15 +524,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1uts7wca_27
+      name: Death1
       rect:
         serializedVersion: 2
         x: 29
         y: 190
         width: 20
         height: 62
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.516129}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -545,15 +545,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1uts7wca_28
+      name: Death2
       rect:
         serializedVersion: 2
         x: 53
         y: 189
-        width: 23
+        width: 22
         height: 63
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.50793654}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -566,15 +566,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1uts7wca_29
+      name: Death3
       rect:
         serializedVersion: 2
-        x: 75
+        x: 76
         y: 189
-        width: 31
+        width: 30
         height: 58
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.55172414}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -587,15 +587,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1uts7wca_30
+      name: Death4
       rect:
         serializedVersion: 2
         x: 108
         y: 188
         width: 32
         height: 51
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.627451}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -608,15 +608,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1uts7wca_31
+      name: Death5
       rect:
         serializedVersion: 2
         x: 147
         y: 188
         width: 32
         height: 51
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.627451}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -629,15 +629,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1uts7wca_32
+      name: Death6
       rect:
         serializedVersion: 2
         x: 184
         y: 188
         width: 32
         height: 50
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.64}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -650,15 +650,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1uts7wca_33
+      name: Death7
       rect:
         serializedVersion: 2
         x: 15
         y: 133
         width: 32
         height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.6666667}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -671,15 +671,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1uts7wca_34
+      name: Death8
       rect:
         serializedVersion: 2
         x: 49
         y: 134
         width: 32
         height: 43
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.74418604}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -692,15 +692,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 1uts7wca_35
+      name: Death9
       rect:
         serializedVersion: 2
         x: 86
         y: 134
         width: 32
         height: 43
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.74418604}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -832,41 +832,41 @@ TextureImporter:
       NormalGiant_Angry_Walk3: 1371293763
       NormalGiant_Stomp4: -1029236345
       1uts7wca_11: -814152201
-      1uts7wca_27: 606638307
       NormalGiant_Confused3: -1967737048
+      Death7: -1520713258
+      Death4: 1779138262
       NormalGiant_happy_Walk5: -1979820179
+      Death9: 763717737
       NormalGiant_happy_Walk4: -1695377703
-      1uts7wca_35: 763717737
+      Death1: 606638307
       NormalGiant_Happy_Walk3: 1040033880
       NormalGiant_Happy_Walk1: 917713946
       NormalGiant_Stomp1: -301837757
       NormalGiant_happy_Walk3: -1031462580
+      Death6: -426343470
       1uts7wca_14: 1303361530
       NormalGiant_Happy_Walk5: -444533742
-      1uts7wca_30: 1779138262
       NormalGiant_Happy_Walk2: 747109517
+      NormalGiant_Stomp6: -232496874
       1uts7wca_20: -1346414618
       NormalGiant_Idle2: -309911003
-      NormalGiant_Stomp6: -232496874
-      1uts7wca_33: -1520713258
+      Death3: -1074508689
+      Death2: 1407851363
       NormalGiant_Angry_Walk1: 1736397476
-      1uts7wca_32: -426343470
-      1uts7wca_34: 2077652008
-      NormalGiant_Angry_Walk2: 919108767
       NormalGiant_happy_Walk2: 711975721
+      NormalGiant_Angry_Walk2: 919108767
       NormalGiant_Confused1: 269333076
       NormalGiant_Confused4: -2049114742
       NormalGiant_happy_Walk1: 542594692
+      Death8: 2077652008
       NormalGiant_Stomp3: 921525781
+      Death5: -2064035378
       1uts7wca_19: 1775004889
       NormalGiant_Stomp2: -2064035378
-      1uts7wca_31: 187534315
       NormalGiant_Idle1: -1023604137
       1uts7wca_17: 1407851363
-      1uts7wca_28: 343005408
       NormalGiant_Angry_Walk5: 956315346
       NormalGiant_Stomp5: -1074508689
-      1uts7wca_29: 472864495
       NormalGiant_Confused2: -1083769912
       NormalGiant_Angry_Walk4: 542594692
   spritePackingTag: 

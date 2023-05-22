@@ -35724,6 +35724,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 415577873}
+  - component: {fileID: 415577874}
   m_Layer: 7
   m_Name: AmooDisplay
   m_TagString: Untagged
@@ -35752,6 +35753,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &415577874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 415577872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4377abc96666474b83c9ceb102fa1fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amountText: {fileID: 484380394}
+  ammoPreviewImage: {fileID: 1958210703}
 --- !u!1 &484380392
 GameObject:
   m_ObjectHideFlags: 0
@@ -42995,6 +43010,7 @@ MonoBehaviour:
   - {fileID: 8076339284096285139, guid: 78b7bfcbdea169541949d70456e790df, type: 3}
   - {fileID: 8076339284096285139, guid: 62c3a02f259eec84194f28fa82442310, type: 3}
   level: 4
+  breakOnGroundHit: 0
 --- !u!114 &1090579830404326756
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43139,6 +43155,7 @@ MonoBehaviour:
   - {fileID: 8076339284096285139, guid: 78b7bfcbdea169541949d70456e790df, type: 3}
   - {fileID: 8076339284096285139, guid: 62c3a02f259eec84194f28fa82442310, type: 3}
   level: 4
+  breakOnGroundHit: 0
 --- !u!4 &2516179680137061426
 Transform:
   m_ObjectHideFlags: 0
@@ -43988,6 +44005,7 @@ MonoBehaviour:
   - {fileID: 8076339284096285139, guid: 78b7bfcbdea169541949d70456e790df, type: 3}
   - {fileID: 8076339284096285139, guid: 62c3a02f259eec84194f28fa82442310, type: 3}
   level: 4
+  breakOnGroundHit: 0
 --- !u!95 &5841219599595363395
 Animator:
   serializedVersion: 4
